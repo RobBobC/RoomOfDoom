@@ -4,15 +4,15 @@ using System.Collections;
 public class CrosshairController : MonoBehaviour {
 
 	public Texture crosshairImage;
-
-	// Use this for initialization
-	void Start () {
+	
+	void Start ()
+	{
 		Screen.showCursor = false;
 	}
 
 	/*void Update ()
 	{
-		transform.Translate(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1));
+		
 	}*/
 	
 	void OnGUI()
