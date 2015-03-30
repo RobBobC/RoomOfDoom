@@ -6,7 +6,6 @@ public class CharacterController : MonoBehaviour {
 	public float moveSpeed = 1.0f;
 
 	Animator animator;
-	int currentAnimation;
 
 	enum Animation {
 		IDLE_UP,
@@ -23,6 +22,7 @@ public class CharacterController : MonoBehaviour {
 		DOWN_RIGHT
 	}
 
+	Animation currentAnimation;
 	
 	/*void AimAt ()
 	{
@@ -51,59 +51,59 @@ public class CharacterController : MonoBehaviour {
 	void Start()
 	{
 		animator = this.GetComponent<Animator>();
-		currentAnimation = (int)Animation.IDLE_UP;
+		currentAnimation = Animation.IDLE_UP;
 		UpdateAnimationState (currentAnimation);
 	}
 	
 	void Update()
 	{
 		if (Input.GetKey ("a") && Input.GetKey ("w")) {
-			UpdateAnimationState ((int)Animation.UP_LEFT);
+			UpdateAnimationState (Animation.UP_LEFT);
 			transform.Translate (new Vector3 (-1, 1, 0) * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("a") && Input.GetKey ("s")) {
-			UpdateAnimationState ((int)Animation.DOWN_LEFT);
+			UpdateAnimationState (Animation.DOWN_LEFT);
 			transform.Translate (new Vector3 (-1, -1, 0) * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("d") && Input.GetKey ("w")) {
-			UpdateAnimationState ((int)Animation.UP_RIGHT);
+			UpdateAnimationState (Animation.UP_RIGHT);
 			transform.Translate (new Vector3 (1, 1, 0) * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("d") && Input.GetKey ("s")) {
-			UpdateAnimationState ((int)Animation.DOWN_RIGHT);
+			UpdateAnimationState (Animation.DOWN_RIGHT);
 			transform.Translate (new Vector3 (1, -1, 0) * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("w")) { 
-			UpdateAnimationState ((int)Animation.UP);
+			UpdateAnimationState (Animation.UP);
 			transform.Translate (Vector3.up * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("s")) {
-			UpdateAnimationState ((int)Animation.DOWN);
+			UpdateAnimationState (Animation.DOWN);
 			transform.Translate (Vector3.down * moveSpeed * Time.deltaTime);	
 		} else if (Input.GetKey ("a")) {
-			UpdateAnimationState ((int)Animation.LEFT);
+			UpdateAnimationState (Animation.LEFT);
 			transform.Translate (Vector3.left * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("d")) {
-			UpdateAnimationState ((int)Animation.RIGHT);
+			UpdateAnimationState (Animation.RIGHT);
 			transform.Translate (Vector3.right * moveSpeed * Time.deltaTime);
 		}
 	}
 	
-	void UpdateAnimationState(int curAnimState)
+	void UpdateAnimationState(Animation curAnimState)
 	{
-		if (currentAnimation == (int)Animation.IDLE_UP)
+		if (currentAnimation == curAnimState)
 			return;
 		
 		switch (curAnimState)
 		{
-			case (int)Animation.IDLE_UP:
+			case Animation.IDLE_UP:
 				animator.SetInteger("animationState", (int)Animation.IDLE_UP);
 				break;
-			case (int)Animation.UP:
+			case Animation.UP:
 				animator.SetInteger("animationState", (int)Animation.UP);
 				break;
-			case (int)Animation.DOWN:
+			case Animation.DOWN:
 				animator.SetInteger("animationState", (int)Animation.DOWN);
 				break;
-			case (int)Animation.LEFT:
+			case Animation.LEFT:
 				animator.SetInteger("animationState", (int)Animation.LEFT);
 				break;
-			case (int)Animation.RIGHT:
+			case Animation.RIGHT:
 				animator.SetInteger("animationState", (int)Animation.RIGHT);
 				break;
 		}
