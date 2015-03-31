@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CharacterController.cs" />
      <Compile Include="Assets\Scripts\CrosshairController.cs" />
+     <Compile Include="Assets\Scripts\SpawnController.cs" />
      <None Include="Assets\Audio\qubodupSqueakyRat\notes.txt" />
      <None Include="Assets\Sprites\torch\License-CC-BY-3.0.txt" />
      <None Include="Assets\Sprites\Side Blaster GFX\Side Blaster GFX\License.txt" />
