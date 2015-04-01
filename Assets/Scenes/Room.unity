@@ -74,6 +74,57 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &10828610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 10828611}
+  - 212: {fileID: 10828612}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &10828611
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10828610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 7
+--- !u!212 &10828612
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221526, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10828610}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &21421677
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +218,210 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: 7c829840fd7598e4fa4dd208094fffa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &60806953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 60806954}
+  - 212: {fileID: 60806955}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &60806954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 60806953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 27
+--- !u!212 &60806955
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221526, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 60806953}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &96857603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 96857604}
+  - 212: {fileID: 96857605}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &96857604
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96857603}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.8799992, y: 26.8199997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 4
+--- !u!212 &96857605
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96857603}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &232480017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 232480018}
+  - 212: {fileID: 232480019}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232480018
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232480017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.8799992, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 15
+--- !u!212 &232480019
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232480017}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &244780181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 244780182}
+  - 212: {fileID: 244780183}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &244780182
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244780181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.93999958, y: 17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 8
+--- !u!212 &244780183
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221526, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 244780181}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &248748053
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,11 +444,164 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248748053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.80000019, y: -9.89999962, z: 0}
+  m_LocalPosition: {x: 4.80000019, y: -15.3000002, z: 0}
   m_LocalScale: {x: .658955038, y: .624922156, z: 1}
   m_Children: []
   m_Father: {fileID: 2101170664}
   m_RootOrder: 4
+--- !u!1 &263519021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 263519022}
+  - 212: {fileID: 263519023}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &263519022
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263519021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.93999958, y: 8.93999958, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 11
+--- !u!212 &263519023
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263519021}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &294923366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121526, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 294923367}
+  - 212: {fileID: 294923368}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &294923367
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421526, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294923366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.8799992, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 19
+--- !u!212 &294923368
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221528, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294923366}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &323912814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 323912815}
+  - 212: {fileID: 323912816}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &323912815
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 323912814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.93999958, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 16
+--- !u!212 &323912816
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 323912814}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &361697697
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +629,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 0
+  m_RootOrder: 13
 --- !u!212 &361697699
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -341,11 +749,78 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 421524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 421528, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 421526, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
   m_RootGameObject: {fileID: 491185176}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &441904003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 441904004}
+  - 212: {fileID: 441904005}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441904004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441904003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.8799992, y: 26.8199997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 0
+--- !u!212 &441904005
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441904003}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &464558175
 Prefab:
   m_ObjectHideFlags: 0
@@ -415,12 +890,89 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
-  - {fileID: 361697698}
+  - {fileID: 441904004}
+  - {fileID: 747876345}
+  - {fileID: 2032955115}
+  - {fileID: 659063793}
+  - {fileID: 96857604}
+  - {fileID: 1024062158}
+  - {fileID: 1425744287}
+  - {fileID: 10828611}
+  - {fileID: 244780182}
+  - {fileID: 1286240075}
+  - {fileID: 773599194}
+  - {fileID: 263519022}
   - {fileID: 1604127592}
+  - {fileID: 361697698}
+  - {fileID: 1945188123}
+  - {fileID: 232480018}
+  - {fileID: 323912815}
   - {fileID: 835718175}
   - {fileID: 1311587728}
+  - {fileID: 294923367}
+  - {fileID: 961660403}
+  - {fileID: 1325973097}
+  - {fileID: 1302880928}
+  - {fileID: 1550921550}
+  - {fileID: 580060076}
+  - {fileID: 2078492025}
+  - {fileID: 1380200586}
+  - {fileID: 60806954}
+  - {fileID: 1079139547}
+  - {fileID: 731970469}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &580060075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121526, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 580060076}
+  - 212: {fileID: 580060077}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &580060076
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421526, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 580060075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.8799992, y: -8.93999958, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 24
+--- !u!212 &580060077
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221528, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 580060075}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &649410031
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +995,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 649410031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.80000019, y: 15.6000004, z: 0}
+  m_LocalPosition: {x: 4.80000019, y: 15.3000002, z: 0}
   m_LocalScale: {x: .658955038, y: .624922156, z: 1}
   m_Children: []
   m_Father: {fileID: 2101170664}
@@ -477,6 +1029,57 @@ Transform:
   - {fileID: 1813949949}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1 &659063792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 659063793}
+  - 212: {fileID: 659063794}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &659063793
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659063792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.93999958, y: 26.8199997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 3
+--- !u!212 &659063794
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659063792}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &680175641
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,11 +1102,164 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 680175641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.8999996, y: 7.69999981, z: 0}
+  m_LocalPosition: {x: -15.8000002, y: 7.69999981, z: 0}
   m_LocalScale: {x: .658955038, y: .624922156, z: 1}
   m_Children: []
   m_Father: {fileID: 2101170664}
   m_RootOrder: 1
+--- !u!1 &731970468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 731970469}
+  - 212: {fileID: 731970470}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &731970469
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731970468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.8799992, y: -17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 29
+--- !u!212 &731970470
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731970468}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &747876344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 747876345}
+  - 212: {fileID: 747876346}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &747876345
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747876344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.93999958, y: 26.8199997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 1
+--- !u!212 &747876346
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747876344}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &773599193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 773599194}
+  - 212: {fileID: 773599195}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &773599194
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773599193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.8799992, y: 8.93999958, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 10
+--- !u!212 &773599195
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773599193}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &835718173
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +1310,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 2
+  m_RootOrder: 17
 --- !u!1 &906564876
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,28 +1377,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
---- !u!1 &913429003
+--- !u!1 &961660402
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 913429005}
-  - 212: {fileID: 913429004}
+  - 4: {fileID: 961660403}
+  - 212: {fileID: 961660404}
   m_Layer: 0
-  m_Name: E_Bones01
+  m_Name: tileableBrick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &913429004
+--- !u!4 &961660403
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 961660402}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.8799992, y: -8.93999958, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 20
+--- !u!212 &961660404
 SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 913429003}
+  m_GameObject: {fileID: 961660402}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -655,22 +1424,10 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 1924070511
+  m_SortingLayerID: 656466473
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 73d41d3dd86bd1542b1589f06d5a15b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &913429005
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 913429003}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.0837412, y: -1.05871344, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
 --- !u!1 &974663091
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,11 +1592,62 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 982223981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: -10.1000004, z: 0}
+  m_LocalPosition: {x: -7.5, y: -15.3000002, z: 0}
   m_LocalScale: {x: .658955038, y: .624922156, z: 1}
   m_Children: []
   m_Father: {fileID: 2101170664}
   m_RootOrder: 5
+--- !u!1 &1024062157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1024062158}
+  - 212: {fileID: 1024062159}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1024062158
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1024062157}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.8799992, y: 17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 5
+--- !u!212 &1024062159
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1024062157}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1053892819
 Prefab:
   m_ObjectHideFlags: 0
@@ -884,6 +1692,57 @@ Prefab:
   m_RootGameObject: {fileID: 975513221}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1079139546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1079139547}
+  - 212: {fileID: 1079139548}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1079139547
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1079139546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.93999958, y: -17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 28
+--- !u!212 &1079139548
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1079139546}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1195255151
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,10 +1779,61 @@ Transform:
   m_GameObject: {fileID: 1195255151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.90136826, y: 4.3961854, z: -10}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &1286240074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1286240075}
+  - 212: {fileID: 1286240076}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1286240075
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1286240074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.8799992, y: 17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 9
+--- !u!212 &1286240076
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1286240074}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1299819544
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,8 +1889,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: .400000006
-    height: .400000006
+    width: 1
+    height: 1
   near clip plane: -1
   far clip plane: 2.00999999
   field of view: 60
@@ -1021,6 +1931,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1574024228}
+--- !u!1 &1302880927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1302880928}
+  - 212: {fileID: 1302880929}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302880928
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302880927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -8.93999958, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 22
+--- !u!212 &1302880929
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221526, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1302880927}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1311587727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +2009,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 3
+  m_RootOrder: 18
 --- !u!212 &1311587729
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1056,6 +2017,108 @@ SpriteRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 413783017}
   m_GameObject: {fileID: 1311587727}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1325973096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1325973097}
+  - 212: {fileID: 1325973098}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1325973097
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1325973096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.93999958, y: -8.93999958, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 21
+--- !u!212 &1325973098
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1325973096}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1380200585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1380200586}
+  - 212: {fileID: 1380200587}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1380200586
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380200585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.93999958, y: -17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 26
+--- !u!212 &1380200587
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380200585}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -1142,6 +2205,108 @@ PolygonCollider2D:
       - {x: -.629999995, y: -.425000012}
       - {x: -.579999983, y: -.474999994}
       - {x: .560000002, y: -.474999994}
+--- !u!1 &1425744286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1425744287}
+  - 212: {fileID: 1425744288}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1425744287
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425744286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.93999958, y: 17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 6
+--- !u!212 &1425744288
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425744286}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1550921549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121526, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1550921550}
+  - 212: {fileID: 1550921551}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1550921550
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421526, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550921549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.93999958, y: -8.93999958, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 23
+--- !u!212 &1550921551
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221528, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550921549}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1564914094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,7 +2422,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1574024228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.5, y: 16.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 1299819549}
@@ -1352,7 +2517,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 1
+  m_RootOrder: 12
 --- !u!212 &1604127593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1398,7 +2563,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1744402357}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.8999996, y: -3.0999999, z: 0}
+  m_LocalPosition: {x: -15.8000002, y: -3.0999999, z: 0}
   m_LocalScale: {x: .658955038, y: .624922156, z: 1}
   m_Children: []
   m_Father: {fileID: 2101170664}
@@ -1460,6 +2625,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2101170664}
   m_RootOrder: 6
+--- !u!1 &1945188121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1945188123}
+  - 212: {fileID: 1945188122}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1945188122
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945188121}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1945188123
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945188121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.8799992, y: 8.93999958, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 14
 --- !u!1 &2006841579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,6 +2790,57 @@ PolygonCollider2D:
       - {x: 1.10500002, y: -1.36500001}
       - {x: 1.17499995, y: -1.245}
       - {x: 1.19500005, y: -1.18499994}
+--- !u!1 &2032955114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121528, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2032955115}
+  - 212: {fileID: 2032955116}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2032955115
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421528, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032955114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 26.8199997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 2
+--- !u!212 &2032955116
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221530, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2032955114}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2045198161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +2909,57 @@ PolygonCollider2D:
       - {x: -.319999993, y: -.319999993}
       - {x: .319999993, y: -.319999993}
       - {x: .319999993, y: .319999993}
+--- !u!1 &2078492024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2078492025}
+  - 212: {fileID: 2078492026}
+  m_Layer: 0
+  m_Name: tileableBrick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2078492025
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2078492024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.7800007, y: -17.8799992, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491185177}
+  m_RootOrder: 25
+--- !u!212 &2078492026
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21221532, guid: 8fe101183cddd6d49a5af737a7f9615f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2078492024}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 656466473
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2101170663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,7 +2983,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2101170663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23, y: 5.80000019, z: 0}
+  m_LocalPosition: {x: 0, y: 4.57000017, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 1744402358}
