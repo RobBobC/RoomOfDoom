@@ -1028,7 +1028,7 @@ Transform:
   - {fileID: 377954494}
   - {fileID: 1813949949}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &659063792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,7 +1376,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &961660402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,7 +1754,7 @@ GameObject:
   - 114: {fileID: 1195255152}
   m_Layer: 0
   m_Name: crosshair
-  m_TagString: Untagged
+  m_TagString: Crosshair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1782,7 +1782,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &1286240074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,10 +1915,10 @@ Transform:
   m_GameObject: {fileID: 1299819544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
-  m_Father: {fileID: 1574024230}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!114 &1299819550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,7 +2413,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1924070511
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300014, guid: be7a9074895d05b4caa71398d2ff4ab8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eaab3da906633734f8968fdf6262c9f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1574024230
 Transform:
@@ -2424,10 +2424,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
-  m_Children:
-  - {fileID: 1299819549}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &1574024231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2466,15 +2465,21 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: .150000006, y: .219999999}
-      - {x: .100000001, y: .25999999}
-      - {x: -.0799999982, y: .25999999}
-      - {x: -.150000006, y: .209999993}
-      - {x: -.150000006, y: -.230000004}
-      - {x: -.140000001, y: -.25999999}
-      - {x: .129999995, y: -.25999999}
-      - {x: .140000001, y: -.209999993}
-      - {x: .150000006, y: -.200000003}
+    - - {x: .104999997, y: .129999995}
+      - {x: .0549999997, y: .219999999}
+      - {x: -.104999997, y: .219999999}
+      - {x: -.174999997, y: .200000003}
+      - {x: -.204999998, y: .119999997}
+      - {x: -.294999987, y: .0399999991}
+      - {x: -.425000012, y: -.0299999993}
+      - {x: -.425000012, y: -.170000002}
+      - {x: -.414999992, y: -.200000003}
+      - {x: -.264999986, y: -.219999999}
+      - {x: -.185000002, y: -.310000002}
+      - {x: .0649999976, y: -.310000002}
+      - {x: .194999993, y: -.219999999}
+      - {x: .335000008, y: -.129999995}
+      - {x: .335000008, y: -.0299999993}
 --- !u!95 &1574024234
 Animator:
   serializedVersion: 3
@@ -2995,7 +3000,7 @@ Transform:
   - {fileID: 1862326400}
   - {fileID: 21421678}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!114 &2101170665
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,24 +5,15 @@ public class CharacterController : MonoBehaviour {
 
 	public float moveSpeed = 1.0f;
 
-	Animator animator;
+	private Animator animator;
 
-	enum Animation {
-		IDLE_UP,
-		IDLE_DOWN,
-		IDLE_LEFT,
-		IDLE_RIGHT,
-		UP,
-		DOWN,
-		LEFT,
-		RIGHT,
-		UP_LEFT,
-		UP_RIGHT,
-		DOWN_LEFT,
-		DOWN_RIGHT
-	}
+	private enum Animation {
+		IDLE,
+		WALK
+	};
 
 	Animation currentAnimation;
+	CrosshairController crosshair;
 	
 	/*void AimAt ()
 	{
@@ -50,38 +41,55 @@ public class CharacterController : MonoBehaviour {
 
 	void Start()
 	{
+		crosshair = GameObject.FindGameObjectWithTag ("Crosshair").GetComponent<CrosshairController>();
 		animator = this.GetComponent<Animator>();
-		currentAnimation = Animation.IDLE_UP;
+		currentAnimation = Animation.IDLE;
 		UpdateAnimationState (currentAnimation);
 	}
 	
 	void Update()
 	{
 		if (Input.GetKey ("a") && Input.GetKey ("w")) {
-			UpdateAnimationState (Animation.UP_LEFT);
+			UpdateAnimationState (Animation.WALK);
 			transform.Translate (new Vector3 (-1, 1, 0) * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("a") && Input.GetKey ("s")) {
-			UpdateAnimationState (Animation.DOWN_LEFT);
+			UpdateAnimationState (Animation.WALK);
 			transform.Translate (new Vector3 (-1, -1, 0) * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("d") && Input.GetKey ("w")) {
-			UpdateAnimationState (Animation.UP_RIGHT);
+			UpdateAnimationState (Animation.WALK);
 			transform.Translate (new Vector3 (1, 1, 0) * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("d") && Input.GetKey ("s")) {
-			UpdateAnimationState (Animation.DOWN_RIGHT);
+			UpdateAnimationState (Animation.WALK);
 			transform.Translate (new Vector3 (1, -1, 0) * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("w")) { 
-			UpdateAnimationState (Animation.UP);
+			UpdateAnimationState (Animation.WALK);
 			transform.Translate (Vector3.up * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("s")) {
-			UpdateAnimationState (Animation.DOWN);
+			UpdateAnimationState (Animation.WALK);
 			transform.Translate (Vector3.down * moveSpeed * Time.deltaTime);	
 		} else if (Input.GetKey ("a")) {
-			UpdateAnimationState (Animation.LEFT);
+			UpdateAnimationState (Animation.WALK);
 			transform.Translate (Vector3.left * moveSpeed * Time.deltaTime);
 		} else if (Input.GetKey ("d")) {
-			UpdateAnimationState (Animation.RIGHT);
+			UpdateAnimationState (Animation.WALK);
 			transform.Translate (Vector3.right * moveSpeed * Time.deltaTime);
 		}
+		else {
+			UpdateAnimationState (Animation.IDLE);
+		}
+
+		Vector3 moveToward = Camera.main.ScreenToWorldPoint( Input.mousePosition );
+		// 4
+		Vector3 moveDirection = moveToward - this.transform.position;
+		moveDirection.z = 0; 
+		moveDirection.Normalize();
+		
+		
+		float targetAngle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+		transform.rotation = 
+			Quaternion.Slerp( transform.rotation, 
+			                 Quaternion.Euler( 0, 0, targetAngle - 90 ), 
+			                 5 * Time.deltaTime );
 	}
 	
 	void UpdateAnimationState(Animation curAnimState)
@@ -91,20 +99,11 @@ public class CharacterController : MonoBehaviour {
 		
 		switch (curAnimState)
 		{
-			case Animation.IDLE_UP:
-				animator.SetInteger("animationState", (int)Animation.IDLE_UP);
+			case Animation.IDLE:
+				animator.SetInteger("animationState", 0);
 				break;
-			case Animation.UP:
-				animator.SetInteger("animationState", (int)Animation.UP);
-				break;
-			case Animation.DOWN:
-				animator.SetInteger("animationState", (int)Animation.DOWN);
-				break;
-			case Animation.LEFT:
-				animator.SetInteger("animationState", (int)Animation.LEFT);
-				break;
-			case Animation.RIGHT:
-				animator.SetInteger("animationState", (int)Animation.RIGHT);
+			case Animation.WALK:
+				animator.SetInteger("animationState", 1);
 				break;
 		}
 		
