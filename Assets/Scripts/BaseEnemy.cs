@@ -2,14 +2,8 @@
 using System.Collections;
 
 public class BaseEnemy : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	private enum attackType {melee, ranged};
+	private Vector2 direction;
+	public float moveSpeed;
+	public int health;
 }
