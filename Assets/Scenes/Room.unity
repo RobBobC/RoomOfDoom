@@ -1783,6 +1783,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!1 &1285163187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1285163188}
+  m_Layer: 0
+  m_Name: LaunchBox
+  m_TagString: LaunchBox
+  m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1285163188
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285163187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .275000006, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1574024230}
+  m_RootOrder: 0
 --- !u!1 &1286240074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,7 +2451,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1285163188}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!114 &1574024231
@@ -2439,6 +2467,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  health: 20
+  bullet: {fileID: 172758, guid: 1932131eadd21c14d9d72122fa2f14fa, type: 2}
+  shotSpeed: 1000
 --- !u!50 &1574024232
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2465,21 +2496,15 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_Poly:
     m_Paths:
-    - - {x: .104999997, y: .129999995}
-      - {x: .0549999997, y: .219999999}
-      - {x: -.104999997, y: .219999999}
-      - {x: -.174999997, y: .200000003}
-      - {x: -.204999998, y: .119999997}
-      - {x: -.294999987, y: .0399999991}
-      - {x: -.425000012, y: -.0299999993}
-      - {x: -.425000012, y: -.170000002}
-      - {x: -.414999992, y: -.200000003}
-      - {x: -.264999986, y: -.219999999}
-      - {x: -.185000002, y: -.310000002}
-      - {x: .0649999976, y: -.310000002}
-      - {x: .194999993, y: -.219999999}
-      - {x: .335000008, y: -.129999995}
-      - {x: .335000008, y: -.0299999993}
+    - - {x: -.140000001, y: .180663049}
+      - {x: -.170000002, y: .150000006}
+      - {x: -.218213916, y: .0217861906}
+      - {x: -.463721246, y: -.0944384336}
+      - {x: -.144641459, y: -.297753751}
+      - {x: .0811231434, y: -.277090669}
+      - {x: .293978333, y: -.126887679}
+      - {x: .314641386, y: -.0631123111}
+      - {x: -.031786181, y: .208213791}
 --- !u!95 &1574024234
 Animator:
   serializedVersion: 3
