@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class BaseEnemy : MonoBehaviour {
-	private enum attackType {melee, ranged};
-	private Vector2 direction;
+	public enum attackType {melee, ranged};
+	protected Vector3 direction;
 	public float moveSpeed;
 	public int health;
 }
