@@ -85,7 +85,7 @@ GameObject:
   - 212: {fileID: 10828612}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!212 &10828612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ GameObject:
   - 60: {fileID: 45776774}
   m_Layer: 0
   m_Name: pillar
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,7 +189,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 45776772}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: -.319999993, y: .319999993}
@@ -214,7 +214,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 1116735395
+  m_SortingLayerID: 1924070511
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300030, guid: 7c829840fd7598e4fa4dd208094fffa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -229,7 +229,7 @@ GameObject:
   - 212: {fileID: 60806955}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,7 +245,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 27
+  m_RootOrder: 26
 --- !u!212 &60806955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ GameObject:
   - 212: {fileID: 96857605}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,7 +296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!212 &96857605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -320,6 +320,85 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b201b13f3c52d584699a7ca828b23fe0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &143976666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 143976668}
+  - 68: {fileID: 143976667}
+  - 68: {fileID: 143976669}
+  - 68: {fileID: 143976671}
+  - 68: {fileID: 143976670}
+  m_Layer: 0
+  m_Name: Barrier
+  m_TagString: Barrier
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!68 &143976667
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143976666}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Points:
+  - {x: -116.045853, y: 109.963898}
+  - {x: -116.045845, y: -104.596077}
+--- !u!4 &143976668
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143976666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.6458416, y: 15.1960993, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!68 &143976669
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143976666}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Points:
+  - {x: 62.7539749, y: 109.963814}
+  - {x: 62.7541428, y: -104.596092}
+--- !u!68 &143976670
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143976666}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Points:
+  - {x: 62.7541733, y: 109.964035}
+  - {x: -116.045837, y: 109.963905}
+--- !u!68 &143976671
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143976666}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Points:
+  - {x: 62.754158, y: -104.596085}
+  - {x: -116.045853, y: -104.5961}
 --- !u!1 &232480017
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +410,7 @@ GameObject:
   - 212: {fileID: 232480019}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,7 +461,7 @@ GameObject:
   - 212: {fileID: 244780183}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,7 +477,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!212 &244780183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -460,7 +539,7 @@ GameObject:
   - 212: {fileID: 263519023}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,7 +555,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!212 &263519023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -511,7 +590,7 @@ GameObject:
   - 212: {fileID: 294923368}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -527,7 +606,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 19
+  m_RootOrder: 12
 --- !u!212 &294923368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -562,7 +641,7 @@ GameObject:
   - 212: {fileID: 323912816}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -613,7 +692,7 @@ GameObject:
   - 212: {fileID: 361697699}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -705,9 +784,9 @@ Transform:
   m_LocalPosition: {x: 14.7299995, y: 8.29000092, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 975513223}
   - {fileID: 1419696826}
   - {fileID: 974663093}
+  - {fileID: 975513223}
   m_Father: {fileID: 652904700}
   m_RootOrder: 0
 --- !u!1001 &413783017
@@ -765,6 +844,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 121532, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+      propertyPath: m_TagString
+      value: BricksBricksAllWhiteBricks
+      objectReference: {fileID: 0}
+    - target: {fileID: 121528, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+      propertyPath: m_TagString
+      value: BricksBricksAllWhiteBricks
+      objectReference: {fileID: 0}
+    - target: {fileID: 121526, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+      propertyPath: m_TagString
+      value: BricksBricksAllWhiteBricks
+      objectReference: {fileID: 0}
+    - target: {fileID: 121524, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
+      propertyPath: m_TagString
+      value: BricksBricksAllWhiteBricks
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8fe101183cddd6d49a5af737a7f9615f, type: 2}
   m_RootGameObject: {fileID: 491185176}
@@ -781,7 +876,7 @@ GameObject:
   - 212: {fileID: 441904005}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -797,7 +892,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 0
+  m_RootOrder: 29
 --- !u!212 &441904005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -860,6 +955,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6097954, guid: 206c65f5326dd8d488bbdce2975f12e2, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 197954, guid: 206c65f5326dd8d488bbdce2975f12e2, type: 2}
+      propertyPath: m_TagString
+      value: Barrier
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 206c65f5326dd8d488bbdce2975f12e2, type: 2}
   m_RootGameObject: {fileID: 2045198161}
@@ -890,7 +993,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
-  - {fileID: 441904004}
   - {fileID: 747876345}
   - {fileID: 2032955115}
   - {fileID: 659063793}
@@ -903,13 +1005,13 @@ Transform:
   - {fileID: 773599194}
   - {fileID: 263519022}
   - {fileID: 1604127592}
+  - {fileID: 294923367}
   - {fileID: 361697698}
   - {fileID: 1945188123}
   - {fileID: 232480018}
   - {fileID: 323912815}
   - {fileID: 835718175}
   - {fileID: 1311587728}
-  - {fileID: 294923367}
   - {fileID: 961660403}
   - {fileID: 1325973097}
   - {fileID: 1302880928}
@@ -920,6 +1022,7 @@ Transform:
   - {fileID: 60806954}
   - {fileID: 1079139547}
   - {fileID: 731970469}
+  - {fileID: 441904004}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &580060075
@@ -933,7 +1036,7 @@ GameObject:
   - 212: {fileID: 580060077}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -949,7 +1052,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 24
+  m_RootOrder: 23
 --- !u!212 &580060077
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1040,7 +1143,7 @@ GameObject:
   - 212: {fileID: 659063794}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1056,7 +1159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!212 &659063794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1118,7 +1221,7 @@ GameObject:
   - 212: {fileID: 731970470}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1134,7 +1237,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 29
+  m_RootOrder: 28
 --- !u!212 &731970470
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1169,7 +1272,7 @@ GameObject:
   - 212: {fileID: 747876346}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1185,7 +1288,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!212 &747876346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1220,7 +1323,7 @@ GameObject:
   - 212: {fileID: 773599195}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1236,7 +1339,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!212 &773599195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1271,7 +1374,7 @@ GameObject:
   - 212: {fileID: 835718174}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1388,7 +1491,7 @@ GameObject:
   - 212: {fileID: 961660404}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1404,7 +1507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!212 &961660404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1440,7 +1543,7 @@ GameObject:
   - 60: {fileID: 974663094}
   m_Layer: 0
   m_Name: stone_block
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1474,11 +1577,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974663091}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.9499998, y: -.349999994, z: 10}
+  m_LocalPosition: {x: -15.9499998, y: -.349999905, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 377954494}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!60 &974663094
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1487,7 +1590,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 974663091}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: .620000005, y: -.435000002}
@@ -1510,7 +1613,7 @@ GameObject:
   - 60: {fileID: 975513224}
   m_Layer: 0
   m_Name: stone_block
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1545,11 +1648,11 @@ Transform:
   m_PrefabInternal: {fileID: 1053892819}
   m_GameObject: {fileID: 975513221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.5599995, y: -10.3199997, z: 10}
+  m_LocalPosition: {x: -33.6999969, y: -10.21, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 377954494}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!60 &975513224
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1559,7 +1662,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 975513221}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: .620000005, y: -.435000002}
@@ -1608,7 +1711,7 @@ GameObject:
   - 212: {fileID: 1024062159}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1624,7 +1727,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!212 &1024062159
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1657,15 +1760,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 414464, guid: f18ea9acfeb167b44b9c7e1bfe620386, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -16.5599995
+      value: -33.6999969
       objectReference: {fileID: 0}
     - target: {fileID: 414464, guid: f18ea9acfeb167b44b9c7e1bfe620386, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10.3199997
+      value: -10.21
       objectReference: {fileID: 0}
     - target: {fileID: 414464, guid: f18ea9acfeb167b44b9c7e1bfe620386, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 414464, guid: f18ea9acfeb167b44b9c7e1bfe620386, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1685,7 +1788,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 414464, guid: f18ea9acfeb167b44b9c7e1bfe620386, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464, guid: f18ea9acfeb167b44b9c7e1bfe620386, type: 2}
+      propertyPath: m_TagString
+      value: Barrier
+      objectReference: {fileID: 0}
+    - target: {fileID: 6014464, guid: f18ea9acfeb167b44b9c7e1bfe620386, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f18ea9acfeb167b44b9c7e1bfe620386, type: 2}
@@ -1703,7 +1814,7 @@ GameObject:
   - 212: {fileID: 1079139548}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1719,7 +1830,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 28
+  m_RootOrder: 27
 --- !u!212 &1079139548
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1794,7 +1905,7 @@ GameObject:
   - 212: {fileID: 1286240076}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1810,7 +1921,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!212 &1286240076
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1942,7 +2053,7 @@ GameObject:
   - 212: {fileID: 1302880929}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1958,7 +2069,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 22
+  m_RootOrder: 21
 --- !u!212 &1302880929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1993,7 +2104,7 @@ GameObject:
   - 212: {fileID: 1311587729}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2044,7 +2155,7 @@ GameObject:
   - 212: {fileID: 1325973098}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2060,7 +2171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!212 &1325973098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2095,7 +2206,7 @@ GameObject:
   - 212: {fileID: 1380200587}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2111,7 +2222,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 26
+  m_RootOrder: 25
 --- !u!212 &1380200587
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2147,7 +2258,7 @@ GameObject:
   - 60: {fileID: 1419696827}
   m_Layer: 0
   m_Name: stone_block
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2185,7 +2296,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 377954494}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!60 &1419696827
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2194,7 +2305,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1419696824}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: .620000005, y: -.435000002}
@@ -2216,7 +2327,7 @@ GameObject:
   - 212: {fileID: 1425744288}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2232,7 +2343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!212 &1425744288
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2267,7 +2378,7 @@ GameObject:
   - 212: {fileID: 1550921551}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2283,7 +2394,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 23
+  m_RootOrder: 22
 --- !u!212 &1550921551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2319,7 +2430,7 @@ GameObject:
   - 60: {fileID: 1564914096}
   m_Layer: 0
   m_Name: pillar
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2344,7 +2455,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1564914094}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: -.319999993, y: .319999993}
@@ -2388,7 +2499,7 @@ GameObject:
   - 95: {fileID: 1574024234}
   m_Layer: 0
   m_Name: character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2465,21 +2576,21 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: .104999997, y: .129999995}
-      - {x: .0549999997, y: .219999999}
-      - {x: -.104999997, y: .219999999}
-      - {x: -.174999997, y: .200000003}
-      - {x: -.204999998, y: .119999997}
-      - {x: -.294999987, y: .0399999991}
-      - {x: -.425000012, y: -.0299999993}
-      - {x: -.425000012, y: -.170000002}
-      - {x: -.414999992, y: -.200000003}
-      - {x: -.264999986, y: -.219999999}
-      - {x: -.185000002, y: -.310000002}
-      - {x: .0649999976, y: -.310000002}
-      - {x: .194999993, y: -.219999999}
-      - {x: .335000008, y: -.129999995}
-      - {x: .335000008, y: -.0299999993}
+    - - {x: .0956221372, y: .062479496}
+      - {x: .0268664975, y: .195617601}
+      - {x: -.0918710157, y: .204995453}
+      - {x: -.158119872, y: .160613045}
+      - {x: -.176866442, y: .104995444}
+      - {x: -.199345976, y: .0512534119}
+      - {x: -.425000012, y: -.0600091033}
+      - {x: -.413746625, y: -.151244313}
+      - {x: -.368110776, y: -.168115333}
+      - {x: -.204981774, y: -.218124434}
+      - {x: -.14186193, y: -.28561762}
+      - {x: .0537465811, y: -.281866461}
+      - {x: .0880925804, y: -.227502272}
+      - {x: .318119884, y: -.128124416}
+      - {x: .318119884, y: -.0562579669}
 --- !u!95 &1574024234
 Animator:
   serializedVersion: 3
@@ -2506,7 +2617,7 @@ GameObject:
   - 212: {fileID: 1604127593}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2522,7 +2633,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!212 &1604127593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2641,7 +2752,7 @@ GameObject:
   - 212: {fileID: 1945188122}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2806,7 +2917,7 @@ GameObject:
   - 212: {fileID: 2032955116}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2822,7 +2933,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!212 &2032955116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2858,7 +2969,7 @@ GameObject:
   - 60: {fileID: 2045198164}
   m_Layer: 0
   m_Name: pillar
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2907,7 +3018,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 2045198161}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: -.319999993, y: .319999993}
@@ -2925,7 +3036,7 @@ GameObject:
   - 212: {fileID: 2078492026}
   m_Layer: 0
   m_Name: tileableBrick
-  m_TagString: Untagged
+  m_TagString: BricksBricksAllWhiteBricks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2937,11 +3048,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2078492024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.7800007, y: -17.8799992, z: 0}
+  m_LocalPosition: {x: -17.8799992, y: -17.8799992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 25
+  m_RootOrder: 24
 --- !u!212 &2078492026
 SpriteRenderer:
   m_ObjectHideFlags: 0

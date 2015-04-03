@@ -6,6 +6,9 @@ TagManager:
   - SpawnPoint
   - Enemy
   - Crosshair
+  - Barrier
+  - Obstacle
+  - BricksBricksAllWhiteBricks
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
