@@ -1,0 +1,20 @@
+Description:
+    A 12-tile sprite of a giant cobra for use in games.
+
+Copyright © 2013 Jordan Irwin (a.k.a. AntumDeluge)
+
+This work can be redistributed under the terms and conditions of one of the following included licenses:
+
+*** ----- Creative Commons Attribution 3.0 ----- ***
+    
+    See License-CC-BY-3.0.txt (or later)
+
+
+*** ----- BSD Style ----- ***
+    
+    See License-BSD.txt
+
+
+*** ----- MIT Style ----- ***
+    
+    See License-MIT.txt

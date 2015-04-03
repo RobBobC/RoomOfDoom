@@ -11,8 +11,6 @@ GameObject:
   - 212: {fileID: 21266248}
   - 95: {fileID: 9566248}
   - 60: {fileID: 6002722}
-  - 114: {fileID: 11433450}
-  - 50: {fileID: 5019740}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Enemy
@@ -32,21 +30,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5019740
-Rigidbody2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166248}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!60 &6002722
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -89,19 +72,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11433450
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02129de7c458edc4e97d15e6bd101dbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4
-  health: 2
 --- !u!212 &21266248
 SpriteRenderer:
   m_ObjectHideFlags: 1

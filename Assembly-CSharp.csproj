@@ -50,13 +50,16 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CharacterController.cs" />
      <Compile Include="Assets\Scripts\CrosshairController.cs" />
-     <Compile Include="Assets\Scripts\RatController.cs" />
      <Compile Include="Assets\Scripts\SpawnController.cs" />
      <None Include="Assets\Audio\qubodupSqueakyRat\notes.txt" />
      <None Include="Assets\Sprites\torch\License-CC-BY-3.0.txt" />
      <None Include="Assets\Sprites\Side Blaster GFX\Side Blaster GFX\License.txt" />
+     <None Include="Assets\Sprites\king_cobra_0.1\License-BSD.txt" />
      <None Include="Assets\Sprites\torch\Readme.txt" />
      <None Include="Assets\Sprites\torch\License-MIT.txt" />
+     <None Include="Assets\Sprites\king_cobra_0.1\License-MIT.txt" />
+     <None Include="Assets\Sprites\king_cobra_0.1\License.txt" />
+     <None Include="Assets\Sprites\king_cobra_0.1\License-CC-BY-3.0.txt" />
      <None Include="Assets\Sprites\torch\License-BSD.txt" />
      <None Include="Assets\Sprites\LPC Imp 2_0\readme.txt" />
  <Reference Include="UnityEngine.UI">
