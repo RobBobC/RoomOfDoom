@@ -13,7 +13,7 @@ GameObject:
   - 60: {fileID: 6033862}
   - 114: {fileID: 11433862}
   m_Layer: 0
-  m_Name: bullet
+  m_Name: beer
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8015a165cb64149bc8c60b7105253b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damagePoints: 2
 --- !u!212 &21233862
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -97,7 +98,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1924070511
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b7b77ad976fb33d4da41d1e1fe0726c9, type: 3}
+  m_Sprite: {fileID: 21300062, guid: 11f05c43c480a4e419e17496d7d6fc6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

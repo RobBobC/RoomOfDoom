@@ -3351,7 +3351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   health: 20
-  bullet: {fileID: 133862, guid: def621f4b72dc4d4f8fc783111a71ec2, type: 2}
+  bullet: {fileID: 133862, guid: 792a89e300bc24c479e7d376c3de9d4b, type: 2}
   shotSpeed: 1000
 --- !u!50 &1574024232
 Rigidbody2D:
