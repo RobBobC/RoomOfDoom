@@ -11,6 +11,8 @@ public class CrosshairController : MonoBehaviour {
 
 	void OnGUI()
 	{
-		GUI.DrawTexture(new Rect(Input.mousePosition.x - (crosshairImage.width / 2), (Screen.height - Input.mousePosition.y) - (crosshairImage.height / 2), crosshairImage.width, crosshairImage.height), crosshairImage);
+		GUI.DrawTexture(new Rect(Input.mousePosition.x - (crosshairImage.width / 4), 
+		                         	(Screen.height - Input.mousePosition.y) - (crosshairImage.height / 4), 
+		                         	crosshairImage.width / 2, crosshairImage.height / 2), crosshairImage);
 	}
 }
