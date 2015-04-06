@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: df2d33c2a5ca6ee41a9c0f57e5f3acf4
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: rat-death_0
+    21300002: rat-death_1
+    21300004: rat-death_2
+    21300006: rat-death_3
+    21300008: rat-death_4
+    21300010: rat-death_5
+    21300012: rat-death_6
+    21300014: rat-death_7
+    21300016: rat-death_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,13 +34,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,6 +51,96 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: rat-death_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 147
+        width: 51
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rat-death_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 151
+        width: 55
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rat-death_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 149
+        width: 64
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rat-death_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 148
+        width: 66
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rat-death_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 14
+        width: 66
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rat-death_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 13
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rat-death_6
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 90
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rat-death_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 57
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rat-death_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 33
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -14,7 +14,7 @@ GameObject:
   - 50: {fileID: 5073222}
   - 114: {fileID: 11453548}
   m_Layer: 0
-  m_Name: rat
+  m_Name: Rat
   m_TagString: Rat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
