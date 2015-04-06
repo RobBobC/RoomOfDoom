@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class RatController : BaseEnemy {
-	private attackType attack;
 	private float lookAtAngle;
 
 	void Start()
