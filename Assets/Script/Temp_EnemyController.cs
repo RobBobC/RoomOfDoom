@@ -13,6 +13,7 @@ public class Temp_EnemyController : BaseEnemy {
 	{
 		if(IsDead) //check if enemy has been killed before updating
 			return;
+		base.Update();
 		//enemy behavior defined here
 	}
 }

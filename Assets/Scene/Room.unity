@@ -3431,8 +3431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2335b8341c3ed6941b310f6622dce770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
-  weapon: {fileID: 185284, guid: 23d819accb003844198d836ab4a613e1, type: 2}
+  type: 1
+  weapon: {fileID: 133862, guid: 792a89e300bc24c479e7d376c3de9d4b, type: 2}
 --- !u!1 &1604127591
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,7 +4108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 166248, guid: 7b5862b5fa8a2a14c8729d551effe4af, type: 2}
-  - {fileID: 0}
+  - {fileID: 100000, guid: 0ab843266ec284942beee578c14919d1, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   spawnInterval: 1

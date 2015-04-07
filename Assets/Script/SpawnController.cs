@@ -47,7 +47,26 @@ public class SpawnController : MonoBehaviour {
 				}
 				break;
 			case 1:
-				wave++;
+				if(spawnInterval < 0)
+				{
+					if(spawnCount > 0)
+					{
+						Instantiate(enemies[1], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
+						spawnCount--;
+						spawnInterval = 1f;
+					}
+					else
+					{
+						wave++;
+						spawnCount = 10;
+						break;
+					}
+				}
+				else
+				{
+					spawnInterval -= Time.deltaTime;
+					break;
+				}
 				break;
 			case 2:
 				wave++;
