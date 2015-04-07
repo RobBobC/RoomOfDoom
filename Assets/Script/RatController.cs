@@ -11,13 +11,9 @@ public class RatController : BaseEnemy {
 
 	void Update()
 	{
-		if(health <= 0)
-		{
-			animator.SetBool("isDead", true);
-			gameObject.collider2D.enabled = false;
-		}
 		if(IsDead) //check if enemy has been killed before updating
 			return;
+		base.Update();
 		transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
 		direction = player.transform.position - transform.position;
 		lookAtAngle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg;

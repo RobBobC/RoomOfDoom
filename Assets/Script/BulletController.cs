@@ -7,7 +7,12 @@ public class BulletController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		if(other.collider.tag != "Player")
+		if(other.gameObject.tag == "Obstacle")
 			Destroy (gameObject);
+	}
+
+	void OnBecameInvisible()
+	{
+		Destroy (gameObject);
 	}
 }

@@ -25,16 +25,24 @@ public class BaseEnemy : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 
+	protected void Update()
+	{
+		if(gameObject.rigidbody2D.isKinematic)
+			gameObject.rigidbody2D.isKinematic = false;
+	}
+
 	protected void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.collider.tag == "Bullet")
 		{
+			gameObject.rigidbody2D.isKinematic = true;
 			health -= other.collider.gameObject.GetComponent<BulletController>().damagePoints;
 			if(health <= 0)
 			{
 				animator.SetBool("isDead", true);
 				gameObject.collider2D.enabled = false;
 			}
+			Destroy (other.gameObject);
 		}
 	}
 
@@ -43,6 +51,11 @@ public class BaseEnemy : MonoBehaviour {
 		if(other.tag == "LaunchBox")
 		{
 			health -= other.gameObject.GetComponentInParent<WeaponController>().weapon.GetComponent<MeleeController>().damage;
+			if(health <= 0)
+			{
+				animator.SetBool("isDead", true);
+				gameObject.collider2D.enabled = false;
+			}
 		}
 	}
 
@@ -51,6 +64,11 @@ public class BaseEnemy : MonoBehaviour {
 		if(other.tag == "LaunchBox")
 		{
 			health -= other.gameObject.GetComponentInParent<WeaponController>().weapon.GetComponent<MeleeController>().damage;
+			if(health <= 0)
+			{
+				animator.SetBool("isDead", true);
+				gameObject.collider2D.enabled = false;
+			}
 		}
 	}
 
