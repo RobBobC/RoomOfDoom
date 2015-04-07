@@ -13,7 +13,7 @@ GameObject:
   - 60: {fileID: 6033862}
   - 114: {fileID: 11433862}
   m_Layer: 0
-  m_Name: axe
+  m_Name: throwing axe
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

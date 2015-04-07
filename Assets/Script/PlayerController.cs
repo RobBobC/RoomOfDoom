@@ -3,9 +3,10 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 	public float moveSpeed = 1.0f;
-	public int health = 20;
-	public GameObject bullet;
+	public int health = 3;
 	public float shotSpeed = 1000;
+	public Weapon weapon;
+	
 
 	private enum Animation {
 		IDLE,
@@ -14,25 +15,43 @@ public class PlayerController : MonoBehaviour {
 
 	private Animator animator;
 	private bool invincible;
+	private bool dead;
 	private float invinceDuration;
 	private CrosshairController crosshair;
 	private GameObject launchBox;
 	private Animation currentAnimation;
+	private float meleeAnimationTime = 0f;
 
 	void Start()
 	{
+		weapon = GetComponent<Weapon>();
 		crosshair = GameObject.FindGameObjectWithTag ("Crosshair").GetComponent<CrosshairController>();
 		animator = this.GetComponent<Animator>();
 		currentAnimation = Animation.IDLE;
 		UpdateAnimationState (currentAnimation);
 		invincible = false;
+		dead = false;
 		invinceDuration = 1.0f;
 		launchBox = GameObject.FindGameObjectWithTag ("LaunchBox");
 	}
 	
 	void Update()
 	{
-		Debug.Log (health);
+		meleeAnimationTime -= Time.deltaTime;
+		if(health <=0)
+		{
+			Time.timeScale = 0;
+		}
+		if (Input.GetKey ("r") && Time.timeScale == 0)
+		{
+			Application.LoadLevel(0);
+			Time.timeScale = 1;
+		}
+		if(meleeAnimationTime <= 0 && launchBox.GetComponent<PolygonCollider2D>().enabled == true && launchBox.GetComponent<PolygonCollider2D>().enabled == true)
+		{
+			launchBox.GetComponent<PolygonCollider2D>().enabled = false;
+			launchBox.GetComponent<HitBox>().enabled = false;
+		}
 		if(invincible)
 		{
 			if(invinceDuration < 0)
@@ -100,8 +119,18 @@ public class PlayerController : MonoBehaviour {
 
 		if(Input.GetMouseButtonDown(0))
 		{
-			GameObject shot = Instantiate(bullet, launchBox.transform.position, Quaternion.Euler(0,0,0)) as GameObject;
-			shot.rigidbody2D.AddForce(moveDirection * shotSpeed);
+			if(weapon.type == Weapon.attackType.ranged)
+			{
+				GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0,0)) as GameObject;
+				shot.rigidbody2D.AddForce(moveDirection * shotSpeed);
+			}
+			else
+			{
+				launchBox.GetComponent<PolygonCollider2D>().enabled = true;
+				launchBox.GetComponent<HitBox>().enabled = true;
+				launchBox.GetComponent<HitBox>().damagePoints = weapon.weapon.GetComponent<MeleeController>().damage;
+				meleeAnimationTime = .5f;
+			}
 		}
 	}
 	

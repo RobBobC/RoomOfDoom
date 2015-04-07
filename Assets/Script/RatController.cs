@@ -11,6 +11,12 @@ public class RatController : BaseEnemy {
 
 	void Update()
 	{
+		
+		if(health <= 0)
+		{
+			animator.SetBool("isDead", true);
+			gameObject.collider2D.enabled = false;
+		}
 		if(IsDead) //check if enemy has been killed before updating
 			return;
 		transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);

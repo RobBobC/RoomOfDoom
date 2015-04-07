@@ -2462,6 +2462,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1285163188}
+  - 60: {fileID: 1285163190}
+  - 114: {fileID: 1285163189}
   m_Layer: 0
   m_Name: LaunchBox
   m_TagString: LaunchBox
@@ -2476,11 +2478,39 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1285163187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .275000006, z: 0}
+  m_LocalPosition: {x: 0, y: .340000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1574024230}
   m_RootOrder: 0
+--- !u!114 &1285163189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285163187}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec74fb1dd72106e45922a6a8acbc63e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePoints: 0
+--- !u!60 &1285163190
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285163187}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: 0, y: .307881504}
+      - {x: .320734024, y: .222502142}
+      - {x: .451833278, y: -.0674613714}
+      - {x: -.439474136, y: -.0674612522}
+      - {x: -.345452845, y: .234861463}
 --- !u!1 &1286240074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,6 +3326,7 @@ GameObject:
   - 50: {fileID: 1574024232}
   - 60: {fileID: 1574024233}
   - 95: {fileID: 1574024234}
+  - 114: {fileID: 1574024235}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -3350,9 +3381,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  health: 20
-  bullet: {fileID: 133862, guid: 792a89e300bc24c479e7d376c3de9d4b, type: 2}
+  health: 3
   shotSpeed: 1000
+  weapon: {fileID: 0}
 --- !u!50 &1574024232
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3403,6 +3434,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1574024235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574024228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2335b8341c3ed6941b310f6622dce770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  weapon: {fileID: 133862, guid: 792a89e300bc24c479e7d376c3de9d4b, type: 2}
 --- !u!1 &1604127591
 GameObject:
   m_ObjectHideFlags: 0

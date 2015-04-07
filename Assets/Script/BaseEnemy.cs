@@ -35,7 +35,6 @@ public class BaseEnemy : MonoBehaviour {
 				animator.SetBool("isDead", true);
 				gameObject.collider2D.enabled = false;
 			}
-			Destroy (other.gameObject);
 		}
 	}
 
