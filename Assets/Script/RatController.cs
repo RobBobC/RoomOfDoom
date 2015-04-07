@@ -11,7 +11,6 @@ public class RatController : BaseEnemy {
 
 	void Update()
 	{
-		
 		if(health <= 0)
 		{
 			animator.SetBool("isDead", true);

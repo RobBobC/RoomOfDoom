@@ -5,8 +5,6 @@ public class PlayerController : MonoBehaviour {
 	public float moveSpeed = 1.0f;
 	public int health = 3;
 	public float shotSpeed = 1000;
-	public Weapon weapon;
-	
 
 	private enum Animation {
 		IDLE,
@@ -20,11 +18,11 @@ public class PlayerController : MonoBehaviour {
 	private CrosshairController crosshair;
 	private GameObject launchBox;
 	private Animation currentAnimation;
-	private float meleeAnimationTime = 0f;
+	private WeaponController weapon;
 
 	void Start()
 	{
-		weapon = GetComponent<Weapon>();
+		weapon = GetComponent<WeaponController>();
 		crosshair = GameObject.FindGameObjectWithTag ("Crosshair").GetComponent<CrosshairController>();
 		animator = this.GetComponent<Animator>();
 		currentAnimation = Animation.IDLE;
@@ -37,7 +35,6 @@ public class PlayerController : MonoBehaviour {
 	
 	void Update()
 	{
-		meleeAnimationTime -= Time.deltaTime;
 		if(health <=0)
 		{
 			Time.timeScale = 0;
@@ -47,10 +44,9 @@ public class PlayerController : MonoBehaviour {
 			Application.LoadLevel(0);
 			Time.timeScale = 1;
 		}
-		if(meleeAnimationTime <= 0 && launchBox.GetComponent<PolygonCollider2D>().enabled == true && launchBox.GetComponent<PolygonCollider2D>().enabled == true)
+		if(launchBox.GetComponent<PolygonCollider2D>().enabled == true && launchBox.GetComponent<PolygonCollider2D>().enabled == true)
 		{
 			launchBox.GetComponent<PolygonCollider2D>().enabled = false;
-			launchBox.GetComponent<HitBox>().enabled = false;
 		}
 		if(invincible)
 		{
@@ -66,22 +62,22 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKey ("a") && Input.GetKey ("w"))
 		{
 			UpdateAnimationState (Animation.WALK);
-			transform.Translate (new Vector3 (-1, 1, 0) * moveSpeed * Time.deltaTime);
+			transform.Translate (new Vector3 (-(1/Mathf.Sqrt(2)), (1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
 		}
 		else if (Input.GetKey ("a") && Input.GetKey ("s"))
 		{
 			UpdateAnimationState (Animation.WALK);
-			transform.Translate (new Vector3 (-1, -1, 0) * moveSpeed * Time.deltaTime);
+			transform.Translate (new Vector3 (-(1/Mathf.Sqrt(2)), -(1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
 		}
 		else if (Input.GetKey ("d") && Input.GetKey ("w"))
 		{
 			UpdateAnimationState (Animation.WALK);
-			transform.Translate (new Vector3 (1, 1, 0) * moveSpeed * Time.deltaTime);
+			transform.Translate (new Vector3 ((1/Mathf.Sqrt(2)), (1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
 		}
 		else if (Input.GetKey ("d") && Input.GetKey ("s"))
 		{
 			UpdateAnimationState (Animation.WALK);
-			transform.Translate (new Vector3 (1, -1, 0) * moveSpeed * Time.deltaTime);
+			transform.Translate (new Vector3 ((1/Mathf.Sqrt(2)), -(1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
 		}
 		else if (Input.GetKey ("w"))
 		{ 
@@ -119,7 +115,7 @@ public class PlayerController : MonoBehaviour {
 
 		if(Input.GetMouseButtonDown(0))
 		{
-			if(weapon.type == Weapon.attackType.ranged)
+			if(weapon.type == WeaponController.attackType.ranged)
 			{
 				GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0,0)) as GameObject;
 				shot.rigidbody2D.AddForce(moveDirection * shotSpeed);
@@ -127,9 +123,6 @@ public class PlayerController : MonoBehaviour {
 			else
 			{
 				launchBox.GetComponent<PolygonCollider2D>().enabled = true;
-				launchBox.GetComponent<HitBox>().enabled = true;
-				launchBox.GetComponent<HitBox>().damagePoints = weapon.weapon.GetComponent<MeleeController>().damage;
-				meleeAnimationTime = .5f;
 			}
 		}
 	}

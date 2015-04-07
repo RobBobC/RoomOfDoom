@@ -2463,7 +2463,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1285163188}
   - 60: {fileID: 1285163190}
-  - 114: {fileID: 1285163189}
   m_Layer: 0
   m_Name: LaunchBox
   m_TagString: LaunchBox
@@ -2483,18 +2482,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1574024230}
   m_RootOrder: 0
---- !u!114 &1285163189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1285163187}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec74fb1dd72106e45922a6a8acbc63e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damagePoints: 0
 --- !u!60 &1285163190
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3383,7 +3370,6 @@ MonoBehaviour:
   moveSpeed: 7
   health: 3
   shotSpeed: 1000
-  weapon: {fileID: 0}
 --- !u!50 &1574024232
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3445,8 +3431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2335b8341c3ed6941b310f6622dce770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
-  weapon: {fileID: 133862, guid: 792a89e300bc24c479e7d376c3de9d4b, type: 2}
+  type: 0
+  weapon: {fileID: 185284, guid: 23d819accb003844198d836ab4a613e1, type: 2}
 --- !u!1 &1604127591
 GameObject:
   m_ObjectHideFlags: 0

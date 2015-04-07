@@ -38,6 +38,22 @@ public class BaseEnemy : MonoBehaviour {
 		}
 	}
 
+	protected void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.tag == "LaunchBox")
+		{
+			health -= other.gameObject.GetComponentInParent<WeaponController>().weapon.GetComponent<MeleeController>().damage;
+		}
+	}
+
+	protected void OnTriggerStay2D(Collider2D other)
+	{
+		if(other.tag == "LaunchBox")
+		{
+			health -= other.gameObject.GetComponentInParent<WeaponController>().weapon.GetComponent<MeleeController>().damage;
+		}
+	}
+
 	protected void GrantTheSweetReleaseOfDeath() //animation event
 	{
 		Destroy (gameObject);
