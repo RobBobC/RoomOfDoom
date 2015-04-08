@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			switch(other.collider.tag)
 			{
-				case "Rat":
+				case "Enemy":
 					health -= 1;
 					invincible = true;
 					break;
@@ -165,12 +165,28 @@ public class PlayerController : MonoBehaviour {
 		{
 			switch(other.collider.tag)
 			{
-				case "Rat":
+				case "Enemy":
 					health -= 1;
 				    invincible = true;
 					break;
 			}		
 		}
 	}
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if(!invincible)
+		{
+			switch(other.tag)
+			{
+				case "EnemyBullet":
+					health -= 1;
+					invincible = true;
+					Destroy(other.gameObject);
+					break;
+			}
+		}
+	}
+
 
 }
