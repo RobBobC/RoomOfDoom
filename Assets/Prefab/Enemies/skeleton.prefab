@@ -124,6 +124,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   health: 4
+  spawnSound: {fileID: 8300000, guid: 5e9b4be23945db745a8d216b93f0ab97, type: 3}
+  dieSound: {fileID: 8300000, guid: e53498f7b7f1dd447b55ca87d4e0e3ae, type: 3}
+  spawnSoundVolume: .100000001
+  dieSoundVolume: 1
   bone: {fileID: 182026, guid: 1da15237d2bb43041b68239b8eb8c07e, type: 2}
   shotSpeed: 1000
   launchBox: {fileID: 126058}

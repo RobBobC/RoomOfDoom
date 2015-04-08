@@ -4,7 +4,13 @@ using System.Collections;
 public class BaseEnemy : MonoBehaviour {
 	public float moveSpeed;
 	public int health;
+	public AudioClip spawnSound;
+	public AudioClip dieSound;
+	public float spawnSoundVolume = 1.0f;
+	public float dieSoundVolume = 1.0f;
 
+
+	private AudioSource audioSource;
 	protected GameObject player;
 	protected Animator animator;
 	protected Vector3 direction;
@@ -23,6 +29,7 @@ public class BaseEnemy : MonoBehaviour {
 	{
 		animator = this.GetComponent<Animator> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
+		AudioSource.PlayClipAtPoint (spawnSound, new Vector3 (0, 0, 0), spawnSoundVolume);
 	}
 
 	protected void Update()
@@ -40,6 +47,7 @@ public class BaseEnemy : MonoBehaviour {
 			if(health <= 0)
 			{
 				animator.SetBool("isDead", true);
+				AudioSource.PlayClipAtPoint (dieSound, new Vector3 (0, 0, 0),dieSoundVolume);
 				gameObject.collider2D.enabled = false;
 			}
 			Destroy (other.gameObject);

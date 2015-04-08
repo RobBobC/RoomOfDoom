@@ -1,6 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\BaseEnemy.cs">
+    <Files>
+      <File FileName="Assets\Script\BaseEnemy.cs" Line="31" Column="2" />
+      <File FileName="Assets\Script\BulletController.cs" Line="9" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\Robert Cook\Downloads\CECS 590\Project\RoomOfDoom\Assets\Script\HitBox.cs" line="12" />

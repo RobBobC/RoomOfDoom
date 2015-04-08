@@ -102,6 +102,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   health: 2
+  spawnSound: {fileID: 8300000, guid: e43f80b7f6f2d4640ac00657f92177fa, type: 3}
+  dieSound: {fileID: 8300000, guid: 1b8dadcf3b68a0c4f928c34886e105e6, type: 3}
+  spawnSoundVolume: .100000001
+  dieSoundVolume: 1
 --- !u!212 &21266248
 SpriteRenderer:
   m_ObjectHideFlags: 1
