@@ -13,6 +13,7 @@ TagManager:
   - SkeletonLaunchBox
   - EnemyBullet
   - HealthUI
+  - ImpLaunchBox
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

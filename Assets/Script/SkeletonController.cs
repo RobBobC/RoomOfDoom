@@ -13,7 +13,7 @@ public class SkeletonController : BaseEnemy {
 	void Start()
 	{
 		base.Start(); //call BaseEnemy's start function
-		coolDownDuration = 1.0f;
+		coolDownDuration = 1.5f;
 		coolDown = false;
 	}
 	

@@ -1,9 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\BaseEnemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\SpawnController.cs">
     <Files>
-      <File FileName="Assets\Script\BaseEnemy.cs" Line="31" Column="2" />
-      <File FileName="Assets\Script\BulletController.cs" Line="9" Column="3" />
+      <File FileName="Assets\Script\BulletController.cs" Line="7" Column="2" />
+      <File FileName="Assets\Script\SpawnController.cs" Line="76" Column="28" />
+      <File FileName="Assets\Script\ImpController.cs" Line="52" Column="20" />
+      <File FileName="Assets\Script\EnemyBulletController.cs" Line="5" Column="18" />
+      <File FileName="Assets\Script\PlayerController.cs" Line="183" Column="21" />
+      <File FileName="Assets\Script\BaseEnemy.cs" Line="25" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

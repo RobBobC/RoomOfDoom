@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 	public float moveSpeed = 1.0f;
-	public int health = 3;
+	public int health = 8;
 	public float shotSpeed = 1000;
 
 	private enum Animation {
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour {
 			switch(other.tag)
 			{
 				case "EnemyBullet":
-					health -= 1;
+					health -= other.gameObject.GetComponent<BulletController>().damagePoints;
 					invincible = true;
 					Destroy(other.gameObject);
 					break;
