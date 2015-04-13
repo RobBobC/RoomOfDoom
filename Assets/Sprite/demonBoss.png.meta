@@ -1,0 +1,1004 @@
+fileFormatVersion: 2
+guid: 10ec4e9f210acfa4cb7755b563de0081
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: demonBoss_0
+    21300002: demonBoss_1
+    21300004: demonBoss_2
+    21300006: demonBoss_3
+    21300008: demonBoss_4
+    21300010: demonBoss_5
+    21300012: demonBoss_6
+    21300014: demonBoss_7
+    21300016: demonBoss_8
+    21300018: demonBoss_9
+    21300020: demonBoss_10
+    21300022: demonBoss_11
+    21300024: demonBoss_12
+    21300026: demonBoss_13
+    21300028: demonBoss_14
+    21300030: demonBoss_15
+    21300032: demonBoss_16
+    21300034: demonBoss_17
+    21300036: demonBoss_18
+    21300038: demonBoss_19
+    21300040: demonBoss_20
+    21300042: demonBoss_21
+    21300044: demonBoss_22
+    21300046: demonBoss_23
+    21300048: demonBoss_24
+    21300050: demonBoss_25
+    21300052: demonBoss_26
+    21300054: demonBoss_27
+    21300056: demonBoss_28
+    21300058: demonBoss_29
+    21300060: demonBoss_30
+    21300062: demonBoss_31
+    21300064: demonBoss_32
+    21300066: demonBoss_33
+    21300068: demonBoss_34
+    21300070: demonBoss_35
+    21300072: demonBoss_36
+    21300074: demonBoss_37
+    21300076: demonBoss_38
+    21300078: demonBoss_39
+    21300080: demonBoss_40
+    21300082: demonBoss_41
+    21300084: demonBoss_42
+    21300086: demonBoss_43
+    21300088: demonBoss_44
+    21300090: demonBoss_45
+    21300092: demonBoss_46
+    21300094: demonBoss_47
+    21300096: demonBoss_48
+    21300098: demonBoss_49
+    21300100: demonBoss_50
+    21300102: demonBoss_51
+    21300104: demonBoss_52
+    21300106: demonBoss_53
+    21300108: demonBoss_54
+    21300110: demonBoss_55
+    21300112: demonBoss_56
+    21300114: demonBoss_57
+    21300116: demonBoss_58
+    21300118: demonBoss_59
+    21300120: demonBoss_60
+    21300122: demonBoss_61
+    21300124: demonBoss_62
+    21300126: demonBoss_63
+    21300128: demonBoss_64
+    21300130: demonBoss_65
+    21300132: demonBoss_66
+    21300134: demonBoss_67
+    21300136: demonBoss_68
+    21300138: demonBoss_69
+    21300140: demonBoss_70
+    21300142: demonBoss_71
+    21300144: demonBoss_72
+    21300146: demonBoss_73
+    21300148: demonBoss_74
+    21300150: demonBoss_75
+    21300152: demonBoss_76
+    21300154: demonBoss_77
+    21300156: demonBoss_78
+    21300158: demonBoss_79
+    21300160: demonBoss_80
+    21300162: demonBoss_81
+    21300164: demonBoss_82
+    21300166: demonBoss_83
+    21300168: demonBoss_84
+    21300170: demonBoss_85
+    21300172: demonBoss_86
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: demonBoss_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 452
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 450
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 453
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 454
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 454
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 454
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_6
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 454
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 454
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 388
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 386
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 389
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_11
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 390
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_12
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 390
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_13
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 390
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_14
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 390
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_15
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 390
+        width: 60
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 321
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_17
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 324
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_18
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 327
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_19
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 324
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_20
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 321
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_21
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 324
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_22
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 327
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 324
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 257
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_25
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 260
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_26
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 263
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_27
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 260
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_28
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 257
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_29
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 260
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_30
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 263
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_31
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 260
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 193
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_33
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 193
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_34
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 193
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_35
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 193
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_36
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 193
+        width: 61
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_37
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 208
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_38
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 197
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_39
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 202
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_40
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 208
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_41
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 209
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_42
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 202
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_43
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 208
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_44
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 199
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_45
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 164
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_46
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 129
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_47
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 167
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_48
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 160
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_49
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 168
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_50
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 160
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_51
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 168
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_52
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 160
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_53
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 168
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_54
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 171
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_55
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 166
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_56
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 147
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_57
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 141
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_58
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 141
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_59
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 141
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_60
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 146
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_61
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 146
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_62
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 156
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_63
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 129
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_64
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_65
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 138
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_66
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 144
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_67
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_68
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 138
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_69
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_70
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 138
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_71
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 147
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_72
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_73
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 138
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_74
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 147
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_75
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 145
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_76
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 138
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_77
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 144
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_78
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 138
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_79
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 145
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_80
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 135
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_81
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 135
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_82
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 135
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_83
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 135
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_84
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 135
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_85
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 135
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: demonBoss_86
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 135
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

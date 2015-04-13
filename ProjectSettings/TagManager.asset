@@ -3,6 +3,17 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - SpawnPoint
+  - Enemy
+  - Crosshair
+  - Rat
+  - Bullet
+  - LaunchBox
+  - Obstacle
+  - SkeletonLaunchBox
+  - EnemyBullet
+  - HealthUI
+  - ImpLaunchBox
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -53,7 +64,7 @@ TagManager:
     userID: 3
     uniqueID: 1924070511
     locked: 0
-  - name: 
+  - name: Torches
     userID: 4
     uniqueID: 4284971493
     locked: 0

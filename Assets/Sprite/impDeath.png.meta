@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: cb1bd2bc408dfca4e90bad50a533dd85
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: impDeath_0
+    21300002: impDeath_1
+    21300004: impDeath_2
+    21300006: impDeath_3
+    21300008: impDeath_4
+    21300010: impDeath_5
+    21300012: impDeath_6
+    21300014: impDeath_7
+    21300016: impDeath_8
+    21300018: impDeath_9
+    21300020: impDeath_10
+    21300022: impDeath_11
+    21300024: impDeath_12
+    21300026: impDeath_13
+    21300028: impDeath_14
+    21300030: impDeath_15
+    21300032: impDeath_16
+    21300034: impDeath_17
+    21300036: impDeath_18
+    21300038: impDeath_19
+    21300040: impDeath_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: impDeath_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 17
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 15
+        width: 60
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 15
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 21
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 27
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 35
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_7
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 31
+        width: 45
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_8
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 51
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 50
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_10
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 15
+        width: 13
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_11
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 39
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_12
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 15
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 40
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_14
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 40
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_15
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 37
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_16
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 34
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_17
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 15
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_18
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 16
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_19
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 22
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: impDeath_20
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 23
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
