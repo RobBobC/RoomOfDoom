@@ -9,6 +9,7 @@ public class SpawnController : MonoBehaviour {
 	private int spawnCount = 5;
 	public List<GameObject> enemies;
 	public float spawnInterval = 1.0f;
+	public float waveTime = 10f;
 
 	void Start ()
 	{
@@ -25,6 +26,17 @@ public class SpawnController : MonoBehaviour {
 		switch(wave)
 		{
 			case 0:
+				if(waveTime < 0 || (Input.GetKeyDown("space") && spawnCount == 0))
+				{
+					wave++;
+					spawnCount = 10;
+					waveTime = 30;
+					break;
+				}
+				else
+				{
+					waveTime -= Time.deltaTime;
+				}
 				if(spawnInterval < 0)
 				{
 					if(spawnCount > 0)
@@ -32,12 +44,6 @@ public class SpawnController : MonoBehaviour {
 						Instantiate(enemies[0], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
 						spawnCount--;
 						spawnInterval = 1f;
-					}
-					else
-					{
-						wave++;
-						spawnCount = 10;
-						break;
 					}
 				}
 				else
@@ -47,19 +53,24 @@ public class SpawnController : MonoBehaviour {
 				}
 				break;
 			case 1:
+				if(waveTime < 0 || (Input.GetKey("space") && spawnCount == 0))
+				{
+					wave++;
+					spawnCount = 10;
+					waveTime = 30;
+					break;
+				}
+				else
+				{
+					waveTime -= Time.deltaTime;
+				}
 				if(spawnInterval < 0)
 				{
 					if(spawnCount > 0)
 					{
-						Instantiate(enemies[1], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
+						Instantiate(enemies[spawnCount % 2], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
 						spawnCount--;
 						spawnInterval = 1f;
-					}
-					else
-					{
-						wave++;
-						spawnCount = 10;
-						break;
 					}
 				}
 				else
@@ -73,15 +84,9 @@ public class SpawnController : MonoBehaviour {
 				{
 					if(spawnCount > 0)
 					{
-						Instantiate(enemies[2], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
+						Instantiate(enemies[spawnCount % 3], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
 						spawnCount--;
 						spawnInterval = 1f;
-					}
-					else
-					{
-						wave++;
-						spawnCount = 10;
-						break;
 					}
 				}
 				else
@@ -90,6 +95,8 @@ public class SpawnController : MonoBehaviour {
 					break;
 				}
 				break;
+			//case 3:
+				//break;
 		}
 	}
 }
