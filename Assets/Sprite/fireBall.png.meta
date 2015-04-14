@@ -1,0 +1,1115 @@
+fileFormatVersion: 2
+guid: 802c8d9be7d109c428ff2b043ef05d6e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fireBalls_0
+    21300002: fireBalls_1
+    21300004: fireBalls_2
+    21300006: fireBalls_3
+    21300008: fireBalls_4
+    21300010: fireBalls_5
+    21300012: fireBalls_6
+    21300014: fireBalls_7
+    21300016: fireBalls_8
+    21300018: fireBalls_9
+    21300020: fireBalls_10
+    21300022: fireBalls_11
+    21300024: fireBalls_12
+    21300026: fireBalls_13
+    21300028: fireBalls_14
+    21300030: fireBalls_15
+    21300032: fireBalls_16
+    21300034: fireBalls_17
+    21300036: fireBalls_18
+    21300038: fireBalls_19
+    21300040: fireBalls_20
+    21300042: fireBalls_21
+    21300044: fireBalls_22
+    21300046: fireBalls_23
+    21300048: fireBalls_24
+    21300050: fireBalls_25
+    21300052: fireBalls_26
+    21300054: fireBalls_27
+    21300056: fireBalls_28
+    21300058: fireBalls_29
+    21300060: fireBalls_30
+    21300062: fireBalls_31
+    21300064: fireBalls_32
+    21300066: fireBalls_33
+    21300068: fireBalls_34
+    21300070: fireBalls_35
+    21300072: fireBalls_36
+    21300074: fireBalls_37
+    21300076: fireBalls_38
+    21300078: fireBalls_39
+    21300080: fireBalls_40
+    21300082: fireBalls_41
+    21300084: fireBalls_42
+    21300086: fireBalls_43
+    21300088: fireBalls_44
+    21300090: fireBalls_45
+    21300092: fireBalls_46
+    21300094: fireBalls_47
+    21300096: fireBalls_48
+    21300098: fireBalls_49
+    21300100: fireBalls_50
+    21300102: fireBalls_51
+    21300104: fireBalls_52
+    21300106: fireBalls_53
+    21300108: fireBalls_54
+    21300110: fireBalls_55
+    21300112: fireBalls_56
+    21300114: fireBalls_57
+    21300116: fireBalls_58
+    21300118: fireBalls_59
+    21300120: fireBalls_60
+    21300122: fireBalls_61
+    21300124: fireBalls_62
+    21300126: fireBalls_63
+    21300128: fireBalls_64
+    21300130: fireBalls_65
+    21300132: fireBalls_66
+    21300134: fireBalls_67
+    21300136: fireBalls_68
+    21300138: fireBalls_69
+    21300140: fireBalls_70
+    21300142: fireBalls_71
+    21300144: fireBalls_72
+    21300146: fireBalls_73
+    21300148: fireBalls_74
+    21300150: fireBalls_75
+    21300152: fireBalls_76
+    21300154: fireBalls_77
+    21300156: fireBalls_78
+    21300158: fireBalls_79
+    21300160: fireBalls_80
+    21300162: fireBalls_81
+    21300164: fireBalls_82
+    21300166: fireBalls_83
+    21300168: fireBalls_84
+    21300170: fireBalls_85
+    21300172: fireBalls_86
+    21300174: fireBalls_87
+    21300176: fireBalls_88
+    21300178: fireBall_0
+    21300180: fireBall_1
+    21300182: fireBall_2
+    21300184: fireBall_3
+    21300186: fireBall_4
+    21300188: fireBall_5
+    21300190: fireBall_6
+    21300192: fireBall_7
+    21300194: fireBall_8
+    21300196: fireBall_9
+    21300198: fireBall_10
+    21300200: fireBall_11
+    21300202: fireBall_12
+    21300204: fireBall_13
+    21300206: fireBall_14
+    21300208: fireBall_15
+    21300210: fireBall_16
+    21300212: fireBall_17
+    21300214: fireBall_18
+    21300216: fireBall_19
+    21300218: fireBall_20
+    21300220: fireBall_21
+    21300222: fireBall_22
+    21300224: fireBall_23
+    21300226: fireBall_24
+    21300228: fireBall_25
+    21300230: fireBall_26
+    21300232: fireBall_27
+    21300234: fireBall_28
+    21300236: fireBall_29
+    21300238: fireBall_30
+    21300240: fireBall_31
+    21300242: fireBall_32
+    21300244: fireBall_33
+    21300246: fireBall_34
+    21300248: fireBall_35
+    21300250: fireBall_36
+    21300252: fireBall_37
+    21300254: fireBall_38
+    21300256: fireBall_39
+    21300258: fireBall_40
+    21300260: fireBall_41
+    21300262: fireBall_42
+    21300264: fireBall_43
+    21300266: fireBall_44
+    21300268: fireBall_45
+    21300270: fireBall_46
+    21300272: fireBall_47
+    21300274: fireBall_48
+    21300276: fireBall_49
+    21300278: fireBall_50
+    21300280: fireBall_51
+    21300282: fireBall_52
+    21300284: fireBall_53
+    21300286: fireBall_54
+    21300288: fireBall_55
+    21300290: fireBall_56
+    21300292: fireBall_57
+    21300294: fireBall_58
+    21300296: fireBall_59
+    21300298: fireBall_60
+    21300300: fireBall_61
+    21300302: fireBall_62
+    21300304: fireBall_63
+    21300306: fireBall_64
+    21300308: fireBall_65
+    21300310: fireBall_66
+    21300312: fireBall_67
+    21300314: fireBall_68
+    21300316: fireBall_69
+    21300318: fireBall_70
+    21300320: fireBall_71
+    21300322: fireBall_72
+    21300324: fireBall_73
+    21300326: fireBall_74
+    21300328: fireBall_75
+    21300330: fireBall_76
+    21300332: fireBall_77
+    21300334: fireBall_78
+    21300336: fireBall_79
+    21300338: fireBall_80
+    21300340: fireBall_81
+    21300342: fireBall_82
+    21300344: fireBall_83
+    21300346: fireBall_84
+    21300348: fireBall_85
+    21300350: fireBall_86
+    21300352: fireBall_87
+    21300354: fireBall_88
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fireBall_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 292
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 292
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 292
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 292
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 292
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 292
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 292
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 263
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 263
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 265
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 264
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 268
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_12
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 268
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 270
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 242
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 244
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 244
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_17
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 242
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_18
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 241
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 217
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_21
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 213
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_22
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 214
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_23
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 212
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_24
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 212
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 191
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_26
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 191
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_27
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 191
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_29
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 191
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_30
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 191
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_31
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 191
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 162
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_33
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 162
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_34
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 164
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_35
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 163
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_36
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_37
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 167
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 169
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 141
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_40
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 143
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_41
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 143
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_42
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 141
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_43
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 140
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_44
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 116
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_45
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 116
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_46
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 112
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_47
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 113
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_48
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 111
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_49
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 111
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 90
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_51
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 90
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_52
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 90
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 90
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_54
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 90
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_55
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 90
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_56
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 90
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_57
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 61
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_58
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 61
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_59
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_60
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 62
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_61
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 66
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_62
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 66
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_63
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 68
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_64
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 40
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_65
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 42
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_66
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 42
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_67
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 40
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_68
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 39
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_69
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_70
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_71
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 11
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_72
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 12
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_73
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 10
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_74
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 10
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_75
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_76
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_77
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_78
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_79
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_80
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_81
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_82
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_83
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_84
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_85
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_86
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_87
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fireBall_88
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

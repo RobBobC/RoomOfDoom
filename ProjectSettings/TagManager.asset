@@ -68,3 +68,11 @@ TagManager:
     userID: 4
     uniqueID: 4284971493
     locked: 0
+  - name: Combat
+    userID: 5
+    uniqueID: 960893985
+    locked: 0
+  - name: Scenery
+    userID: 6
+    uniqueID: 3006855371
+    locked: 0

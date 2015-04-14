@@ -10,14 +10,18 @@ TextureImporter:
     21300010: impWalk_5
     21300012: impWalk_6
     21300014: impWalk_7
-    21300016: impWalk_8
-    21300018: impWalk_9
-    21300020: impWalk_10
-    21300022: impWalk_11
+    21300016: impWalk_1
+    21300018: impWalk_2
+    21300020: impWalk_3
+    21300022: impWalk_4
     21300024: impWalk_12
     21300026: impWalk_13
     21300028: impWalk_14
     21300030: impWalk_15
+    21300032: impWalk_8
+    21300034: impWalk_9
+    21300036: impWalk_10
+    21300038: impWalk_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -67,7 +71,7 @@ TextureImporter:
         width: 60
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: impWalk_1
       rect:
@@ -147,7 +151,7 @@ TextureImporter:
         width: 60
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: impWalk_9
       rect:
@@ -157,7 +161,7 @@ TextureImporter:
         width: 64
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: impWalk_10
       rect:

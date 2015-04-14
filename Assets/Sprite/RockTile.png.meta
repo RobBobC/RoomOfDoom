@@ -7,6 +7,11 @@ TextureImporter:
     21300004: RockTile_2
     21300006: RockTile_3
     21300008: RockTile_4
+    21300010: rockTile_0
+    21300012: rockTile_1
+    21300014: rockTile_2
+    21300016: rockTile_3
+    21300018: rockTile_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,7 +53,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: RockTile_0
+    - name: rockTile_0
       rect:
         serializedVersion: 2
         x: 0
@@ -56,9 +61,9 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RockTile_1
+    - name: rockTile_1
       rect:
         serializedVersion: 2
         x: 64
@@ -68,7 +73,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RockTile_2
+    - name: rockTile_2
       rect:
         serializedVersion: 2
         x: 33
@@ -78,7 +83,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RockTile_3
+    - name: rockTile_3
       rect:
         serializedVersion: 2
         x: 0
@@ -88,7 +93,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RockTile_4
+    - name: rockTile_4
       rect:
         serializedVersion: 2
         x: 129

@@ -1,0 +1,505 @@
+fileFormatVersion: 2
+guid: 11f05c43c480a4e419e17496d7d6fc6e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: candelabra_2
+    21300002: cage
+    21300004: candelabra_2
+    21300006: chain_1
+    21300008: chain_2
+    21300010: chain_hook
+    21300012: noose
+    21300014: spear
+    21300016: spear_blood
+    21300018: spear_head
+    21300020: spike
+    21300022: hook_left
+    21300024: hook_right
+    21300026: hook_left_blood
+    21300028: hook_right_blood
+    21300030: crystal_ball
+    21300032: spike_blood
+    21300034: spike_blood_drip
+    21300036: hand
+    21300038: skeleton_head_1
+    21300040: skeleton_head_2
+    21300042: skeleton_head_dark_1
+    21300044: skeleton_head_dark_2
+    21300046: stone_sword
+    21300048: head
+    21300050: blood_2
+    21300052: blood_1
+    21300054: gargoyle_1
+    21300056: mushroom_small_1
+    21300058: mushroom_small_2
+    21300060: gargoyle_2
+    21300062: beer_mug_full
+    21300064: beer_mug
+    21300066: beer_mug_spilled
+    21300068: candle_1
+    21300070: candle_2
+    21300072: stone
+    21300074: mushroom_large
+    21300076: mushroom_pair
+    21300078: mushroom_medium
+    21300080: candelabra_1
+    21300082: scenery_34
+    21300084: scenery_35
+    21300086: scenery_36
+    21300088: scenery_37
+    21300090: scenery_38
+    21300092: scenery_39
+    21300094: scenery_40
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: candelabra_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 93
+        width: 17
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cage
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 77
+        width: 32
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: candelabra_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 93
+        width: 17
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chain_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 123
+        width: 6
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chain_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 126
+        width: 4
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chain_hook
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 119
+        width: 6
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spear
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 90
+        width: 5
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spear_blood
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 90
+        width: 5
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spear_head
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 90
+        width: 11
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spike
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 105
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hook_left
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 105
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hook_right
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 105
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hook_left_blood
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 93
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hook_right_blood
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 93
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crystal_ball
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 76
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spike_blood
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 83
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spike_blood_drip
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 82
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hand
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 67
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skeleton_head_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 54
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skeleton_head_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 54
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skeleton_head_dark_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 54
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skeleton_head_dark_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 54
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: head
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 50
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blood_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 79
+        width: 15
+        height: 3
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blood_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 79
+        width: 15
+        height: 3
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gargoyle_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 49
+        width: 38
+        height: 38
+      alignment: 9
+      pivot: {x: .46923095, y: .583333313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gargoyle_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 9
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beer_mug_full
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 11
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beer_mug
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 11
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beer_mug_spilled
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 10
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: candle_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 9
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: candle_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 9
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 8
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: candelabra_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 93
+        width: 17
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scenery_34
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 114
+        width: 7
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scenery_35
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 36
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scenery_36
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 31
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scenery_37
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 31
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scenery_38
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 31
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scenery_39
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 33
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scenery_40
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 33
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

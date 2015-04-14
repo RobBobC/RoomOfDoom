@@ -95,8 +95,6 @@ public class SpawnController : MonoBehaviour {
 					break;
 				}
 				break;
-			//case 3:
-				//break;
 		}
 	}
 }
