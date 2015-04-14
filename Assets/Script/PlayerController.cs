@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour {
 	public float moveSpeed = 1.0f;
 	public int health = 8;
 	public float shotSpeed = 1000;
+	public float fireRate;
 
 	private enum Animation {
 		IDLE,
@@ -15,11 +16,12 @@ public class PlayerController : MonoBehaviour {
 	private bool invincible;
 	private bool dead;
 	private float invinceDuration;
+	private float nextFire;
 	private CrosshairController crosshair;
 	private GameObject launchBox;
 	private Animation currentAnimation;
 	private WeaponController weapon;
-
+	
 	void Start()
 	{
 		weapon = GetComponent<WeaponController>();
@@ -113,8 +115,10 @@ public class PlayerController : MonoBehaviour {
 		float targetAngle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler( 0, 0, targetAngle - 90 ), 5 * Time.deltaTime);
 
-		if(Input.GetMouseButtonDown(0))
+		if (Input.GetButton ("Fire1") && Time.time > nextFire)
 		{
+			nextFire = Time.time + fireRate;
+
 			if(weapon.type == WeaponController.attackType.ranged)
 			{
 				GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0,0)) as GameObject;
@@ -126,7 +130,16 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 	}
-	
+
+	void LateUpdate ()
+	{
+		if (rigidbody2D.velocity.magnitude > 0)
+		{
+			rigidbody2D.velocity = new Vector2(0, 0);
+			rigidbody2D.angularVelocity = 0;
+		}
+	}
+
 	void UpdateAnimationState(Animation curAnimState)
 	{
 		if (currentAnimation == curAnimState)
