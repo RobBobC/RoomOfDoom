@@ -12,16 +12,20 @@ public class SkeletonController : BaseEnemy {
 	
 	void Start()
 	{
-		base.Start(); //call BaseEnemy's start function
+		base.Start();
 		coolDownDuration = 1.5f;
 		coolDown = false;
 	}
 	
 	void Update()
 	{
-		if(IsDead) //check if enemy has been killed before updating
+		if(IsDead)
+		{
 			return;
+		}
+
 		base.Update();
+
 		transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
 		direction = player.transform.position - transform.position;
 
@@ -38,7 +42,9 @@ public class SkeletonController : BaseEnemy {
 				coolDownDuration -= Time.deltaTime;
 		}
 		else
+		{
 			ThrowBone();
+		}
 
 	}
 

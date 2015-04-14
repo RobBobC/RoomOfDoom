@@ -17,39 +17,45 @@ public class PlayerController : MonoBehaviour {
 	private bool dead;
 	private float invinceDuration;
 	private float nextFire;
-	private CrosshairController crosshair;
 	private GameObject launchBox;
 	private Animation currentAnimation;
 	private WeaponController weapon;
 	
 	void Start()
 	{
+		launchBox = GameObject.FindGameObjectWithTag ("LaunchBox");
+
 		weapon = GetComponent<WeaponController>();
-		crosshair = GameObject.FindGameObjectWithTag ("Crosshair").GetComponent<CrosshairController>();
-		animator = this.GetComponent<Animator>();
+
+		animator = gameObject.GetComponent<Animator>();
 		currentAnimation = Animation.IDLE;
 		UpdateAnimationState (currentAnimation);
+
 		invincible = false;
 		dead = false;
+
 		invinceDuration = 1.0f;
-		launchBox = GameObject.FindGameObjectWithTag ("LaunchBox");
 	}
 	
 	void Update()
 	{
-		if(health <=0)
+		if(health <= 0)
 		{
+			dead = true;
 			Time.timeScale = 0;
+
+			if (Input.GetKey ("r") && Time.timeScale == 0)
+			{
+				Application.LoadLevel(0);
+				Time.timeScale = 1;
+			}
 		}
-		if (Input.GetKey ("r") && Time.timeScale == 0)
-		{
-			Application.LoadLevel(0);
-			Time.timeScale = 1;
-		}
+
 		if(launchBox.GetComponent<PolygonCollider2D>().enabled == true && launchBox.GetComponent<PolygonCollider2D>().enabled == true)
 		{
 			launchBox.GetComponent<PolygonCollider2D>().enabled = false;
 		}
+
 		if(invincible)
 		{
 			if(invinceDuration < 0)
@@ -78,11 +84,11 @@ public class PlayerController : MonoBehaviour {
 		}
 		else if (Input.GetKey ("d") && Input.GetKey ("s"))
 		{
-			UpdateAnimationState (Animation.WALK);
 			transform.Translate (new Vector3 ((1/Mathf.Sqrt(2)), -(1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
+			UpdateAnimationState (Animation.WALK);
 		}
 		else if (Input.GetKey ("w"))
-		{ 
+		{
 			UpdateAnimationState (Animation.WALK);
 			transform.Translate (Vector3.up * moveSpeed * Time.deltaTime);
 		}
@@ -108,12 +114,12 @@ public class PlayerController : MonoBehaviour {
 
 		Vector3 moveToward = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-		Vector3 moveDirection = moveToward - this.transform.position;
+		Vector3 moveDirection = moveToward - transform.position;
 		moveDirection.z = 0; 
 		moveDirection.Normalize();
 
 		float targetAngle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler( 0, 0, targetAngle - 90 ), 5 * Time.deltaTime);
+		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, targetAngle - 90), 5 * Time.deltaTime);
 
 		if (Input.GetButton ("Fire1") && Time.time > nextFire)
 		{
@@ -200,6 +206,5 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 	}
-
-
+	
 }
