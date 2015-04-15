@@ -5991,11 +5991,11 @@ Transform:
   - {fileID: 323912815}
   - {fileID: 294923367}
   - {fileID: 1604127592}
-  - {fileID: 1325973097}
-  - {fileID: 361697698}
-  - {fileID: 1302880928}
   - {fileID: 1550921550}
+  - {fileID: 361697698}
   - {fileID: 961660403}
+  - {fileID: 1325973097}
+  - {fileID: 1302880928}
   - {fileID: 835718175}
   - {fileID: 1311587728}
   - {fileID: 580060076}
@@ -9377,6 +9377,45 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1f55aae784031344bbbcf490fc7f5759, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &764808805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 764808807}
+  - 61: {fileID: 764808806}
+  m_Layer: 8
+  m_Name: CameraBounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &764808806
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764808805}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 169.720001, y: 167}
+  m_Center: {x: 2.20000005, y: -5.6500001}
+--- !u!4 &764808807
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764808805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .25, y: .25, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1299819549}
+  m_RootOrder: 0
 --- !u!1 &766268050
 GameObject:
   m_ObjectHideFlags: 0
@@ -12217,7 +12256,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 16
+  m_RootOrder: 14
 --- !u!212 &961660404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17385,7 +17424,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 764808807}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!114 &1299819550
@@ -17400,6 +17440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1574024228}
+  cameraBounds: {fileID: 764808806}
 --- !u!82 &1299819551
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17485,7 +17526,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 14
+  m_RootOrder: 16
 --- !u!212 &1302880929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17711,7 +17752,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 12
+  m_RootOrder: 15
 --- !u!212 &1325973098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20619,7 +20660,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 15
+  m_RootOrder: 12
 --- !u!212 &1550921551
 SpriteRenderer:
   m_ObjectHideFlags: 0
