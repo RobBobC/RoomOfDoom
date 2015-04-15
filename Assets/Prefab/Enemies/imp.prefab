@@ -128,7 +128,7 @@ MonoBehaviour:
   health: 8
   spawnSound: {fileID: 8300000, guid: 3b8f291b70a9def4ead8a7aaebb6edb6, type: 3}
   dieSound: {fileID: 8300000, guid: 9e0748f5dbbb8684595ac76ddcaff1d7, type: 3}
-  spawnSoundVolume: .100000001
+  spawnSoundVolume: 1
   dieSoundVolume: 1
   fireball: {fileID: 182026, guid: 29c834fb4373281428edf29c6c1b865e, type: 2}
   shotSpeed: 1000

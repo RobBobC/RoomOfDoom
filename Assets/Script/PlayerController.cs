@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour {
 	private GameObject launchBox;
 	private Animation currentAnimation;
 	private WeaponController weapon;
+
+	private ChestController chestController;
 	
 	void Start()
 	{
@@ -44,9 +46,9 @@ public class PlayerController : MonoBehaviour {
 			dead = true;
 			Time.timeScale = 0;
 
-			if (Input.GetKey ("r") && Time.timeScale == 0)
+			if (dead)
 			{
-				Application.LoadLevel(0);
+				Application.LoadLevel(3);
 				Time.timeScale = 1;
 			}
 		}
@@ -127,7 +129,7 @@ public class PlayerController : MonoBehaviour {
 
 			if(weapon.type == WeaponController.attackType.ranged)
 			{
-				GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0,0)) as GameObject;
+				GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0, targetAngle - 45)) as GameObject;
 				shot.rigidbody2D.AddForce(moveDirection * shotSpeed);
 			}
 			else
@@ -203,6 +205,19 @@ public class PlayerController : MonoBehaviour {
 					invincible = true;
 					Destroy(other.gameObject);
 					break;
+			}
+		}
+	}
+
+	void OnTriggerStay2D(Collider2D other)
+	{
+		if (other.gameObject.tag == "Chest")
+		{
+			chestController = other.gameObject.GetComponent<ChestController>();
+			if (Input.GetKey ("e") && !chestController.collected)
+			{
+				chestController.OpenChest();
+				chestController.collected = true;
 			}
 		}
 	}

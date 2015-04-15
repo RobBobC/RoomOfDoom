@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class Temp_EnemyController : BaseEnemy {
-	
-	
+		
+
 	void Start()
 	{
 		base.Start ();
