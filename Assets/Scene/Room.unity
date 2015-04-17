@@ -5991,11 +5991,11 @@ Transform:
   - {fileID: 323912815}
   - {fileID: 294923367}
   - {fileID: 1604127592}
-  - {fileID: 1550921550}
+  - {fileID: 1302880928}
   - {fileID: 361697698}
+  - {fileID: 1550921550}
   - {fileID: 961660403}
   - {fileID: 1325973097}
-  - {fileID: 1302880928}
   - {fileID: 835718175}
   - {fileID: 1311587728}
   - {fileID: 580060076}
@@ -12275,7 +12275,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!212 &961660404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17545,7 +17545,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 16
+  m_RootOrder: 12
 --- !u!212 &1302880929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17771,7 +17771,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!212 &1325973098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20679,7 +20679,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 12
+  m_RootOrder: 14
 --- !u!212 &1550921551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26390,6 +26390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e7873c3ed377a418768e047fc85538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players: []
 --- !u!4 &1945764857
 Transform:
   m_ObjectHideFlags: 0
@@ -28867,7 +28868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 166248, guid: 7b5862b5fa8a2a14c8729d551effe4af, type: 2}
+  - {fileID: 0}
   - {fileID: 126060, guid: 0ab843266ec284942beee578c14919d1, type: 2}
   - {fileID: 133192, guid: d03955d291be873439ebad52e38a03c9, type: 2}
   - {fileID: 0}
