@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
 	public int health = 80;
 	public float shotSpeed = 1000;
 	public float fireRate;
+    public RuntimeAnimatorController[] animators;
 
 	private enum Animation {
 		IDLE,
@@ -144,22 +145,31 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
+        // Melee weapon
 		if (Input.GetKey(KeyCode.Alpha1))
 		{
-			weapon.weapon = inventory[0];
+            animator.runtimeAnimatorController = animators[0];
+            weapon.weapon = inventory[0];
 			weapon.type = inventory[0].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
 		}
+
+        // Ranged weapon 1
 		else if(Input.GetKey(KeyCode.Alpha2))
 		{
+            animator.runtimeAnimatorController = animators[1];
 			if(inventory.Count >= 2)
 			{
 				weapon.weapon = inventory[1];
 				weapon.type = inventory[1].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
 			}
 		}
+
+        // Ranged weapon 2
 		else if(Input.GetKey(KeyCode.Alpha3))
 		{
-			if(inventory.Count >= 3)
+            //animator.runtimeAnimatorController = (RuntimeAnimatorController)Resources.Load("Animation/Player/RangedPlayer.controller", typeof(RuntimeAnimatorController));
+            animator.runtimeAnimatorController = animators[1];
+            if(inventory.Count >= 3)
 			{
 				weapon.weapon = inventory[2];
 				weapon.type = inventory[2].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
