@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: ba1b0bd142909fd41807d77bd2d349da
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: smoke-spawn_15
+    21300002: smoke-spawn_14
+    21300004: smoke-spawn_13
+    21300006: smoke-spawn_12
+    21300008: smoke-spawn_11
+    21300010: smoke-spawn_10
+    21300012: smoke-spawn_9
+    21300014: smoke-spawn_8
+    21300016: smoke-spawn_7
+    21300018: smoke-spawn_6
+    21300020: smoke-spawn_5
+    21300022: smoke-spawn_4
+    21300024: smoke-spawn_3
+    21300026: smoke-spawn_2
+    21300028: smoke-spawn_1
+    21300030: smoke-spawn_0
+    21300032: smoke-spawn_16
+    21300034: smoke-spawn_17
+    21300036: smoke-spawn_18
+    21300038: smoke-spawn_19
+    21300040: smoke-spawn_20
+    21300042: smoke-spawn_21
+    21300044: smoke-spawn_22
+    21300046: smoke-spawn_23
+    21300048: smoke-spawn_24
+    21300050: smoke-spawn_25
+    21300052: smoke-spawn_26
+    21300054: smoke-spawn_27
+    21300056: smoke-spawn_28
+    21300058: smoke-spawn_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: smoke-spawn_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1023
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1023
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1023
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1023
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_11
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1023
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1023
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 767
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_7
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 767
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 767
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_5
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 767
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 767
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 511
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 511
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 511
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 511
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 511
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 255
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 255
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 255
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 255
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 255
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_24
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 12
+        width: 233
+        height: 219
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_25
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 250
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_26
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 247
+        height: 237
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_27
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 0
+        width: 238
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_28
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 0
+        width: 232
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoke-spawn_29
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 42
+        width: 225
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

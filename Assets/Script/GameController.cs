@@ -2,22 +2,24 @@
 using System.Collections;
 
 public class GameController : MonoBehaviour {
+	/*
+	public GameObject player;
 
+	public void DestroyPlayer()
+	{
+		Destroy(player);
+	}
+	
+	// Use this for initialization
 	void Start ()
 	{
-		if (Application.loadedLevel == 0 || Application.loadedLevel == 2 || Application.loadedLevel == 3)
-		{
-			Screen.showCursor = true;
-		}
+		// Initialize necessary game objects
 	}
-
-	public void MainMenu ()
+	
+	// Update is called once per frame
+	void Update ()
 	{
-		Application.LoadLevel (0);
+		// Game logic
 	}
-
-	public void StartButton ()
-	{
-		Application.LoadLevel (1);
-	}
+	*/
 }

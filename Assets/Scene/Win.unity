@@ -85,8 +85,9 @@ GameObject:
   - 223: {fileID: 199785387}
   - 114: {fileID: 199785386}
   - 114: {fileID: 199785385}
+  - 114: {fileID: 199785389}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: WinScreenCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,50 +165,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &330427587
-Prefab:
+--- !u!114 &199785389
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-  m_RootGameObject: {fileID: 1176560176}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 199785384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617377e213f63e44482b435432220413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: MainMenu
 --- !u!1001 &587797214
 Prefab:
   m_ObjectHideFlags: 0
@@ -302,14 +271,22 @@ Prefab:
     - target: {fileID: 11403962, guid: e56459d255cdad940b61c45623d87450, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1176560177}
+      objectReference: {fileID: 199785389}
     - target: {fileID: 11403962, guid: e56459d255cdad940b61c45623d87450, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainMenu
+      value: LevelName
       objectReference: {fileID: 0}
     - target: {fileID: 11403962, guid: e56459d255cdad940b61c45623d87450, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 11403962, guid: e56459d255cdad940b61c45623d87450, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11403962, guid: e56459d255cdad940b61c45623d87450, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e56459d255cdad940b61c45623d87450, type: 2}
@@ -327,7 +304,7 @@ GameObject:
   - 222: {fileID: 633710073}
   - 114: {fileID: 633710072}
   m_Layer: 5
-  m_Name: MainMenuText
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,46 +435,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!1 &1176560176
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 101386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-  m_PrefabInternal: {fileID: 330427587}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1176560178}
-  - 114: {fileID: 1176560177}
-  m_Layer: 0
-  m_Name: GameController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1176560177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11401386, guid: 746445bde6533fe4ebf9ad3233d77610,
-    type: 2}
-  m_PrefabInternal: {fileID: 330427587}
-  m_GameObject: {fileID: 1176560176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9e7873c3ed377a418768e047fc85538, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1176560178
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 401386, guid: 746445bde6533fe4ebf9ad3233d77610, type: 2}
-  m_PrefabInternal: {fileID: 330427587}
-  m_GameObject: {fileID: 1176560176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
 --- !u!1 &1278472511
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +576,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: .850980401, b: 0, a: 1}
+    m_NormalColor: {r: .917647064, g: .87843138, b: 0, a: 1}
     m_HighlightedColor: {r: 0, g: .960784316, b: .367358595, a: 1}
     m_PressedColor: {r: 1, g: .235294119, b: .113725491, a: 1}
     m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
@@ -659,8 +596,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1176560177}
-        m_MethodName: MainMenu
+      - m_Target: {fileID: 199785389}
+        m_MethodName: LevelName
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -713,7 +650,7 @@ GameObject:
   - 222: {fileID: 2022364899}
   - 114: {fileID: 2022364898}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: BackgroundPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

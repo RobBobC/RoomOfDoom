@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour {
 	private Vector3 min;
 	private Vector3 max;
 
+	// Use this for initialization
 	void Start()
 	{
 		//the orthographic size is half of the camera view's height

@@ -8,8 +8,7 @@ public class BaseEnemy : MonoBehaviour {
 	public AudioClip dieSound;
 	public float spawnSoundVolume = 1.0f;
 	public float dieSoundVolume = 1.0f;
-
-
+	
 	private AudioSource audioSource;
 	protected GameObject player;
 	protected Animator animator;
@@ -25,6 +24,7 @@ public class BaseEnemy : MonoBehaviour {
 		get { return animator.GetBool("isDead"); }
 	}
 
+	// Use this for initialization
 	protected void Start()
 	{
 		animator = gameObject.GetComponent<Animator> ();
@@ -32,6 +32,7 @@ public class BaseEnemy : MonoBehaviour {
 		AudioSource.PlayClipAtPoint (spawnSound, new Vector3 (0, 0, 0), spawnSoundVolume);
 	}
 
+	// Update is called once per frame
 	protected void Update()
 	{
 		if(gameObject.rigidbody2D.isKinematic)

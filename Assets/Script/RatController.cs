@@ -4,11 +4,13 @@ using System.Collections;
 public class RatController : BaseEnemy {
 	private float lookAtAngle;
 
+	// Use this for initialization
 	void Start()
 	{
 		base.Start();
 	}
 
+	// Update is called once per frame
 	void Update()
 	{
 		if(IsDead)

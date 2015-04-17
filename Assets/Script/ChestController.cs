@@ -10,20 +10,21 @@ public class ChestController : MonoBehaviour {
 	[HideInInspector]
 	public bool collectable;
 
-	void Start ()
-	{
-		animator = gameObject.GetComponent<Animator> ();
-		collectable = false;
-	}
-
 	public void OpenChest ()
 	{
 		animator.Play ("OpenChest");
 		collectable = false;
 	}
-
+	
 	public void CloseChest ()
 	{
 		animator.Play ("IdleChest");
+	}
+
+	// Use this for initialization
+	void Start ()
+	{
+		animator = gameObject.GetComponent<Animator> ();
+		collectable = false;
 	}
 }

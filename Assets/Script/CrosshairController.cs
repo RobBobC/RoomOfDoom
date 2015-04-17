@@ -3,7 +3,8 @@ using System.Collections;
 
 public class CrosshairController : MonoBehaviour {
 	public Texture crosshairImage;
-	
+
+	// Use this for initialization
 	void Start ()
 	{
 		Screen.showCursor = false;

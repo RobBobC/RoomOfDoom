@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
-
 	public float moveSpeed = 1.0f;
 	public int health = 80;
 	public float shotSpeed = 1000;
@@ -26,7 +25,8 @@ public class PlayerController : MonoBehaviour {
 	private ChestController chestController;
 	private int inventoryIndex = 0;
 	private int weaponReward = 0;
-	
+
+	// Use this for initialization
 	void Start()
 	{
 		inventory = new List<GameObject> ();
@@ -43,7 +43,8 @@ public class PlayerController : MonoBehaviour {
 
 		invinceDuration = 1.0f;
 	}
-	
+
+	// Update is called once per frame
 	void Update()
 	{
 		if(health <= 0)

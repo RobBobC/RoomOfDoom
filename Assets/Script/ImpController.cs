@@ -9,14 +9,27 @@ public class ImpController : BaseEnemy {
 
 	private bool coolDown;
 	private float coolDownDuration;
-	
+
+	void ThrowBone()
+	{
+		if(direction.magnitude < 25)
+		{
+			direction.Normalize ();
+			GameObject shot = Instantiate(fireball, launchBox.transform.position, Quaternion.Euler(0,0,0)) as GameObject;
+			shot.rigidbody2D.AddForce(direction * shotSpeed);
+			coolDown = true;
+		}
+	}
+
+	// Use this for initialization
 	void Start()
 	{
 		base.Start();
 		coolDownDuration = 1.5f;
 		coolDown = false;
 	}
-	
+
+	// Update is called once per frame
 	void Update()
 	{
 		if(IsDead)
@@ -44,17 +57,6 @@ public class ImpController : BaseEnemy {
 		else
 		{
 			ThrowBone();
-		}
-	}
-
-	void ThrowBone()
-	{
-		if(direction.magnitude < 25)
-		{
-			direction.Normalize ();
-			GameObject shot = Instantiate(fireball, launchBox.transform.position, Quaternion.Euler(0,0,0)) as GameObject;
-			shot.rigidbody2D.AddForce(direction * shotSpeed);
-			coolDown = true;
 		}
 	}
 }

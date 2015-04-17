@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SpawnController : MonoBehaviour {
 
@@ -8,11 +8,20 @@ public class SpawnController : MonoBehaviour {
 	private int wave = 0;
 	private int spawnCount = 5;
 	public List<GameObject> enemies;
+    public GameObject smokeSpawn;
 	public float spawnInterval = 1.0f;
 	public float waveTime = 10f;
 	private ChestController chest;
 	private bool opened;
+    private Vector3 spawnPosition;
 
+    private enum EnemyType {
+        Rat,
+        Skeleton,
+        Imp
+    };
+
+	// Use this for initialization
 	void Start ()
 	{
 		chest = GameObject.FindGameObjectWithTag ("Chest").GetComponent<ChestController>();
@@ -25,6 +34,7 @@ public class SpawnController : MonoBehaviour {
 		}
 	}
 
+	// Update is called once per frame
 	void Update ()
 	{
 		switch(wave)
@@ -45,7 +55,7 @@ public class SpawnController : MonoBehaviour {
 				{
 					if(spawnCount > 0)
 					{
-						Instantiate(enemies[0], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
+                        SpawnEnemy(0);
 						spawnCount--;
 						spawnInterval = 1f;
 					}
@@ -79,7 +89,7 @@ public class SpawnController : MonoBehaviour {
 				{
 					if(spawnCount > 0)
 					{
-						Instantiate(enemies[spawnCount % 2], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
+						SpawnEnemy(spawnCount % 2);
 						spawnCount--;
 						spawnInterval = 1f;
 					}
@@ -101,7 +111,7 @@ public class SpawnController : MonoBehaviour {
 				{
 					if(spawnCount > 0)
 					{
-						Instantiate(enemies[spawnCount % 3], spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position, Quaternion.Euler(new Vector2(0,0)));
+						SpawnEnemy(spawnCount % 3);
 						spawnCount--;
 						spawnInterval = 1f;
 					}
@@ -114,4 +124,10 @@ public class SpawnController : MonoBehaviour {
 				break;
 		}
 	}
+    void SpawnEnemy(int type)
+    {
+        spawnPosition = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position;
+        Instantiate(smokeSpawn, spawnPosition, Quaternion.Euler(new Vector2(0, 0)));
+        Instantiate(enemies[type], spawnPosition, Quaternion.Euler(new Vector2(0, 0)));
+    }
 }
