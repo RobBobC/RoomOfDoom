@@ -5991,11 +5991,11 @@ Transform:
   - {fileID: 323912815}
   - {fileID: 294923367}
   - {fileID: 1604127592}
-  - {fileID: 1550921550}
+  - {fileID: 1302880928}
   - {fileID: 361697698}
+  - {fileID: 1550921550}
   - {fileID: 961660403}
   - {fileID: 1325973097}
-  - {fileID: 1302880928}
   - {fileID: 835718175}
   - {fileID: 1311587728}
   - {fileID: 580060076}
@@ -11817,7 +11817,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e0bbf22aafb134f934e5586b919f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collected: 0
+  weaponRewardOne: {fileID: 133862, guid: def621f4b72dc4d4f8fc783111a71ec2, type: 2}
+  weaponRewardTwo: {fileID: 133862, guid: 792a89e300bc24c479e7d376c3de9d4b, type: 2}
+  collectable: 0
 --- !u!1 &913373534
 GameObject:
   m_ObjectHideFlags: 0
@@ -12273,7 +12275,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!212 &961660404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17543,7 +17545,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 16
+  m_RootOrder: 12
 --- !u!212 &1302880929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17769,7 +17771,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!212 &1325973098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20677,7 +20679,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 12
+  m_RootOrder: 14
 --- !u!212 &1550921551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21147,8 +21149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2335b8341c3ed6941b310f6622dce770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
-  weapon: {fileID: 133862, guid: def621f4b72dc4d4f8fc783111a71ec2, type: 2}
+  type: 0
+  weapon: {fileID: 185284, guid: 23d819accb003844198d836ab4a613e1, type: 2}
 --- !u!1001 &1574696260
 Prefab:
   m_ObjectHideFlags: 0
@@ -21480,6 +21482,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 11469504, guid: ccb4bc4197aa8e242ba6b3b204266df0, type: 2}
+      propertyPath: weaponRewardOne
+      value: 
+      objectReference: {fileID: 133862, guid: def621f4b72dc4d4f8fc783111a71ec2, type: 2}
+    - target: {fileID: 11469504, guid: ccb4bc4197aa8e242ba6b3b204266df0, type: 2}
+      propertyPath: weaponRewardTwo
+      value: 
+      objectReference: {fileID: 133862, guid: 792a89e300bc24c479e7d376c3de9d4b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccb4bc4197aa8e242ba6b3b204266df0, type: 2}
   m_RootGameObject: {fileID: 906564876}
@@ -28518,7 +28528,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2078492024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.7800007, y: -17.8799992, z: 0}
+  m_LocalPosition: {x: -17.8799992, y: -17.8799992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}

@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
+
 	public float moveSpeed = 1.0f;
-	public int health = 8;
+	public int health = 80;
 	public float shotSpeed = 1000;
 	public float fireRate;
 
@@ -20,15 +22,18 @@ public class PlayerController : MonoBehaviour {
 	private GameObject launchBox;
 	private Animation currentAnimation;
 	private WeaponController weapon;
-
+	private List<GameObject> inventory;
 	private ChestController chestController;
+	private int inventoryIndex = 0;
+	private int weaponReward = 0;
 	
 	void Start()
 	{
+		inventory = new List<GameObject> ();
 		launchBox = GameObject.FindGameObjectWithTag ("LaunchBox");
 
 		weapon = GetComponent<WeaponController>();
-
+		inventory.Add (weapon.weapon);
 		animator = gameObject.GetComponent<Animator>();
 		currentAnimation = Animation.IDLE;
 		UpdateAnimationState (currentAnimation);
@@ -137,6 +142,28 @@ public class PlayerController : MonoBehaviour {
 				launchBox.GetComponent<PolygonCollider2D>().enabled = true;
 			}
 		}
+
+		if (Input.GetKey(KeyCode.Alpha1))
+		{
+			weapon.weapon = inventory[0];
+			weapon.type = inventory[0].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
+		}
+		else if(Input.GetKey(KeyCode.Alpha2))
+		{
+			if(inventory.Count >= 2)
+			{
+				weapon.weapon = inventory[1];
+				weapon.type = inventory[1].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
+			}
+		}
+		else if(Input.GetKey(KeyCode.Alpha3))
+		{
+			if(inventory.Count >= 3)
+			{
+				weapon.weapon = inventory[2];
+				weapon.type = inventory[2].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
+			}
+		}
 	}
 
 	void LateUpdate ()
@@ -214,10 +241,24 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.tag == "Chest")
 		{
 			chestController = other.gameObject.GetComponent<ChestController>();
-			if (Input.GetKey ("e") && !chestController.collected)
+			if (Input.GetKey ("e") && chestController.collectable)
 			{
 				chestController.OpenChest();
-				chestController.collected = true;
+				chestController.collectable = false;
+
+				switch (weaponReward)
+				{
+					case 0:
+						inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardOne);
+						weaponReward++;
+						break;
+					case 1:
+						inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardTwo);
+						weaponReward++;
+						break;
+					default:
+						break;
+				}
 			}
 		}
 	}

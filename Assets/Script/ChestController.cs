@@ -4,18 +4,26 @@ using System.Collections;
 public class ChestController : MonoBehaviour {
 	private Animator animator;
 
+	public GameObject weaponRewardOne;
+	public GameObject weaponRewardTwo;
+
 	[HideInInspector]
-	public bool collected;
+	public bool collectable;
 
 	void Start ()
 	{
 		animator = gameObject.GetComponent<Animator> ();
-		collected = false;
+		collectable = false;
 	}
 
 	public void OpenChest ()
 	{
-		animator.SetBool ("open", true);
-		collected = true;
+		animator.Play ("OpenChest");
+		collectable = false;
+	}
+
+	public void CloseChest ()
+	{
+		animator.Play ("IdleChest");
 	}
 }
