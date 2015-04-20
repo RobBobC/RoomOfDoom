@@ -3,24 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
-	public float moveSpeed = 1.0f;
-	public int health = 80;
+	public int health = 100;
 	public float shotSpeed = 1000;
 	public float fireRate;
-    public RuntimeAnimatorController[] animators;
 
-	private enum Animation {
-		IDLE,
-		WALK
-	};
-
-	private Animator animator;
 	private bool invincible;
 	private bool dead;
 	private float invinceDuration;
 	private float nextFire;
 	private GameObject launchBox;
-	private Animation currentAnimation;
 	private WeaponController weapon;
 	private List<GameObject> inventory;
 	private ChestController chestController;
@@ -35,9 +26,6 @@ public class PlayerController : MonoBehaviour {
 
 		weapon = GetComponent<WeaponController>();
 		inventory.Add (weapon.weapon);
-		animator = gameObject.GetComponent<Animator>();
-		currentAnimation = Animation.IDLE;
-		UpdateAnimationState (currentAnimation);
 
 		invincible = false;
 		dead = false;
@@ -76,51 +64,6 @@ public class PlayerController : MonoBehaviour {
 				invinceDuration -= Time.deltaTime;
 		}
 
-		if (Input.GetKey ("a") && Input.GetKey ("w"))
-		{
-			UpdateAnimationState (Animation.WALK);
-			transform.Translate (new Vector3 (-(1/Mathf.Sqrt(2)), (1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
-		}
-		else if (Input.GetKey ("a") && Input.GetKey ("s"))
-		{
-			UpdateAnimationState (Animation.WALK);
-			transform.Translate (new Vector3 (-(1/Mathf.Sqrt(2)), -(1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
-		}
-		else if (Input.GetKey ("d") && Input.GetKey ("w"))
-		{
-			UpdateAnimationState (Animation.WALK);
-			transform.Translate (new Vector3 ((1/Mathf.Sqrt(2)), (1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
-		}
-		else if (Input.GetKey ("d") && Input.GetKey ("s"))
-		{
-			transform.Translate (new Vector3 ((1/Mathf.Sqrt(2)), -(1/Mathf.Sqrt(2)), 0) * moveSpeed * Time.deltaTime);
-			UpdateAnimationState (Animation.WALK);
-		}
-		else if (Input.GetKey ("w"))
-		{
-			UpdateAnimationState (Animation.WALK);
-			transform.Translate (Vector3.up * moveSpeed * Time.deltaTime);
-		}
-		else if (Input.GetKey ("s"))
-		{
-			UpdateAnimationState (Animation.WALK);
-			transform.Translate (Vector3.down * moveSpeed * Time.deltaTime);	
-		}
-		else if (Input.GetKey ("a"))
-		{
-			UpdateAnimationState (Animation.WALK);
-			transform.Translate (Vector3.left * moveSpeed * Time.deltaTime);
-		}
-		else if (Input.GetKey ("d"))
-		{
-			UpdateAnimationState (Animation.WALK);
-			transform.Translate (Vector3.right * moveSpeed * Time.deltaTime);
-		}
-		else
-		{
-			UpdateAnimationState (Animation.IDLE);
-		}
-
 		Vector3 moveToward = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 		Vector3 moveDirection = moveToward - transform.position;
@@ -148,7 +91,6 @@ public class PlayerController : MonoBehaviour {
         // Melee weapon
 		if (Input.GetKey(KeyCode.Alpha1))
 		{
-            animator.runtimeAnimatorController = animators[0];
             weapon.weapon = inventory[0];
 			weapon.type = inventory[0].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
 		}
@@ -156,7 +98,6 @@ public class PlayerController : MonoBehaviour {
         // Ranged weapon 1
 		else if(Input.GetKey(KeyCode.Alpha2))
 		{
-            animator.runtimeAnimatorController = animators[1];
 			if(inventory.Count >= 2)
 			{
 				weapon.weapon = inventory[1];
@@ -167,8 +108,6 @@ public class PlayerController : MonoBehaviour {
         // Ranged weapon 2
 		else if(Input.GetKey(KeyCode.Alpha3))
 		{
-            //animator.runtimeAnimatorController = (RuntimeAnimatorController)Resources.Load("Animation/Player/RangedPlayer.controller", typeof(RuntimeAnimatorController));
-            animator.runtimeAnimatorController = animators[1];
             if(inventory.Count >= 3)
 			{
 				weapon.weapon = inventory[2];
@@ -184,24 +123,6 @@ public class PlayerController : MonoBehaviour {
 			rigidbody2D.velocity = new Vector2(0, 0);
 			rigidbody2D.angularVelocity = 0;
 		}
-	}
-
-	void UpdateAnimationState(Animation curAnimState)
-	{
-		if (currentAnimation == curAnimState)
-			return;
-		
-		switch (curAnimState)
-		{
-			case Animation.IDLE:
-				animator.SetInteger("animationState", 0);
-				break;
-			case Animation.WALK:
-				animator.SetInteger("animationState", 1);
-				break;
-		}
-		
-		currentAnimation = curAnimState;
 	}
 
 	void OnCollisionEnter2D(Collision2D other)

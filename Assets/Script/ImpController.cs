@@ -10,7 +10,7 @@ public class ImpController : BaseEnemy {
 	private bool coolDown;
 	private float coolDownDuration;
 
-	void ThrowBone()
+	void FireBall()
 	{
 		if(direction.magnitude < 25)
 		{
@@ -56,7 +56,7 @@ public class ImpController : BaseEnemy {
 		}
 		else
 		{
-			ThrowBone();
+			FireBall();
 		}
 	}
 }

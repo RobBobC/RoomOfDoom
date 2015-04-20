@@ -56,7 +56,9 @@
      <Compile Include="Assets\Script\GameController.cs" />
      <Compile Include="Assets\Script\ImpController.cs" />
      <Compile Include="Assets\Script\MeleeController.cs" />
-     <Compile Include="Assets\Script\PlayerController.cs" />
+     <Compile Include="Assets\Script\PlayerScripts\AnimationController.cs" />
+     <Compile Include="Assets\Script\PlayerScripts\MovementController.cs" />
+     <Compile Include="Assets\Script\PlayerScripts\PlayerController.cs" />
      <Compile Include="Assets\Script\RatController.cs" />
      <Compile Include="Assets\Script\SkeletonController.cs" />
      <Compile Include="Assets\Script\SmokeDestroyer.cs" />
