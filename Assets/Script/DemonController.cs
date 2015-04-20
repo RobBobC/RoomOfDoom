@@ -11,40 +11,16 @@ public class DemonController : BaseEnemy {
     private bool coolDown;
     private float coolDownDuration;
     private float lookAtAngle;
+    private float fireBallDuration;
 
-    void FireBall()
-    {
-        if (direction.magnitude < 25)
-        {
-            direction.Normalize();
-            GameObject shot = Instantiate(fireball, launchBox.transform.position, Quaternion.Euler(0, 0, 0)) as GameObject;
-            shot.rigidbody2D.AddForce(direction * shotSpeed);
-            coolDown = true;
-        }
-    }
-
-    void FireBallCircle()
-    {
-        Vector3 circleDirection = new Vector3();
-        if (direction.magnitude < 25)
-        {
-            direction.Normalize();
-
-            for (int i = 0; i < circleLaunchBoxes.Length; i++)
-            {
-                GameObject shot = Instantiate(fireball, circleLaunchBoxes[i].transform.position, Quaternion.Euler(0, 0, 0)) as GameObject;
-                circleDirection = circleLaunchBoxes[i].transform.position - transform.position;
-                shot.rigidbody2D.AddForce(circleDirection * shotSpeed);
-                coolDown = true;
-            }
-        }
-    }
+    
 
     // Use this for initialization
     void Start()
     {
         base.Start();
         coolDownDuration = 1.5f;
+        fireBallDuration = .75f;
         coolDown = false;
     }
 
@@ -61,7 +37,8 @@ public class DemonController : BaseEnemy {
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
         direction = player.transform.position - transform.position;
 
-        launchBox.transform.RotateAround(transform.position, Vector3.forward, launchBoxRotatationSpeed * Time.deltaTime);
+        lookAtAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.forward);
 
         if (coolDown)
         {
@@ -78,7 +55,36 @@ public class DemonController : BaseEnemy {
             FireBallCircle();
         }
 
-        lookAtAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.forward);
+        if(fireBallDuration > 0)
+        {
+            fireBallDuration -= Time.deltaTime;
+        }
+        else
+        {
+            fireBallDuration = .75f;
+            FireBall();
+        }
+    }
+
+    void FireBall()
+    {
+        direction.Normalize();
+        GameObject shot = Instantiate(fireball, launchBox.transform.position, Quaternion.Euler(0, 0, 0)) as GameObject;
+        shot.rigidbody2D.AddForce(6 * direction * shotSpeed);
+        coolDown = true;
+    }
+
+    void FireBallCircle()
+    {
+        Vector3 circleDirection = new Vector3();
+        direction.Normalize();
+
+        for (int i = 0; i < circleLaunchBoxes.Length; i++)
+        {
+            GameObject shot = Instantiate(fireball, circleLaunchBoxes[i].transform.position, Quaternion.Euler(0, 0, 0)) as GameObject;
+            circleDirection = circleLaunchBoxes[i].transform.position - transform.position;
+            shot.rigidbody2D.AddForce(circleDirection * shotSpeed);
+            coolDown = true;
+        }
     }
 }
