@@ -3,14 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class SpawnController : MonoBehaviour {
+	
+	public List<GameObject> enemies;
+	public GameObject smokeSpawn;
+	public float spawnInterval = 1.0f;
+	public float waveTime = 10f;
+	public int enemyCount = 0;
 
 	private List<GameObject> spawnPoints;
 	private int wave = 0;
 	private int spawnCount = 5;
-	public List<GameObject> enemies;
-    public GameObject smokeSpawn;
-	public float spawnInterval = 1.0f;
-	public float waveTime = 10f;
 	private ChestController chest;
 	private bool opened;
     private Vector3 spawnPosition;
@@ -18,7 +20,8 @@ public class SpawnController : MonoBehaviour {
     private enum EnemyType {
         Rat,
         Skeleton,
-        Imp
+        Imp,
+		Demon
     };
 
 	// Use this for initialization
@@ -58,6 +61,7 @@ public class SpawnController : MonoBehaviour {
                         SpawnEnemy(0);
 						spawnCount--;
 						spawnInterval = 1f;
+						enemyCount++;
 					}
 				}
 				else
@@ -92,6 +96,7 @@ public class SpawnController : MonoBehaviour {
 						SpawnEnemy(spawnCount % 2);
 						spawnCount--;
 						spawnInterval = 1f;
+						enemyCount++;
 					}
 				}
 				else
@@ -107,6 +112,18 @@ public class SpawnController : MonoBehaviour {
 					opened = false;
 				}
 				chest.collectable = true;
+				if(waveTime < 0 || (Input.GetKey("space") && spawnCount == 0))
+				{
+					wave++;
+					spawnCount = 10;
+					waveTime = 10;
+					opened = true;
+					break;
+				}
+				else
+				{
+					waveTime -= Time.deltaTime;
+				}
 				if(spawnInterval < 0)
 				{
 					if(spawnCount > 0)
@@ -114,6 +131,7 @@ public class SpawnController : MonoBehaviour {
 						SpawnEnemy(spawnCount % 3);
 						spawnCount--;
 						spawnInterval = 1f;
+						enemyCount++;
 					}
 				}
 				else
@@ -122,8 +140,29 @@ public class SpawnController : MonoBehaviour {
 					break;
 				}
 				break;
+			case 3:
+				if(opened)
+				{
+					chest.CloseChest();
+					opened = false;
+				}
+				chest.collectable = true;
+				SpawnEnemy(3);
+				SpawnEnemy(0);
+				SpawnEnemy(0);
+				SpawnEnemy(0);
+				SpawnEnemy(2);
+				SpawnEnemy(2);
+				enemyCount = enemyCount + 6;
+				wave++;
+				break;
+			case 4:
+				if(enemyCount == 0)
+					Application.LoadLevel(2);
+				break;
 		}
 	}
+
     void SpawnEnemy(int type)
     {
         spawnPosition = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Count)].transform.position;

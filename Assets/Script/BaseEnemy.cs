@@ -10,6 +10,7 @@ public class BaseEnemy : MonoBehaviour {
 	public float dieSoundVolume = 1.0f;
 	
 	private AudioSource audioSource;
+	private SpawnController spawnController;
 	protected GameObject player;
 	protected Animator animator;
 	protected Vector3 direction;
@@ -30,6 +31,7 @@ public class BaseEnemy : MonoBehaviour {
 		animator = gameObject.GetComponent<Animator> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
 		AudioSource.PlayClipAtPoint (spawnSound, new Vector3 (0, 0, 0), spawnSoundVolume);
+		spawnController = GameObject.FindGameObjectWithTag ("SpawnController").GetComponent<SpawnController> ();
 	}
 
 	// Update is called once per frame
@@ -53,6 +55,7 @@ public class BaseEnemy : MonoBehaviour {
 				animator.SetBool("isDead", true);
 				AudioSource.PlayClipAtPoint (dieSound, new Vector3 (0, 0, 0),dieSoundVolume);
 				gameObject.collider2D.enabled = false;
+				spawnController.enemyCount--;
 			}
 
 			Destroy (other.gameObject);
@@ -69,6 +72,7 @@ public class BaseEnemy : MonoBehaviour {
 			{
 				animator.SetBool("isDead", true);
 				gameObject.collider2D.enabled = false;
+				spawnController.enemyCount--;
 			}
 		}
 	}
@@ -83,6 +87,7 @@ public class BaseEnemy : MonoBehaviour {
 			{
 				animator.SetBool("isDead", true);
 				gameObject.collider2D.enabled = false;
+				spawnController.enemyCount--;
 			}
 		}
 	}

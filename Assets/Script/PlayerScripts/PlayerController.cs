@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
+		Debug.Log (health);
 		if(health <= 0)
 		{
 			dead = true;
@@ -164,6 +165,10 @@ public class PlayerController : MonoBehaviour {
 					invincible = true;
 					Destroy(other.gameObject);
 					break;
+				case "Lava":
+					health -= 1;
+					invincible = true;
+					break;
 			}
 		}
 	}
@@ -192,6 +197,11 @@ public class PlayerController : MonoBehaviour {
 						break;
 				}
 			}
+		}
+		else if (other.gameObject.tag == "Lava" && !invincible)
+		{
+			health -= 1;
+			invincible = true;
 		}
 	}
 	

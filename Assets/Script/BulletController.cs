@@ -6,13 +6,13 @@ public class BulletController : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		if(other.gameObject.tag != "Player" && other.gameObject.tag != "Enemy")
+		if(other.gameObject.tag != "Player" && other.gameObject.tag != "Enemy" && other.gameObject.tag != "Lava")
 			Destroy (gameObject);
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.gameObject.tag != "Player" && other.gameObject.tag != "Enemy")
+		if(other.gameObject.tag != "Player" && other.gameObject.tag != "Enemy" && other.gameObject.tag != "Lava")
 			Destroy (gameObject);
 	}
 

@@ -6510,11 +6510,11 @@ Transform:
   - {fileID: 323912815}
   - {fileID: 294923367}
   - {fileID: 1604127592}
-  - {fileID: 1550921550}
-  - {fileID: 361697698}
   - {fileID: 961660403}
+  - {fileID: 361697698}
   - {fileID: 1325973097}
   - {fileID: 1302880928}
+  - {fileID: 1550921550}
   - {fileID: 835718175}
   - {fileID: 1311587728}
   - {fileID: 580060076}
@@ -12848,7 +12848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 14
+  m_RootOrder: 12
 --- !u!212 &961660404
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18489,7 +18489,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!212 &1302880929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18783,7 +18783,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!212 &1325973098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21827,7 +21827,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491185177}
-  m_RootOrder: 12
+  m_RootOrder: 16
 --- !u!212 &1550921551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28389,7 +28389,7 @@ GameObject:
   - 60: {fileID: 2006841582}
   m_Layer: 0
   m_Name: lavaPit
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30248,7 +30248,7 @@ GameObject:
   - 114: {fileID: 2101170665}
   m_Layer: 0
   m_Name: spawnPoints
-  m_TagString: Untagged
+  m_TagString: SpawnController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30288,10 +30288,11 @@ MonoBehaviour:
   - {fileID: 176618, guid: 361a5ad9ef050334d9dd0e852171f8b6, type: 2}
   - {fileID: 126060, guid: 0ab843266ec284942beee578c14919d1, type: 2}
   - {fileID: 133192, guid: d03955d291be873439ebad52e38a03c9, type: 2}
-  - {fileID: 0}
+  - {fileID: 166248, guid: 404fd8dec30032b4490c005f4b604313, type: 2}
   smokeSpawn: {fileID: 178450, guid: 092dca46cd772584e9170cfc02159a81, type: 2}
   spawnInterval: 1
   waveTime: 30
+  enemyCount: 0
 --- !u!1 &2102108361
 GameObject:
   m_ObjectHideFlags: 0
