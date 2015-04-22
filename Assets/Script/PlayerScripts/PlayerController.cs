@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 
     [HideInInspector]
     public bool dead;
+    public List<GameObject> inventory;
 
     int weaponReward;
     bool damaged;
@@ -22,7 +23,6 @@ public class PlayerController : MonoBehaviour {
 	float nextFire;
 	GameObject launchBox;
 	WeaponController weapon;
-	List<GameObject> inventory;
 	ChestController chestController;
     AudioSource playerAudio;
     BaseEnemy baseEnemy;
@@ -137,6 +137,10 @@ public class PlayerController : MonoBehaviour {
 					invincible = true;
 					Destroy(other.gameObject);
 					break;
+                case "Lava":
+				    health -= 1;
+				    invincible = true;
+				    break;
 			}
 		}
 	}
@@ -165,6 +169,11 @@ public class PlayerController : MonoBehaviour {
 						break;
 				}
 			}
+		}
+        else if (other.gameObject.tag == "Lava" && !invincible)
+		{
+			health -= 1;
+			invincible = true;
 		}
 	}
 

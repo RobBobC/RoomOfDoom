@@ -20,6 +20,7 @@ public class BaseEnemy : MonoBehaviour {
     bool playerInRange;
     float meleeAttackTimer;
     PlayerController playerController;
+    SpawnController spawnController;
 
 	protected enum attackType {
 		melee,
@@ -33,10 +34,14 @@ public class BaseEnemy : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player");
         playerController = player.GetComponent<PlayerController>();
 		AudioSource.PlayClipAtPoint (spawnSound, new Vector3 (0, 0, 0), spawnSoundVolume);
+        spawnController = GameObject.FindGameObjectWithTag("SpawnController").GetComponent<SpawnController>();
 	}
     
 	protected void Update()
 	{
+        direction = player.transform.position - transform.position;
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime)/* + collisionAvoidance(direction)*/;
+
         meleeAttackTimer += Time.deltaTime;
 
         if (meleeAttackTimer >= timeBetweenAttacks && playerInRange && health > 0)
@@ -122,6 +127,46 @@ public class BaseEnemy : MonoBehaviour {
     {
         animator.SetBool("isDead", true);
         gameObject.collider2D.enabled = false;
+        spawnController.enemyCount--;
         ScoreController.score += scoreValue;
     }
+
+    //private Vector2 collisionAvoidance(Vector3 direction) 
+    //{
+    //    Vector3 ahead = this.transform.position + moveSpeed * 2f;
+    //    Vector3 ahead2 = this.transform.position + moveSpeed * 2f * 0.5;
+ 
+    //    var mostThreatening = findMostThreateningObstacle();
+    //    var avoidance = new Vector3(0, 0, 0);
+ 
+    //    if (mostThreatening != null) {
+    //        avoidance.x = ahead.x - mostThreatening.transform.position.x;
+    //        avoidance.y = ahead.y - mostThreatening.transform.position.y;
+ 
+    //        avoidance.normalize();
+    //        avoidance.scaleBy(MAX_AVOID_FORCE);
+    //    } 
+    //    else 
+    //    {
+    //        avoidance.scaleBy(0); // nullify the avoidance force
+    //    }
+ 
+    //    return avoidance;
+    //}
+ 
+    //private GameObject findMostThreateningObstacle() 
+    //{
+    //    var mostThreatening :Obstacle = null;
+     
+    //    for (var i:int = 0; i < Game.instance.obstacles.length; i++) {
+    //        var obstacle :Obstacle = Game.instance.obstacles[i];
+    //        var collision :Boolean = lineIntersecsCircle(ahead, ahead2, obstacle);
+     
+    //        // "position" is the character's current position
+    //        if (collision && (mostThreatening == null || distance(position, obstacle) < distance(position, mostThreatening))) {
+    //            mostThreatening = obstacle;
+    //        }
+    //    }
+    //    return mostThreatening;
+    //}
 }
