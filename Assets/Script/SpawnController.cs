@@ -3,25 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class SpawnController : MonoBehaviour {
-
-	private List<GameObject> spawnPoints;
-	private int wave = 0;
-	private int spawnCount = 5;
-	public List<GameObject> enemies;
+    public float spawnInterval = 1.0f;
+    public float waveTime = 10f;
+    public List<GameObject> enemies;
     public GameObject smokeSpawn;
-	public float spawnInterval = 1.0f;
-	public float waveTime = 10f;
-	private ChestController chest;
-	private bool opened;
-    private Vector3 spawnPosition;
 
-    private enum EnemyType {
+    enum EnemyType
+    {
         Rat,
         Skeleton,
         Imp
     };
 
-	// Use this for initialization
+    bool opened;
+    int wave = 0;
+    int spawnCount = 5;
+	List<GameObject> spawnPoints;
+	ChestController chest;
+    Vector3 spawnPosition;
+    
 	void Start ()
 	{
 		chest = GameObject.FindGameObjectWithTag ("Chest").GetComponent<ChestController>();
@@ -34,7 +34,6 @@ public class SpawnController : MonoBehaviour {
 		}
 	}
 
-	// Update is called once per frame
 	void Update ()
 	{
 		switch(wave)

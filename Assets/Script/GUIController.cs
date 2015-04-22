@@ -25,8 +25,7 @@ public class GUIController : GameController {
 		Application.Quit();
 		StopEditorPlayback ();
 	}
-
-	// Use this for initialization
+    
 	void Start ()
 	{
 		if (Application.loadedLevelName == "MainMenu" || Application.loadedLevelName == "Lose" || Application.loadedLevelName == "Win")

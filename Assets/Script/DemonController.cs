@@ -8,14 +8,11 @@ public class DemonController : BaseEnemy {
     public GameObject[] circleLaunchBoxes;
     public int launchBoxRotatationSpeed;
 
-    private bool coolDown;
-    private float coolDownDuration;
-    private float lookAtAngle;
-    private float fireBallDuration;
-
+    bool coolDown;
+    float lookAtAngle;
+    float coolDownDuration;
+    float fireBallDuration;
     
-
-    // Use this for initialization
     void Start()
     {
         base.Start();
@@ -23,8 +20,7 @@ public class DemonController : BaseEnemy {
         fireBallDuration = .75f;
         coolDown = false;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (IsDead)

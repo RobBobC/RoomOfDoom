@@ -2,28 +2,26 @@
 using System.Collections;
 
 public class RatController : BaseEnemy {
-	private float lookAtAngle;
+	float lookAtAngle;
 
-	// Use this for initialization
 	void Start()
 	{
 		base.Start();
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
-		if(IsDead)
-		{
-			return;
-		}
+    void Update()
+    {
+        if (IsDead)
+        {
+            return;
+        }
 
-		base.Update();
+        base.Update();
 
-		transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
-		direction = player.transform.position - transform.position;
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        direction = player.transform.position - transform.position;
 
-		lookAtAngle = Mathf.Atan2 (direction.y, direction.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.AngleAxis (lookAtAngle - 90, Vector3.forward);
-	}
+        lookAtAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.forward);
+    }
 }

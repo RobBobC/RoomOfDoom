@@ -4,22 +4,23 @@ using System.Collections;
 public class AnimationController : MonoBehaviour {
     public RuntimeAnimatorController[] animators;
 
-    private enum Animation
+    enum Animation
     {
         IDLE,
         WALK
     };
-    private Animation currentAnimation;
-    private Animator animator;
 
-	// Use this for initialization
-	void Start () {
+    Animation currentAnimation;
+    Animator animator;
+    
+	void Start ()
+    {
         currentAnimation = Animation.IDLE;
         animator = GetComponent<Animator>();
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if (Input.GetKey("a") && Input.GetKey("w"))
         {
             UpdateAnimationState(Animation.WALK);            
@@ -56,19 +57,17 @@ public class AnimationController : MonoBehaviour {
         {
             UpdateAnimationState(Animation.IDLE);
         }
-
+        
         if (Input.GetKey(KeyCode.Alpha1))
         {
             animator.runtimeAnimatorController = animators[0];
         }
-
-        // Ranged weapon 1
+        
         else if (Input.GetKey(KeyCode.Alpha2))
         {
             animator.runtimeAnimatorController = animators[1];
         }
-
-        // Ranged weapon 2
+        
         else if (Input.GetKey(KeyCode.Alpha3))
         {
             animator.runtimeAnimatorController = animators[1];

@@ -2,47 +2,57 @@
 using System.Collections;
 
 public class BaseEnemy : MonoBehaviour {
+    public int health = 100;
+    public int attackDamage = 10;
+    public int scoreValue = 20;
 	public float moveSpeed;
-	public int health;
+    public float spawnSoundVolume = 1.0f;
+    public float dieSoundVolume = 1.0f;
+    public float timeBetweenAttacks = 1.5f;
 	public AudioClip spawnSound;
 	public AudioClip dieSound;
-	public float spawnSoundVolume = 1.0f;
-	public float dieSoundVolume = 1.0f;
-	
-	private AudioSource audioSource;
+
 	protected GameObject player;
 	protected Animator animator;
 	protected Vector3 direction;
+    protected PolygonCollider2D polygonCollider2D;
+
+    bool playerInRange;
+    float meleeAttackTimer;
+    PlayerController playerController;
 
 	protected enum attackType {
 		melee,
 		ranged
 	};
-
-	protected bool IsDead
-	{
-		get { return animator.GetBool("isDead"); }
-	}
-
-	// Use this for initialization
+    
 	protected void Start()
 	{
-		animator = gameObject.GetComponent<Animator> ();
-		player = GameObject.FindGameObjectWithTag ("Player");
+        polygonCollider2D = GetComponent<PolygonCollider2D>();
+        animator = GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerController = player.GetComponent<PlayerController>();
 		AudioSource.PlayClipAtPoint (spawnSound, new Vector3 (0, 0, 0), spawnSoundVolume);
 	}
-
-	// Update is called once per frame
+    
 	protected void Update()
 	{
-		if(gameObject.rigidbody2D.isKinematic)
+        meleeAttackTimer += Time.deltaTime;
+
+        if (meleeAttackTimer >= timeBetweenAttacks && playerInRange && health > 0)
+            Attack();
+
+		if(rigidbody2D.isKinematic)
 		{
-			gameObject.rigidbody2D.isKinematic = false;
+			rigidbody2D.isKinematic = false;
 		}
 	}
 
 	protected void OnCollisionEnter2D(Collision2D other)
 	{
+        if (other.gameObject == player)
+            playerInRange = true;
+
 		if (other.collider.tag == "Bullet")
 		{
 			gameObject.rigidbody2D.isKinematic = true;
@@ -50,14 +60,19 @@ public class BaseEnemy : MonoBehaviour {
 
 			if(health <= 0)
 			{
-				animator.SetBool("isDead", true);
 				AudioSource.PlayClipAtPoint (dieSound, new Vector3 (0, 0, 0),dieSoundVolume);
-				gameObject.collider2D.enabled = false;
+                Death();
 			}
 
 			Destroy (other.gameObject);
 		}
 	}
+
+    protected void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject == player)
+            playerInRange = false;
+    }
 
 	protected void OnTriggerEnter2D(Collider2D other)
 	{
@@ -67,8 +82,7 @@ public class BaseEnemy : MonoBehaviour {
 
 			if(health <= 0)
 			{
-				animator.SetBool("isDead", true);
-				gameObject.collider2D.enabled = false;
+                Death();
 			}
 		}
 	}
@@ -81,14 +95,33 @@ public class BaseEnemy : MonoBehaviour {
 
 			if(health <= 0)
 			{
-				animator.SetBool("isDead", true);
-				gameObject.collider2D.enabled = false;
+                Death();
 			}
 		}
 	}
-
+    
 	protected void GrantTheSweetReleaseOfDeath()
 	{
 		Destroy (gameObject);
 	}
+
+    void Attack()
+    {
+        meleeAttackTimer = 0f;
+
+        if (playerController.health > 0)
+            playerController.Damage(attackDamage);
+    }
+
+    protected bool IsDead
+    {
+        get { return animator.GetBool("isDead"); }
+    }
+
+    void Death()
+    {
+        animator.SetBool("isDead", true);
+        gameObject.collider2D.enabled = false;
+        ScoreController.score += scoreValue;
+    }
 }

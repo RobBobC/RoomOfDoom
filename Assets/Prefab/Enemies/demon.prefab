@@ -132,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13, y: -22.3999996, z: 0}
+  m_LocalPosition: {x: 5.55300951, y: -22.63731, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 470464}
@@ -299,12 +299,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8704b6cfe1c85b845ab30c69404b30eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
   health: 15
-  spawnSound: {fileID: 8300000, guid: 126abc80e21863248958a81502450075, type: 3}
-  dieSound: {fileID: 8300000, guid: a77a2f03ebf93fc44ae1f61c04f94500, type: 3}
+  attackDamage: 10
+  scoreValue: 20
+  moveSpeed: 7
   spawnSoundVolume: 1
   dieSoundVolume: 1
+  timeBetweenAttacks: .5
+  spawnSound: {fileID: 8300000, guid: 126abc80e21863248958a81502450075, type: 3}
+  dieSound: {fileID: 8300000, guid: a77a2f03ebf93fc44ae1f61c04f94500, type: 3}
   fireball: {fileID: 182026, guid: 29c834fb4373281428edf29c6c1b865e, type: 2}
   shotSpeed: 200
   launchBox: {fileID: 170464}

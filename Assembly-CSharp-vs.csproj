@@ -54,16 +54,17 @@
      <Compile Include="Assets\Script\DemonController.cs" />
      <Compile Include="Assets\Script\GUIController.cs" />
      <Compile Include="Assets\Script\GameController.cs" />
+     <Compile Include="Assets\Script\GargantController.cs" />
      <Compile Include="Assets\Script\ImpController.cs" />
      <Compile Include="Assets\Script\MeleeController.cs" />
      <Compile Include="Assets\Script\PlayerScripts\AnimationController.cs" />
      <Compile Include="Assets\Script\PlayerScripts\MovementController.cs" />
      <Compile Include="Assets\Script\PlayerScripts\PlayerController.cs" />
      <Compile Include="Assets\Script\RatController.cs" />
+     <Compile Include="Assets\Script\ScoreController.cs" />
      <Compile Include="Assets\Script\SkeletonController.cs" />
      <Compile Include="Assets\Script\SmokeDestroyer.cs" />
      <Compile Include="Assets\Script\SpawnController.cs" />
-     <Compile Include="Assets\Script\Temp_EnemyController.cs" />
      <Compile Include="Assets\Script\WeaponController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

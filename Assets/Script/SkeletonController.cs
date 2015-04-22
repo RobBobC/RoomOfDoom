@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class SkeletonController : BaseEnemy {
-	public GameObject bone;
 	public int shotSpeed = 1000;
+    public int launchBoxRotatationSpeed;
 	public GameObject launchBox;
-	public int launchBoxRotatationSpeed;
+    public GameObject bone;
 
-	private bool coolDown;
-	private float coolDownDuration;
+	bool coolDown;
+	float coolDownDuration;
 
 	void ThrowBone()
 	{
@@ -20,8 +20,7 @@ public class SkeletonController : BaseEnemy {
 			coolDown = true;
 		}
 	}
-
-	// Use this for initialization
+    
 	void Start()
 	{
 		base.Start();
@@ -29,7 +28,6 @@ public class SkeletonController : BaseEnemy {
 		coolDown = false;
 	}
 
-	// Update is called once per frame
 	void Update()
 	{
 		if(IsDead)

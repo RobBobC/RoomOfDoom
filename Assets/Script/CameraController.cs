@@ -5,14 +5,13 @@ public class CameraController : MonoBehaviour {
     public GameObject player;
 	public BoxCollider2D cameraBounds;
 
-	private float halfCamWidth;
-	private float halfCamHeight;
-	private float x;
-	private float y;
-	private Vector3 min;
-	private Vector3 max;
+	float halfCamWidth;
+	float halfCamHeight;
+	float x;
+	float y;
+	Vector3 min;
+	Vector3 max;
 
-	// Use this for initialization
 	void Start()
 	{
 		//the orthographic size is half of the camera view's height

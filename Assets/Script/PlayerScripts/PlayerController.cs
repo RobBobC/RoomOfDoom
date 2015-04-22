@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,49 +7,54 @@ public class PlayerController : MonoBehaviour {
 	public int health = 100;
 	public float shotSpeed = 1000;
 	public float fireRate;
+    public float flashSpeed = 5f;
+    public Image damageImage;
+    public Slider healthSlider;
+    public Color flashColor;
 
-	private bool invincible;
-	private bool dead;
-	private float invinceDuration;
-	private float nextFire;
-	private GameObject launchBox;
-	private WeaponController weapon;
-	private List<GameObject> inventory;
-	private ChestController chestController;
-	private int inventoryIndex = 0;
-	private int weaponReward = 0;
+    [HideInInspector]
+    public bool dead;
 
-	// Use this for initialization
-	void Start()
-	{
-		inventory = new List<GameObject> ();
-		launchBox = GameObject.FindGameObjectWithTag ("LaunchBox");
+    int weaponReward;
+    bool damaged;
+	bool invincible;
+	float invinceDuration;
+	float nextFire;
+	GameObject launchBox;
+	WeaponController weapon;
+	List<GameObject> inventory;
+	ChestController chestController;
+    AudioSource playerAudio;
+    BaseEnemy baseEnemy;
+    
+    void Start()
+    {
+        weaponReward = 0;
+        invinceDuration = 1.0f;
+        invincible = false;
+        dead = false;
+        inventory = new List<GameObject>();
+        launchBox = GameObject.FindGameObjectWithTag("LaunchBox");
+        weapon = GetComponent<WeaponController>();
+        inventory.Add(weapon.weapon);
+        playerAudio = GetComponent<AudioSource>();
+    }
 
-		weapon = GetComponent<WeaponController>();
-		inventory.Add (weapon.weapon);
-
-		invincible = false;
-		dead = false;
-
-		invinceDuration = 1.0f;
-	}
-
-	// Update is called once per frame
 	void Update()
 	{
-		if(health <= 0)
-		{
-			dead = true;
-			Time.timeScale = 0;
+        if (health <= 0 && !dead)
+        {
+            Death();
+        }
 
-			if (dead)
-			{
-				Application.LoadLevel(3);
-				Time.timeScale = 1;
-			}
-		}
+        if (damaged)
+            damageImage.color = flashColor;
+        else
+            damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+        
+        damaged = false;
 
-		if(launchBox.GetComponent<PolygonCollider2D>().enabled == true && launchBox.GetComponent<PolygonCollider2D>().enabled == true)
+		if(launchBox.GetComponent<PolygonCollider2D>().enabled == true)
 		{
 			launchBox.GetComponent<PolygonCollider2D>().enabled = false;
 		}
@@ -73,7 +79,7 @@ public class PlayerController : MonoBehaviour {
 		float targetAngle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, targetAngle - 90), 5 * Time.deltaTime);
 
-		if (Input.GetButton ("Fire1") && Time.time > nextFire)
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
 		{
 			nextFire = Time.time + fireRate;
 
@@ -88,14 +94,11 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
-        // Melee weapon
 		if (Input.GetKey(KeyCode.Alpha1))
 		{
             weapon.weapon = inventory[0];
 			weapon.type = inventory[0].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
 		}
-
-        // Ranged weapon 1
 		else if(Input.GetKey(KeyCode.Alpha2))
 		{
 			if(inventory.Count >= 2)
@@ -104,8 +107,6 @@ public class PlayerController : MonoBehaviour {
 				weapon.type = inventory[1].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
 			}
 		}
-
-        // Ranged weapon 2
 		else if(Input.GetKey(KeyCode.Alpha3))
 		{
             if(inventory.Count >= 3)
@@ -122,34 +123,6 @@ public class PlayerController : MonoBehaviour {
 		{
 			rigidbody2D.velocity = new Vector2(0, 0);
 			rigidbody2D.angularVelocity = 0;
-		}
-	}
-
-	void OnCollisionEnter2D(Collision2D other)
-	{
-		if(!invincible)
-		{
-			switch(other.collider.tag)
-			{
-				case "Enemy":
-					health -= 1;
-					invincible = true;
-					break;
-			}
-		}
-	}
-
-	void OnCollisionStay2D(Collision2D other)
-	{
-		if(!invincible)
-		{
-			switch(other.collider.tag)
-			{
-				case "Enemy":
-					health -= 1;
-				    invincible = true;
-					break;
-			}		
 		}
 	}
 
@@ -194,5 +167,21 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 	}
-	
+
+    public void Damage(int amount)
+    {
+        if (!invincible)
+            invincible = true;
+
+        damaged = true;
+        health -= amount;
+        healthSlider.value = health;
+        playerAudio.Play();
+    }
+
+    void Death()
+    {
+        dead = true;
+        Time.timeScale = 0;
+    }
 }

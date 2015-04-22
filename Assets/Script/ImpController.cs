@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class ImpController : BaseEnemy {
+    public int shotSpeed = 1000;
+    public int launchBoxRotatationSpeed;
 	public GameObject fireball;
-	public int shotSpeed = 1000;
 	public GameObject launchBox;
-	public int launchBoxRotatationSpeed;
-
-	private bool coolDown;
-	private float coolDownDuration;
+    
+	bool coolDown;
+	float coolDownDuration;
 
 	void FireBall()
 	{
@@ -21,7 +21,6 @@ public class ImpController : BaseEnemy {
 		}
 	}
 
-	// Use this for initialization
 	void Start()
 	{
 		base.Start();
@@ -29,7 +28,6 @@ public class ImpController : BaseEnemy {
 		coolDown = false;
 	}
 
-	// Update is called once per frame
 	void Update()
 	{
 		if(IsDead)

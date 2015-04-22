@@ -3,14 +3,7 @@ using System.Collections;
 
 public class MovementController : MonoBehaviour {
     public float moveSpeed = 1.0f;
-
-	// Use this for initialization
-	void Start ()
-    {
 	
-	}
-	
-	// Update is called once per frame
 	void Update ()
     {
         if (Input.GetKey("a") && Input.GetKey("w"))
