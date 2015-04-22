@@ -21,6 +21,8 @@ public class BaseEnemy : MonoBehaviour {
     float meleeAttackTimer;
     PlayerController playerController;
     SpawnController spawnController;
+    bool avoidingCollision = false;
+    float timeToAvoidCollision = .1f;
 
 	protected enum attackType {
 		melee,
@@ -38,9 +40,37 @@ public class BaseEnemy : MonoBehaviour {
 	}
     
 	protected void Update()
-	{
+    {
         direction = player.transform.position - transform.position;
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime)/* + collisionAvoidance(direction)*/;
+        Debug.Log(Physics2D.Raycast(this.transform.position, direction, 2f).collider.tag);
+        if (Physics2D.Raycast(this.transform.position, direction, 10f).collider.tag == "Obstacle")
+        {
+            avoidingCollision = true;
+            Quaternion angleFacing = transform.rotation;
+            if (this.name == "rat" || this.name == "demon")
+            {
+                transform.rotation = new Quaternion(angleFacing.x, angleFacing.y, angleFacing.z + 90, angleFacing.w);
+            }
+        }
+
+        if (avoidingCollision)
+        {
+            timeToAvoidCollision -= Time.deltaTime;
+            if (timeToAvoidCollision <= 0)
+            {
+                avoidingCollision = false;
+                timeToAvoidCollision = .1f;
+            }
+            else
+            {
+                Vector3 target = new Vector3(transform.position.x + .1f, transform.position.y + .1f, transform.position.z);
+                transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+            }
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        }
 
         meleeAttackTimer += Time.deltaTime;
 
@@ -130,43 +160,4 @@ public class BaseEnemy : MonoBehaviour {
         spawnController.enemyCount--;
         ScoreController.score += scoreValue;
     }
-
-    //private Vector2 collisionAvoidance(Vector3 direction) 
-    //{
-    //    Vector3 ahead = this.transform.position + moveSpeed * 2f;
-    //    Vector3 ahead2 = this.transform.position + moveSpeed * 2f * 0.5;
- 
-    //    var mostThreatening = findMostThreateningObstacle();
-    //    var avoidance = new Vector3(0, 0, 0);
- 
-    //    if (mostThreatening != null) {
-    //        avoidance.x = ahead.x - mostThreatening.transform.position.x;
-    //        avoidance.y = ahead.y - mostThreatening.transform.position.y;
- 
-    //        avoidance.normalize();
-    //        avoidance.scaleBy(MAX_AVOID_FORCE);
-    //    } 
-    //    else 
-    //    {
-    //        avoidance.scaleBy(0); // nullify the avoidance force
-    //    }
- 
-    //    return avoidance;
-    //}
- 
-    //private GameObject findMostThreateningObstacle() 
-    //{
-    //    var mostThreatening :Obstacle = null;
-     
-    //    for (var i:int = 0; i < Game.instance.obstacles.length; i++) {
-    //        var obstacle :Obstacle = Game.instance.obstacles[i];
-    //        var collision :Boolean = lineIntersecsCircle(ahead, ahead2, obstacle);
-     
-    //        // "position" is the character's current position
-    //        if (collision && (mostThreatening == null || distance(position, obstacle) < distance(position, mostThreatening))) {
-    //            mostThreatening = obstacle;
-    //        }
-    //    }
-    //    return mostThreatening;
-    //}
 }

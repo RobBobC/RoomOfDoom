@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour {
 					Destroy(other.gameObject);
 					break;
                 case "Lava":
-				    health -= 1;
+                    Damage(1);
 				    invincible = true;
 				    break;
 			}
@@ -172,7 +172,7 @@ public class PlayerController : MonoBehaviour {
 		}
         else if (other.gameObject.tag == "Lava" && !invincible)
 		{
-			health -= 1;
+            Damage(1);
 			invincible = true;
 		}
 	}
