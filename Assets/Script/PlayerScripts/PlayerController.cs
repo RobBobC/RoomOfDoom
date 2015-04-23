@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 
     [HideInInspector]
     public bool dead;
+    public List<GameObject> inventory;
 
     int weaponReward;
     bool damaged;
@@ -22,7 +23,6 @@ public class PlayerController : MonoBehaviour {
 	float nextFire;
 	GameObject launchBox;
 	WeaponController weapon;
-	List<GameObject> inventory;
 	ChestController chestController;
     AudioSource playerAudio;
     BaseEnemy baseEnemy;
@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour {
 		float targetAngle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, targetAngle - 90), 5 * Time.deltaTime);
 
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        if (Input.GetButton("Fire1") && Time.time > nextFire || Input.GetButtonDown("Fire1"))
 		{
 			nextFire = Time.time + fireRate;
 
@@ -137,6 +137,10 @@ public class PlayerController : MonoBehaviour {
 					invincible = true;
 					Destroy(other.gameObject);
 					break;
+                case "Lava":
+                    Damage(1);
+				    invincible = true;
+				    break;
 			}
 		}
 	}
@@ -165,6 +169,11 @@ public class PlayerController : MonoBehaviour {
 						break;
 				}
 			}
+		}
+        else if (other.gameObject.tag == "Lava" && !invincible)
+		{
+            Damage(1);
+			invincible = true;
 		}
 	}
 

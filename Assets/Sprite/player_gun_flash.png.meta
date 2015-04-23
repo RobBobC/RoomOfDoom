@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: b471ef04a773ab247b91c6323bea6ed4
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_gun_flash_0
+    21300002: player_gun_flash_1
+    21300004: player_gun_flash_2
+    21300006: player_gun_flash_3
+    21300008: player_gun_flash_4
+    21300010: player_gun_flash_10
+    21300012: player_gun_flash_5
+    21300014: player_gun_flash_6
+    21300016: player_gun_flash_7
+    21300018: player_gun_flash_8
+    21300020: player_gun_flash_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: player_gun_flash_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1226
+        width: 73
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1187
+        width: 72
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1071
+        width: 73
+        height: 135
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_3
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 928
+        width: 72
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 942
+        width: 81
+        height: 147
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_10
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 866
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 657
+        width: 84
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_6
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 619
+        width: 84
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_7
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 499
+        width: 77
+        height: 135
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 354
+        width: 68
+        height: 149
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_gun_flash_9
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 380
+        width: 70
+        height: 133
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -7,12 +7,14 @@ public class SpawnController : MonoBehaviour {
     public float waveTime = 10f;
     public List<GameObject> enemies;
     public GameObject smokeSpawn;
+    public int enemyCount = 0;
 
     enum EnemyType
     {
         Rat,
         Skeleton,
-        Imp
+        Imp,
+        Demon
     };
 
     bool opened;
@@ -57,6 +59,7 @@ public class SpawnController : MonoBehaviour {
                         SpawnEnemy(0);
 						spawnCount--;
 						spawnInterval = 1f;
+                        enemyCount++;
 					}
 				}
 				else
@@ -91,6 +94,7 @@ public class SpawnController : MonoBehaviour {
 						SpawnEnemy(spawnCount % 2);
 						spawnCount--;
 						spawnInterval = 1f;
+                        enemyCount++;
 					}
 				}
 				else
@@ -106,6 +110,18 @@ public class SpawnController : MonoBehaviour {
 					opened = false;
 				}
 				chest.collectable = true;
+                if(waveTime < 0 || (Input.GetKey("space") && spawnCount == 0))
+				{
+					wave++;
+					spawnCount = 10;
+					waveTime = 10;
+					opened = true;
+					break;
+				}
+				else
+				{
+					waveTime -= Time.deltaTime;
+				}
 				if(spawnInterval < 0)
 				{
 					if(spawnCount > 0)
@@ -113,6 +129,7 @@ public class SpawnController : MonoBehaviour {
 						SpawnEnemy(spawnCount % 3);
 						spawnCount--;
 						spawnInterval = 1f;
+                        enemyCount++;
 					}
 				}
 				else
@@ -120,6 +137,26 @@ public class SpawnController : MonoBehaviour {
 					spawnInterval -= Time.deltaTime;
 					break;
 				}
+				break;
+            case 3:
+				if(opened)
+				{
+					chest.CloseChest();
+					opened = false;
+				}
+				chest.collectable = true;
+				SpawnEnemy(3);
+				SpawnEnemy(0);
+				SpawnEnemy(0);
+				SpawnEnemy(0);
+				SpawnEnemy(2);
+				SpawnEnemy(2);
+				enemyCount = enemyCount + 6;
+				wave++;
+				break;
+			case 4:
+				if(enemyCount == 0)
+					Application.LoadLevel(2);
 				break;
 		}
 	}

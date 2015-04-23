@@ -37,9 +37,6 @@ public class SkeletonController : BaseEnemy {
 
 		base.Update();
 
-		transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
-		direction = player.transform.position - transform.position;
-
 		launchBox.transform.RotateAround (transform.position, Vector3.forward, launchBoxRotatationSpeed * Time.deltaTime);
 
 		if(coolDown)

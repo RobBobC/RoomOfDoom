@@ -20,6 +20,9 @@ public class BaseEnemy : MonoBehaviour {
     bool playerInRange;
     float meleeAttackTimer;
     PlayerController playerController;
+    SpawnController spawnController;
+    bool avoidingCollision = false;
+    float timeToAvoidCollision = .1f;
 
 	protected enum attackType {
 		melee,
@@ -33,10 +36,42 @@ public class BaseEnemy : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player");
         playerController = player.GetComponent<PlayerController>();
 		AudioSource.PlayClipAtPoint (spawnSound, new Vector3 (0, 0, 0), spawnSoundVolume);
+        spawnController = GameObject.FindGameObjectWithTag("SpawnController").GetComponent<SpawnController>();
 	}
     
 	protected void Update()
-	{
+    {
+        direction = player.transform.position - transform.position;
+        Debug.Log(Physics2D.Raycast(this.transform.position, direction, 2f).collider.tag);
+        if (Physics2D.Raycast(this.transform.position, direction, 10f).collider.tag == "Obstacle")
+        {
+            avoidingCollision = true;
+            Quaternion angleFacing = transform.rotation;
+            if (this.name == "rat" || this.name == "demon")
+            {
+                transform.rotation = new Quaternion(angleFacing.x, angleFacing.y, angleFacing.z + 90, angleFacing.w);
+            }
+        }
+
+        if (avoidingCollision)
+        {
+            timeToAvoidCollision -= Time.deltaTime;
+            if (timeToAvoidCollision <= 0)
+            {
+                avoidingCollision = false;
+                timeToAvoidCollision = .1f;
+            }
+            else
+            {
+                Vector3 target = new Vector3(transform.position.x + .1f, transform.position.y + .1f, transform.position.z);
+                transform.position = Vector2.MoveTowards(transform.position, target, moveSpeed * Time.deltaTime);
+            }
+        }
+        else
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        }
+
         meleeAttackTimer += Time.deltaTime;
 
         if (meleeAttackTimer >= timeBetweenAttacks && playerInRange && health > 0)
@@ -122,6 +157,7 @@ public class BaseEnemy : MonoBehaviour {
     {
         animator.SetBool("isDead", true);
         gameObject.collider2D.enabled = false;
+        spawnController.enemyCount--;
         ScoreController.score += scoreValue;
     }
 }

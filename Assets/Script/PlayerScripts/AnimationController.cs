@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class AnimationController : MonoBehaviour {
     public RuntimeAnimatorController[] animators;
+    public List<GameObject> inventory;
 
     enum Animation
     {
@@ -17,6 +19,7 @@ public class AnimationController : MonoBehaviour {
     {
         currentAnimation = Animation.IDLE;
         animator = GetComponent<Animator>();
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().inventory;
 	}
 	
 	void Update ()
@@ -65,12 +68,18 @@ public class AnimationController : MonoBehaviour {
         
         else if (Input.GetKey(KeyCode.Alpha2))
         {
-            animator.runtimeAnimatorController = animators[1];
+            if (inventory.Count > 1)
+            {
+                animator.runtimeAnimatorController = animators[1];
+            }
         }
         
         else if (Input.GetKey(KeyCode.Alpha3))
         {
-            animator.runtimeAnimatorController = animators[1];
+            if (inventory.Count > 1)
+            {
+                animator.runtimeAnimatorController = animators[1];
+            }
         }
 	}
 
