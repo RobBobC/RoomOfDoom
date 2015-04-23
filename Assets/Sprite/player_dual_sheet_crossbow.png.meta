@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: 81850a473ab466d4796601fc1ed06fbf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: player_dual_sheet_crossbow_0
+    21300002: player_dual_sheet_crossbow_1
+    21300004: player_dual_sheet_crossbow_2
+    21300006: player_dual_sheet_crossbow_5
+    21300008: player_dual_sheet_crossbow_4
+    21300010: player_dual_sheet_crossbow_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: player_dual_sheet_crossbow_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 315
+        width: 73
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_dual_sheet_crossbow_1
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 291
+        width: 90
+        height: 129
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_dual_sheet_crossbow_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 168
+        width: 92
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_dual_sheet_crossbow_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 43
+        width: 82
+        height: 129
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_dual_sheet_crossbow_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 92
+        height: 139
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: player_dual_sheet_crossbow_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 192
+        width: 77
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

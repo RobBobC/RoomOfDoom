@@ -4660,14 +4660,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 388108292}
-  - 212: {fileID: 388108298}
-  - 114: {fileID: 388108297}
-  - 114: {fileID: 388108296}
   - 50: {fileID: 388108295}
   - 60: {fileID: 388108294}
+  - 212: {fileID: 388108298}
   - 95: {fileID: 388108293}
-  - 114: {fileID: 388108299}
   - 82: {fileID: 388108300}
+  - 114: {fileID: 388108297}
+  - 114: {fileID: 388108296}
+  - 114: {fileID: 388108299}
   m_Layer: 0
   m_Name: playerControl
   m_TagString: Player
@@ -29306,7 +29306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fb1a68b75ce86347b59f71915c0ac52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 14
+  moveSpeed: 16
 --- !u!1 &2078492024
 GameObject:
   m_ObjectHideFlags: 0

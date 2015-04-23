@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour {
 		float targetAngle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, targetAngle - 90), 5 * Time.deltaTime);
 
-        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        if (Input.GetButton("Fire1") && Time.time > nextFire || Input.GetButtonDown("Fire1"))
 		{
 			nextFire = Time.time + fireRate;
 
