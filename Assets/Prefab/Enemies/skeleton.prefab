@@ -122,16 +122,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b8a903bd7cc18448b68079c093d277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
   health: 4
-  spawnSound: {fileID: 8300000, guid: 5e9b4be23945db745a8d216b93f0ab97, type: 3}
-  dieSound: {fileID: 8300000, guid: e53498f7b7f1dd447b55ca87d4e0e3ae, type: 3}
+  attackDamage: 8
+  scoreValue: 40
+  moveSpeed: 3
   spawnSoundVolume: 1
   dieSoundVolume: 1
-  bone: {fileID: 182026, guid: 1da15237d2bb43041b68239b8eb8c07e, type: 2}
+  timeBetweenAttacks: 1.5
+  spawnSound: {fileID: 8300000, guid: 5e9b4be23945db745a8d216b93f0ab97, type: 3}
+  dieSound: {fileID: 8300000, guid: e53498f7b7f1dd447b55ca87d4e0e3ae, type: 3}
   shotSpeed: 1000
-  launchBox: {fileID: 126058}
   launchBoxRotatationSpeed: 20
+  launchBox: {fileID: 126058}
+  bone: {fileID: 182026, guid: 1da15237d2bb43041b68239b8eb8c07e, type: 2}
 --- !u!212 &21226058
 SpriteRenderer:
   m_ObjectHideFlags: 1

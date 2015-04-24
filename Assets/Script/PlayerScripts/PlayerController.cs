@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     public Slider healthSlider;
     public Color flashColor;
     public GameObject[] weaponImages;
+    public GameObject chestPrompt;
 
     [HideInInspector]
     public bool dead;
@@ -174,6 +175,8 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.tag == "Chest")
 		{
 			chestController = other.gameObject.GetComponent<ChestController>();
+            if (chestController.collectable)
+                chestPrompt.SetActive(true);
 			if (Input.GetKey ("e") && chestController.collectable)
 			{
 				chestController.OpenChest();
@@ -207,6 +210,11 @@ public class PlayerController : MonoBehaviour {
 			invincible = true;
 		}
 	}
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        chestPrompt.SetActive(false);
+    }
 
     public void Damage(int amount)
     {

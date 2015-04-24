@@ -299,9 +299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8704b6cfe1c85b845ab30c69404b30eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 50
   attackDamage: 10
-  scoreValue: 20
+  scoreValue: 1000
   moveSpeed: 7
   spawnSoundVolume: 1
   dieSoundVolume: 1

@@ -366,6 +366,88 @@ Prefab:
   m_RootGameObject: {fileID: 1610373792}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &39758945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 39758946}
+  - 222: {fileID: 39758949}
+  - 114: {fileID: 39758948}
+  - 95: {fileID: 39758950}
+  m_Layer: 5
+  m_Name: ChestAvailable
+  m_TagString: ChestAvailable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &39758946
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39758945}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2028505332}
+  m_RootOrder: 3
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 19, y: 132}
+  m_SizeDelta: {x: 278.25, y: 40.4000015}
+  m_Pivot: {x: 0, y: .5}
+--- !u!114 &39758948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39758945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 981100514}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: .972413778, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 394c736a67a075e46a2eb80b5f048250, type: 3}
+    m_FontSize: 11
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Weapon In Chest!
+--- !u!222 &39758949
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39758945}
+--- !u!95 &39758950
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39758945}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c45cfcddff35b544d899f750deabdd21, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &43409530
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,7 +4826,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 388108291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.4822559, y: .473550797, z: 0}
+  m_LocalPosition: {x: -13.3999996, y: -3.79999995, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 1225960356}
@@ -4845,7 +4927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1489c533223a249a9710a77a4fcfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10000
+  health: 75
   shotSpeed: 1250
   fireRate: .5
   nextFire: 0
@@ -4857,6 +4939,7 @@ MonoBehaviour:
   - {fileID: 1483058644}
   - {fileID: 748176375}
   - {fileID: 1702559797}
+  chestPrompt: {fileID: 904607265}
   dead: 0
   inventory: []
 --- !u!212 &388108298
@@ -7867,7 +7950,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 19, y: -23}
-  m_SizeDelta: {x: 278.25, y: 40.4000015}
+  m_SizeDelta: {x: 1044, y: 40}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &574590172
 MonoBehaviour:
@@ -7895,7 +7978,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 394c736a67a075e46a2eb80b5f048250, type: 3}
-    m_FontSize: 16
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -12267,6 +12350,72 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1f55aae784031344bbbcf490fc7f5759, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &904607265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 904607266}
+  - 222: {fileID: 904607268}
+  - 114: {fileID: 904607267}
+  m_Layer: 5
+  m_Name: ChestPrompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &904607266
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904607265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2028505332}
+  m_RootOrder: 4
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 4.19999981, y: -79.4000015}
+  m_SizeDelta: {x: 286.600006, y: 30}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &904607267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904607265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1640090793}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .324137926, g: 1, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 394c736a67a075e46a2eb80b5f048250, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press "e" to open the chest!
+--- !u!222 &904607268
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904607265}
 --- !u!1 &904957069
 GameObject:
   m_ObjectHideFlags: 0
@@ -12409,6 +12558,7 @@ GameObject:
   - 60: {fileID: 906564877}
   - 95: {fileID: 906564880}
   - 114: {fileID: 906564881}
+  - 60: {fileID: 906564882}
   m_Layer: 0
   m_Name: chest
   m_TagString: Chest
@@ -12451,7 +12601,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 1924070511
+  m_SortingLayerID: 4284971493
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 850794f6af7a8be4c8365a17880589d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12462,8 +12612,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 906564876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.5100002, y: -16.4699993, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalPosition: {x: -1.20000005, y: -16.5, z: 0}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -12499,6 +12649,21 @@ MonoBehaviour:
   weaponRewardTwo: {fileID: 133862, guid: 792a89e300bc24c479e7d376c3de9d4b, type: 2}
   weaponRewardThree: {fileID: 113596, guid: 94fff44fd988d644cbe057691063ad35, type: 2}
   collectable: 0
+--- !u!60 &906564882
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 906564876}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: -.150000095, y: -.0900294781}
+      - {x: -.150000006, y: -.159999996}
+      - {x: .150000006, y: -.159999996}
+      - {x: .141802311, y: -.0900294781}
 --- !u!1 &906808020
 GameObject:
   m_ObjectHideFlags: 0
@@ -23140,6 +23305,22 @@ Prefab:
   m_RootGameObject: {fileID: 1281103119}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!115 &1640090793
+MonoScript:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 4
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_EditorGraphData: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: Text
+  m_Namespace: UnityEngine.UI
+  m_AssemblyName: UnityEngine.UI.dll
+  m_IsEditorScript: 0
 --- !u!1 &1645173325
 GameObject:
   m_ObjectHideFlags: 0
@@ -28779,6 +28960,8 @@ RectTransform:
   - {fileID: 1189277926}
   - {fileID: 574590171}
   - {fileID: 994982490}
+  - {fileID: 39758946}
+  - {fileID: 904607266}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_AnchorMin: {x: 0, y: 0}
@@ -30355,6 +30538,7 @@ MonoBehaviour:
   - {fileID: 166248, guid: 404fd8dec30032b4490c005f4b604313, type: 2}
   smokeSpawn: {fileID: 178450, guid: 092dca46cd772584e9170cfc02159a81, type: 2}
   enemyCount: 0
+  chestMessage: {fileID: 39758945}
 --- !u!1 &2102108361
 GameObject:
   m_ObjectHideFlags: 0

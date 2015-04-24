@@ -8,6 +8,7 @@ public class SpawnController : MonoBehaviour {
     public List<GameObject> enemies;
     public GameObject smokeSpawn;
     public int enemyCount = 0;
+    public GameObject chestMessage;
 
     enum EnemyType
     {
@@ -43,8 +44,9 @@ public class SpawnController : MonoBehaviour {
 				{
 					wave++;
 					spawnCount = 10;
-					waveTime = 30;
+					waveTime = 15;
                     chest.collectable = true;
+                    chestMessage.SetActive(true);
 					break;
 				}
 				else
@@ -68,12 +70,17 @@ public class SpawnController : MonoBehaviour {
 				}
 				break;
 			case 1:
+                if (!chest.collectable)
+                {
+                    chestMessage.SetActive(false);
+                }
 				if(waveTime < 0 || (Input.GetKey("space") && spawnCount == 0))
 				{
 					wave++;
 					spawnCount = 10;
-					waveTime = 10;
+					waveTime = 20;
                     chest.collectable = true;
+                    chestMessage.SetActive(true);
 					break;
 				}
 				else
@@ -97,12 +104,17 @@ public class SpawnController : MonoBehaviour {
 				}
 				break;
 			case 2:
+                if (!chest.collectable)
+                {
+                    chestMessage.SetActive(false);
+                }
                 if(waveTime < 0 || (Input.GetKey("space") && spawnCount == 0))
 				{
 					wave++;
 					spawnCount = 10;
-					waveTime = 10;
+					waveTime = 25;
                     chest.collectable = true;
+                    chestMessage.SetActive(true);
 					break;
 				}
 				else
@@ -126,6 +138,10 @@ public class SpawnController : MonoBehaviour {
 				}
 				break;
             case 3:
+                if (!chest.collectable)
+                {
+                    chestMessage.SetActive(false);
+                }
 				SpawnEnemy(3);
 				SpawnEnemy(0);
 				SpawnEnemy(0);

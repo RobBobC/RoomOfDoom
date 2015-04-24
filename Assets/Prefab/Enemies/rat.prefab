@@ -100,12 +100,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 488316eb59aa71e4c89bbb3fcc847e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   health: 2
-  spawnSound: {fileID: 8300000, guid: e43f80b7f6f2d4640ac00657f92177fa, type: 3}
-  dieSound: {fileID: 8300000, guid: 1b8dadcf3b68a0c4f928c34886e105e6, type: 3}
+  attackDamage: 4
+  scoreValue: 20
+  moveSpeed: 5
   spawnSoundVolume: 1
   dieSoundVolume: 1
+  timeBetweenAttacks: 1.5
+  spawnSound: {fileID: 8300000, guid: e43f80b7f6f2d4640ac00657f92177fa, type: 3}
+  dieSound: {fileID: 8300000, guid: 1b8dadcf3b68a0c4f928c34886e105e6, type: 3}
 --- !u!212 &21276618
 SpriteRenderer:
   m_ObjectHideFlags: 1

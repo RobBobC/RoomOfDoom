@@ -42,12 +42,12 @@ public class BaseEnemy : MonoBehaviour {
 	protected void Update()
     {
         direction = player.transform.position - transform.position;
-        //Debug.Log(Physics2D.Raycast(this.transform.position, direction, 2f).collider.tag);
+        //Debug.Log(Physics2D.Raycast(this.transform.position + this.transform.localScale, direction, 2f).collider.tag);
         if (Physics2D.Raycast(this.transform.position, direction, 10f).collider.tag == "Obstacle")
         {
             avoidingCollision = true;
             Quaternion angleFacing = transform.rotation;
-            if (this.name == "rat" || this.name == "demon")
+            if (this.name == "rat(Clone)" || this.name == "demon(Clone)")
             {
                 transform.rotation = new Quaternion(angleFacing.x, angleFacing.y, angleFacing.z + 90, angleFacing.w);
             }
