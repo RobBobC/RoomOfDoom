@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePoints: 4
+  shotSpeed: 1500
 --- !u!212 &21233862
 SpriteRenderer:
   m_ObjectHideFlags: 1

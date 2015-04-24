@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 
     [HideInInspector]
     public bool dead;
+    [HideInInspector]
     public List<GameObject> inventory;
     
     int weaponReward;
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Update()
 	{
+        Debug.Log(inventory.Count);
         if (health <= 0 && !dead)
         {
             Death();
@@ -85,8 +87,16 @@ public class PlayerController : MonoBehaviour {
 
 			if(weapon.type == WeaponController.attackType.ranged)
 			{
-				GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0, targetAngle - 45)) as GameObject;
-				shot.rigidbody2D.AddForce(moveDirection * shotSpeed);
+                if (weapon.weapon.name == "bullet")
+                {
+				    GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0, targetAngle)) as GameObject;
+				    shot.rigidbody2D.AddForce(moveDirection * weapon.weapon.GetComponent<BulletController>().shotSpeed);
+                }
+                else
+                {
+				    GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0, targetAngle - 45)) as GameObject;
+                    shot.rigidbody2D.AddForce(moveDirection * weapon.weapon.GetComponent<BulletController>().shotSpeed);
+                }
 			}
 			else
 			{
@@ -94,11 +104,13 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
+        // Hammer
 		if (Input.GetKey(KeyCode.Alpha1))
 		{
             weapon.weapon = inventory[0];
 			weapon.type = inventory[0].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
         }
+        // Throwing Axes
 		else if(Input.GetKey(KeyCode.Alpha2))
 		{
 			if(inventory.Count >= 2)
@@ -107,6 +119,7 @@ public class PlayerController : MonoBehaviour {
 				weapon.type = inventory[1].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
             }
 		}
+        // Crossbows
 		else if(Input.GetKey(KeyCode.Alpha3))
 		{
             if(inventory.Count >= 3)
@@ -115,6 +128,15 @@ public class PlayerController : MonoBehaviour {
 				weapon.type = inventory[2].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
             }
 		}
+        // Dualies
+        else if (Input.GetKey(KeyCode.Alpha4))
+        {
+            if (inventory.Count >= 4)
+            {
+                weapon.weapon = inventory[3];
+                weapon.type = inventory[3].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
+            }
+        }
 	}
 
 	void LateUpdate ()

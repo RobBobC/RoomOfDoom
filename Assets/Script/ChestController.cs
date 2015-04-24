@@ -4,6 +4,7 @@ using System.Collections;
 public class ChestController : MonoBehaviour {
 	public GameObject weaponRewardOne;
 	public GameObject weaponRewardTwo;
+    public GameObject weaponRewardThree;
 
 	[HideInInspector]
 	public bool collectable;
