@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
 	public int health = 100;
 	public float shotSpeed = 1000;
 	public float fireRate;
+    public float nextFire;
     public float flashSpeed = 5f;
     public Image damageImage;
     public Slider healthSlider;
@@ -15,12 +16,11 @@ public class PlayerController : MonoBehaviour {
     [HideInInspector]
     public bool dead;
     public List<GameObject> inventory;
-
+    
     int weaponReward;
-    bool damaged;
-	bool invincible;
 	float invinceDuration;
-	float nextFire;
+    bool damaged;
+    bool invincible;
 	GameObject launchBox;
 	WeaponController weapon;
 	ChestController chestController;
@@ -98,14 +98,14 @@ public class PlayerController : MonoBehaviour {
 		{
             weapon.weapon = inventory[0];
 			weapon.type = inventory[0].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
-		}
+        }
 		else if(Input.GetKey(KeyCode.Alpha2))
 		{
 			if(inventory.Count >= 2)
 			{
 				weapon.weapon = inventory[1];
 				weapon.type = inventory[1].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
-			}
+            }
 		}
 		else if(Input.GetKey(KeyCode.Alpha3))
 		{
@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour {
 			{
 				weapon.weapon = inventory[2];
 				weapon.type = inventory[2].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
-			}
+            }
 		}
 	}
 
@@ -133,7 +133,7 @@ public class PlayerController : MonoBehaviour {
 			switch(other.tag)
 			{
 				case "EnemyBullet":
-					health -= other.gameObject.GetComponent<BulletController>().damagePoints;
+                    Damage(other.gameObject.GetComponent<BulletController>().damagePoints);
 					invincible = true;
 					Destroy(other.gameObject);
 					break;

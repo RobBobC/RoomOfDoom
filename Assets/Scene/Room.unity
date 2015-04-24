@@ -4716,15 +4716,15 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_Poly:
     m_Paths:
-    - - {x: -.140000001, y: .180663049}
+    - - {x: -.10351181, y: .162418842}
       - {x: -.170000002, y: .150000006}
       - {x: -.218213916, y: .0217861906}
-      - {x: -.463721246, y: -.0944384336}
-      - {x: -.144641459, y: -.297753751}
-      - {x: .0811231434, y: -.277090669}
-      - {x: .293978333, y: -.126887679}
+      - {x: -.500209808, y: -.161334038}
+      - {x: -.162885666, y: -.3707304}
+      - {x: .0689601898, y: -.392637253}
+      - {x: .38519907, y: -.236352921}
       - {x: .314641386, y: -.0631123111}
-      - {x: -.031786181, y: .208213791}
+      - {x: .0229463577, y: .165643692}
 --- !u!50 &388108295
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4770,6 +4770,7 @@ MonoBehaviour:
   health: 100
   shotSpeed: 1000
   fireRate: .5
+  nextFire: 0
   flashSpeed: 5
   damageImage: {fileID: 1901201123}
   healthSlider: {fileID: 1190734372}
@@ -4797,7 +4798,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1924070511
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300016, guid: eaab3da906633734f8968fdf6262c9f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50df6a7276cb9a945b3ab9e9ecf54b1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &388108299
 MonoBehaviour:
@@ -17065,8 +17066,7 @@ GameObject:
 --- !u!60 &1225960355
 PolygonCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6096672, guid: 54fbcabe622561949a905e0dbce65198,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225960354}
   m_Enabled: 1
@@ -17074,12 +17074,11 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_Poly:
     m_Paths:
-    - - {x: .00679136533, y: .422733307}
-      - {x: .944265187, y: .05773592}
-      - {x: .485914648, y: -.25212431}
-      - {x: -.00881728902, y: -.136670589}
-      - {x: -.479123354, y: -.218167305}
-      - {x: -.985013425, y: .0101966858}
+    - - {x: .00433659554, y: .184929609}
+      - {x: .560893059, y: -.00268864632}
+      - {x: .347883701, y: -.30796957}
+      - {x: -.406925201, y: -.306987762}
+      - {x: -.526367903, y: -.0464308262}
 --- !u!4 &1225960356
 Transform:
   m_ObjectHideFlags: 0

@@ -17,12 +17,12 @@ public class BaseEnemy : MonoBehaviour {
 	protected Vector3 direction;
     protected PolygonCollider2D polygonCollider2D;
 
+    bool avoidingCollision = false;
     bool playerInRange;
     float meleeAttackTimer;
+    float timeToAvoidCollision = .1f;
     PlayerController playerController;
     SpawnController spawnController;
-    bool avoidingCollision = false;
-    float timeToAvoidCollision = .1f;
 
 	protected enum attackType {
 		melee,
@@ -42,7 +42,7 @@ public class BaseEnemy : MonoBehaviour {
 	protected void Update()
     {
         direction = player.transform.position - transform.position;
-        Debug.Log(Physics2D.Raycast(this.transform.position, direction, 2f).collider.tag);
+        //Debug.Log(Physics2D.Raycast(this.transform.position, direction, 2f).collider.tag);
         if (Physics2D.Raycast(this.transform.position, direction, 10f).collider.tag == "Obstacle")
         {
             avoidingCollision = true;

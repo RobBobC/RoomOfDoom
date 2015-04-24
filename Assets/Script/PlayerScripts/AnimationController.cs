@@ -9,56 +9,96 @@ public class AnimationController : MonoBehaviour {
     enum Animation
     {
         IDLE,
-        WALK
+        WALK,
+        SWING
     };
-
+    
     Animation currentAnimation;
     Animator animator;
+    PlayerController playerController;
     
 	void Start ()
     {
         currentAnimation = Animation.IDLE;
         animator = GetComponent<Animator>();
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().inventory;
+        playerController = GetComponent<PlayerController>();
+        inventory = playerController.inventory;
 	}
 	
 	void Update ()
     {
         if (Input.GetKey("a") && Input.GetKey("w"))
         {
-            UpdateAnimationState(Animation.WALK);            
+            UpdateAnimationState(Animation.WALK);
+            if (Input.GetButton("Fire1"))
+            {
+                UpdateAnimationState(Animation.SWING);
+            }
         }
         else if (Input.GetKey("a") && Input.GetKey("s"))
         {
-            UpdateAnimationState(Animation.WALK);           
+            UpdateAnimationState(Animation.WALK);
+            if (Input.GetButton("Fire1"))
+            {
+                UpdateAnimationState(Animation.SWING);
+            }
         }
         else if (Input.GetKey("d") && Input.GetKey("w"))
         {
-            UpdateAnimationState(Animation.WALK);           
+            UpdateAnimationState(Animation.WALK);
+            if (Input.GetButton("Fire1"))
+                if (Input.GetButton("Fire1"))
+                {
+                    UpdateAnimationState(Animation.SWING);
+                }
         }
         else if (Input.GetKey("d") && Input.GetKey("s"))
         {            
             UpdateAnimationState(Animation.WALK);
+            if (Input.GetButton("Fire1"))
+            {
+                UpdateAnimationState(Animation.SWING);
+            }
         }
         else if (Input.GetKey("w"))
         {
             UpdateAnimationState(Animation.WALK);
+            if (Input.GetButton("Fire1"))
+            {
+                UpdateAnimationState(Animation.SWING);
+            }
         }
         else if (Input.GetKey("s"))
         {
             UpdateAnimationState(Animation.WALK);
+            if (Input.GetButton("Fire1"))
+            {
+                UpdateAnimationState(Animation.SWING);
+            }
         }
         else if (Input.GetKey("a"))
         {
             UpdateAnimationState(Animation.WALK);
+            if (Input.GetButton("Fire1"))
+            {
+                UpdateAnimationState(Animation.SWING);
+            }
         }
         else if (Input.GetKey("d"))
         {
             UpdateAnimationState(Animation.WALK);
+            if (Input.GetButton("Fire1"))
+            {
+                UpdateAnimationState(Animation.SWING);
+            }
         }
         else
         {
             UpdateAnimationState(Animation.IDLE);
+            if (Input.GetButton("Fire1"))
+            {
+                UpdateAnimationState(Animation.SWING);
+            }
         }
         
         if (Input.GetKey(KeyCode.Alpha1))
@@ -95,6 +135,9 @@ public class AnimationController : MonoBehaviour {
                 break;
             case Animation.WALK:
                 animator.SetInteger("animationState", 1);
+                break;
+            case Animation.SWING:
+                animator.SetInteger("animationState", 3);
                 break;
         }
 
