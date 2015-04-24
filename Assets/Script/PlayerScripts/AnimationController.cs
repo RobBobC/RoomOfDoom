@@ -109,7 +109,7 @@ public class AnimationController : MonoBehaviour {
         
         else if (Input.GetKey(KeyCode.Alpha2))
         {
-            if (inventory.Count >= 1)
+            if (inventory.Count >= 2)
             {
                 animator.runtimeAnimatorController = animators[1];
             }
@@ -117,14 +117,14 @@ public class AnimationController : MonoBehaviour {
         
         else if (Input.GetKey(KeyCode.Alpha3))
         {
-            if (inventory.Count >= 2)
+            if (inventory.Count >= 3)
             {
                 animator.runtimeAnimatorController = animators[2];
             }
         }
         else if (Input.GetKey(KeyCode.Alpha4))
         {
-            if (inventory.Count >= 3)
+            if (inventory.Count >= 4)
             {
                 animator.runtimeAnimatorController = animators[3];
             }

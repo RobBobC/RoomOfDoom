@@ -22,9 +22,4 @@ public class ChestController : MonoBehaviour {
         animator.Play("OpenChest");
         collectable = false;
     }
-
-    public void CloseChest()
-    {
-        animator.Play("IdleChest");
-    }
 }

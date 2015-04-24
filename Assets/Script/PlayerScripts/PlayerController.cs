@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     public Image damageImage;
     public Slider healthSlider;
     public Color flashColor;
+    public GameObject[] weaponImages;
 
     [HideInInspector]
     public bool dead;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour {
 	ChestController chestController;
     AudioSource playerAudio;
     BaseEnemy baseEnemy;
+
     
     void Start()
     {
@@ -181,12 +183,19 @@ public class PlayerController : MonoBehaviour {
 				{
 					case 0:
 						inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardOne);
+                        weaponImages[0].SetActive(true);
 						weaponReward++;
 						break;
 					case 1:
 						inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardTwo);
+                        weaponImages[1].SetActive(true);
 						weaponReward++;
 						break;
+                    case 2:
+                        inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardThree);
+                        weaponImages[2].SetActive(true);
+                        weaponReward++;
+                        break;
 					default:
 						break;
 				}
