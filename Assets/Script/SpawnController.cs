@@ -9,6 +9,7 @@ public class SpawnController : MonoBehaviour {
     public GameObject smokeSpawn;
     public int enemyCount = 0;
     public GameObject chestMessage;
+    public int wave = 0;
 
     enum EnemyType
     {
@@ -18,7 +19,6 @@ public class SpawnController : MonoBehaviour {
         Demon
     };
 
-    int wave = 0;
     int spawnCount = 5;
 	List<GameObject> spawnPoints;
 	ChestController chest;

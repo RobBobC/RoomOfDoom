@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
-	public int health = 100;
+	public int health;
 	public float shotSpeed = 1000;
 	public float fireRate;
     public float nextFire;
@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour {
 	ChestController chestController;
     AudioSource playerAudio;
     BaseEnemy baseEnemy;
+    SpawnController spawnController;
 
     
     void Start()
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour {
         weapon = GetComponent<WeaponController>();
         inventory.Add(weapon.weapon);
         playerAudio = GetComponent<AudioSource>();
+        spawnController = GameObject.FindGameObjectWithTag("SpawnController").GetComponent<SpawnController>();
     }
 
 	void Update()
@@ -187,17 +189,24 @@ public class PlayerController : MonoBehaviour {
 					case 0:
 						inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardOne);
                         weaponImages[0].SetActive(true);
+                        if (weaponReward < spawnController.wave - 1)
+                            chestController.collectable = true;
 						weaponReward++;
+                        spawnController.chestMessage.SetActive(false);
 						break;
 					case 1:
 						inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardTwo);
                         weaponImages[1].SetActive(true);
+                        if (weaponReward < spawnController.wave - 1)
+                            chestController.collectable = true;
 						weaponReward++;
+                        spawnController.chestMessage.SetActive(false);
 						break;
                     case 2:
                         inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardThree);
                         weaponImages[2].SetActive(true);
                         weaponReward++;
+                        spawnController.chestMessage.SetActive(false);
                         break;
 					default:
 						break;

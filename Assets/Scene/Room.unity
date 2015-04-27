@@ -16988,9 +16988,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 75
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 75
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -30539,6 +30539,7 @@ MonoBehaviour:
   smokeSpawn: {fileID: 178450, guid: 092dca46cd772584e9170cfc02159a81, type: 2}
   enemyCount: 0
   chestMessage: {fileID: 39758945}
+  wave: 0
 --- !u!1 &2102108361
 GameObject:
   m_ObjectHideFlags: 0
