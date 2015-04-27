@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
     public Color flashColor;
     public GameObject[] weaponImages;
     public GameObject chestPrompt;
+    public AudioClip hammerWhoosh;
 
     [HideInInspector]
     public bool dead;
@@ -22,15 +23,14 @@ public class PlayerController : MonoBehaviour {
     
     int weaponReward;
 	float invinceDuration;
-    bool damaged;
     bool invincible;
+    bool damaged;
 	GameObject launchBox;
 	WeaponController weapon;
 	ChestController chestController;
     AudioSource playerAudio;
     BaseEnemy baseEnemy;
     SpawnController spawnController;
-
     
     void Start()
     {
@@ -48,7 +48,6 @@ public class PlayerController : MonoBehaviour {
 
 	void Update()
 	{
-        Debug.Log(inventory.Count);
         if (health <= 0 && !dead)
         {
             Death();
@@ -88,6 +87,8 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetButton("Fire1") && Time.time > nextFire || Input.GetButtonDown("Fire1"))
 		{
+            if (weapon.weapon.name == "hammer")
+                AudioSource.PlayClipAtPoint(hammerWhoosh, new Vector3(0, 0, 0), 1);
 			nextFire = Time.time + fireRate;
 
 			if(weapon.type == WeaponController.attackType.ranged)

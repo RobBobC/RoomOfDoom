@@ -38,7 +38,6 @@ public class BaseEnemy : MonoBehaviour {
         playerController = player.GetComponent<PlayerController>();
 		AudioSource.PlayClipAtPoint (spawnSound, new Vector3 (0, 0, 0), spawnSoundVolume);
         spawnController = GameObject.FindGameObjectWithTag("SpawnController").GetComponent<SpawnController>();
-
 	}
     
 	protected void Update()

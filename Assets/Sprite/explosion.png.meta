@@ -482,16 +482,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion_39
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 566
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: explosion_27
       rect:
         serializedVersion: 2
@@ -865,10 +855,10 @@ TextureImporter:
     - name: explosion_39
       rect:
         serializedVersion: 2
-        x: 301
-        y: 402
-        width: 96
-        height: 93
+        x: 300
+        y: 396
+        width: 97
+        height: 95
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
