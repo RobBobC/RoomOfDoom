@@ -151,10 +151,6 @@ public class SpawnController : MonoBehaviour {
 				enemyCount = enemyCount + 6;
 				wave++;
 				break;
-			case 4:
-				//if(enemyCount == 0)
-					//Application.LoadLevel(2);
-				break;
 		}
 	}
     void SpawnEnemy(int type)

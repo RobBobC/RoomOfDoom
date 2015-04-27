@@ -12,26 +12,7 @@ Platform assembly: C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_D
 Loading C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.077 seconds
+- Completed reload, in  0.062 seconds
 desktop: 2880x1800 60Hz; virtual: 2880x1800 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 3.011450 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1963.
-Total: 3.917452 ms (FindLiveObjects: 0.055517 ms CreateObjectMapping: 0.017728 ms MarkObjects: 0.251926 ms  DeleteObjects: 3.067434 ms)
-
-UnloadTime: 2.362041 ms
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 440 unused Assets to reduce memory usage. Loaded Objects now: 144.
-Total: 3.967370 ms (FindLiveObjects: 0.013529 ms CreateObjectMapping: 0.010263 ms MarkObjects: 0.146956 ms  DeleteObjects: 3.428995 ms)
-
-UnloadTime: 1.180320 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 151.
-Total: 2.235145 ms (FindLiveObjects: 0.026125 ms CreateObjectMapping: 0.028458 ms MarkObjects: 0.499653 ms  DeleteObjects: 0.436205 ms)
-
