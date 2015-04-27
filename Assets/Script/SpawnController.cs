@@ -152,8 +152,8 @@ public class SpawnController : MonoBehaviour {
 				wave++;
 				break;
 			case 4:
-				if(enemyCount == 0)
-					Application.LoadLevel(2);
+				//if(enemyCount == 0)
+					//Application.LoadLevel(2);
 				break;
 		}
 	}

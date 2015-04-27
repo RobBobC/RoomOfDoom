@@ -509,7 +509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: d2188b83b7d03d84582165011828a695, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7f5bbce513ec77249a11b9d4110d9211, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -976,6 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617377e213f63e44482b435432220413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseImage: {fileID: 0}
 --- !u!82 &2103778628
 AudioSource:
   m_ObjectHideFlags: 0

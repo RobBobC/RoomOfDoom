@@ -100,9 +100,9 @@ public class DemonController : BaseEnemy {
         Instantiate(explosion, transform.position + new Vector3(Random.Range(-4, 4), Random.Range(-4, 4)), Quaternion.Euler(0, 0, 0));
     }
 
-    void GrantGrantTheSweetReleaseOfDeath()
+    void WinGame()
     {
-        Destroy(gameObject);
+        Application.LoadLevel("Win");
     }
 
     void DeathSound()
