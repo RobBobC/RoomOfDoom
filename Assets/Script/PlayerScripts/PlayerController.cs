@@ -4,28 +4,33 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
-	public int health = 100;
+	public int health;
 	public float shotSpeed = 1000;
 	public float fireRate;
+    public float nextFire;
     public float flashSpeed = 5f;
     public Image damageImage;
     public Slider healthSlider;
     public Color flashColor;
+    public GameObject[] weaponImages;
+    public GameObject chestPrompt;
+    public AudioClip hammerWhoosh;
 
     [HideInInspector]
     public bool dead;
+    [HideInInspector]
     public List<GameObject> inventory;
-
+    
     int weaponReward;
-    bool damaged;
-	bool invincible;
 	float invinceDuration;
-	float nextFire;
+    bool invincible;
+    bool damaged;
 	GameObject launchBox;
 	WeaponController weapon;
 	ChestController chestController;
     AudioSource playerAudio;
     BaseEnemy baseEnemy;
+    SpawnController spawnController;
     
     void Start()
     {
@@ -38,6 +43,7 @@ public class PlayerController : MonoBehaviour {
         weapon = GetComponent<WeaponController>();
         inventory.Add(weapon.weapon);
         playerAudio = GetComponent<AudioSource>();
+        spawnController = GameObject.FindGameObjectWithTag("SpawnController").GetComponent<SpawnController>();
     }
 
 	void Update()
@@ -81,12 +87,22 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetButton("Fire1") && Time.time > nextFire || Input.GetButtonDown("Fire1"))
 		{
+            if (weapon.weapon.name == "hammer")
+                AudioSource.PlayClipAtPoint(hammerWhoosh, new Vector3(0, 0, 0), 1);
 			nextFire = Time.time + fireRate;
 
 			if(weapon.type == WeaponController.attackType.ranged)
 			{
-				GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0, targetAngle - 45)) as GameObject;
-				shot.rigidbody2D.AddForce(moveDirection * shotSpeed);
+                if (weapon.weapon.name == "bullet")
+                {
+				    GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0, targetAngle)) as GameObject;
+				    shot.rigidbody2D.AddForce(moveDirection * weapon.weapon.GetComponent<BulletController>().shotSpeed);
+                }
+                else
+                {
+				    GameObject shot = Instantiate(weapon.weapon, launchBox.transform.position, Quaternion.Euler(0,0, targetAngle - 45)) as GameObject;
+                    shot.rigidbody2D.AddForce(moveDirection * weapon.weapon.GetComponent<BulletController>().shotSpeed);
+                }
 			}
 			else
 			{
@@ -94,27 +110,39 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
+        // Hammer
 		if (Input.GetKey(KeyCode.Alpha1))
 		{
             weapon.weapon = inventory[0];
 			weapon.type = inventory[0].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
-		}
+        }
+        // Throwing Axes
 		else if(Input.GetKey(KeyCode.Alpha2))
 		{
 			if(inventory.Count >= 2)
 			{
 				weapon.weapon = inventory[1];
 				weapon.type = inventory[1].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
-			}
+            }
 		}
+        // Crossbows
 		else if(Input.GetKey(KeyCode.Alpha3))
 		{
             if(inventory.Count >= 3)
 			{
 				weapon.weapon = inventory[2];
 				weapon.type = inventory[2].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
-			}
+            }
 		}
+        // Dualies
+        else if (Input.GetKey(KeyCode.Alpha4))
+        {
+            if (inventory.Count >= 4)
+            {
+                weapon.weapon = inventory[3];
+                weapon.type = inventory[3].GetComponent<MeleeController>() != null ? WeaponController.attackType.melee : WeaponController.attackType.ranged;
+            }
+        }
 	}
 
 	void LateUpdate ()
@@ -133,7 +161,7 @@ public class PlayerController : MonoBehaviour {
 			switch(other.tag)
 			{
 				case "EnemyBullet":
-					health -= other.gameObject.GetComponent<BulletController>().damagePoints;
+                    Damage(other.gameObject.GetComponent<BulletController>().damagePoints);
 					invincible = true;
 					Destroy(other.gameObject);
 					break;
@@ -150,6 +178,8 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.tag == "Chest")
 		{
 			chestController = other.gameObject.GetComponent<ChestController>();
+            if (chestController.collectable)
+                chestPrompt.SetActive(true);
 			if (Input.GetKey ("e") && chestController.collectable)
 			{
 				chestController.OpenChest();
@@ -159,12 +189,26 @@ public class PlayerController : MonoBehaviour {
 				{
 					case 0:
 						inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardOne);
+                        weaponImages[0].SetActive(true);
+                        if (weaponReward < spawnController.wave - 1)
+                            chestController.collectable = true;
 						weaponReward++;
+                        spawnController.chestMessage.SetActive(false);
 						break;
 					case 1:
 						inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardTwo);
+                        weaponImages[1].SetActive(true);
+                        if (weaponReward < spawnController.wave - 1)
+                            chestController.collectable = true;
 						weaponReward++;
+                        spawnController.chestMessage.SetActive(false);
 						break;
+                    case 2:
+                        inventory.Add(other.gameObject.GetComponent<ChestController>().weaponRewardThree);
+                        weaponImages[2].SetActive(true);
+                        weaponReward++;
+                        spawnController.chestMessage.SetActive(false);
+                        break;
 					default:
 						break;
 				}
@@ -176,6 +220,11 @@ public class PlayerController : MonoBehaviour {
 			invincible = true;
 		}
 	}
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        chestPrompt.SetActive(false);
+    }
 
     public void Damage(int amount)
     {

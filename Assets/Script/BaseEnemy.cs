@@ -11,18 +11,19 @@ public class BaseEnemy : MonoBehaviour {
     public float timeBetweenAttacks = 1.5f;
 	public AudioClip spawnSound;
 	public AudioClip dieSound;
+    public AudioClip hammerSmack;
 
 	protected GameObject player;
 	protected Animator animator;
 	protected Vector3 direction;
     protected PolygonCollider2D polygonCollider2D;
 
+    bool avoidingCollision = false;
     bool playerInRange;
     float meleeAttackTimer;
+    float timeToAvoidCollision = .1f;
     PlayerController playerController;
     SpawnController spawnController;
-    bool avoidingCollision = false;
-    float timeToAvoidCollision = .1f;
 
 	protected enum attackType {
 		melee,
@@ -42,12 +43,12 @@ public class BaseEnemy : MonoBehaviour {
 	protected void Update()
     {
         direction = player.transform.position - transform.position;
-        Debug.Log(Physics2D.Raycast(this.transform.position, direction, 2f).collider.tag);
+        //Debug.Log(Physics2D.Raycast(this.transform.position + this.transform.localScale, direction, 2f).collider.tag);
         if (Physics2D.Raycast(this.transform.position, direction, 10f).collider.tag == "Obstacle")
         {
             avoidingCollision = true;
             Quaternion angleFacing = transform.rotation;
-            if (this.name == "rat" || this.name == "demon")
+            if (this.name == "rat(Clone)" || this.name == "demon(Clone)")
             {
                 transform.rotation = new Quaternion(angleFacing.x, angleFacing.y, angleFacing.z + 90, angleFacing.w);
             }
@@ -95,7 +96,6 @@ public class BaseEnemy : MonoBehaviour {
 
 			if(health <= 0)
 			{
-				AudioSource.PlayClipAtPoint (dieSound, new Vector3 (0, 0, 0),dieSoundVolume);
                 Death();
 			}
 
@@ -114,7 +114,7 @@ public class BaseEnemy : MonoBehaviour {
 		if(other.tag == "LaunchBox")
 		{
 			health -= other.gameObject.GetComponentInParent<WeaponController>().weapon.GetComponent<MeleeController>().damage;
-
+            AudioSource.PlayClipAtPoint(hammerSmack, new Vector3(0, 0, 0), spawnSoundVolume);
 			if(health <= 0)
 			{
                 Death();
@@ -127,7 +127,7 @@ public class BaseEnemy : MonoBehaviour {
 		if(other.tag == "LaunchBox")
 		{
 			health -= other.gameObject.GetComponentInParent<WeaponController>().weapon.GetComponent<MeleeController>().damage;
-
+            AudioSource.PlayClipAtPoint(hammerSmack, new Vector3(0, 0, 0), spawnSoundVolume);
 			if(health <= 0)
 			{
                 Death();
@@ -137,6 +137,7 @@ public class BaseEnemy : MonoBehaviour {
     
 	protected void GrantTheSweetReleaseOfDeath()
 	{
+        AudioSource.PlayClipAtPoint(dieSound, new Vector3(0, 0, 0), dieSoundVolume);
 		Destroy (gameObject);
 	}
 

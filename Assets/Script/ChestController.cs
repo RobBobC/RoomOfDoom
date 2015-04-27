@@ -4,6 +4,7 @@ using System.Collections;
 public class ChestController : MonoBehaviour {
 	public GameObject weaponRewardOne;
 	public GameObject weaponRewardTwo;
+    public GameObject weaponRewardThree;
 
 	[HideInInspector]
 	public bool collectable;
@@ -20,10 +21,5 @@ public class ChestController : MonoBehaviour {
     {
         animator.Play("OpenChest");
         collectable = false;
-    }
-
-    public void CloseChest()
-    {
-        animator.Play("IdleChest");
     }
 }

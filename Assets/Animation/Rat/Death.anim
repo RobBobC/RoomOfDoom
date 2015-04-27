@@ -76,7 +76,7 @@ AnimationClip:
   m_EditorCurves: []
   m_EulerEditorCurves: []
   m_Events:
-  - time: .75
+  - time: .875
     functionName: GrantTheSweetReleaseOfDeath
     data: 
     objectReferenceParameter: {fileID: 0}

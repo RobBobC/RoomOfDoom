@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BulletController : MonoBehaviour {
 	public int damagePoints = 0;
+    public float shotSpeed = 1000;
 
 	void OnCollisionEnter2D(Collision2D other)
 	{

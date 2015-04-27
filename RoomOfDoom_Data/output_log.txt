@@ -6,13 +6,13 @@ Direct3D:
     Vendor:   Intel
     VRAM:     128 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Robert Cook\CECS 590\Projects\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Robert Cook\CECS 590\Projects\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Robert Cook\CECS 590\Projects\RoomOfDoom\RoomOfDoom_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Robert Cook\CECS 590\Projects\RoomOfDoom\RoomOfDoom_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Robert Cook\CECS 590\Projects\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Robert Cook\CECS 590\Projects\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.038 seconds
-desktop: 1360x768 60Hz; virtual: 1360x768 at 0,0
+Platform assembly: C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Robert Cook\Documents\GitHub\RoomOfDoom\RoomOfDoom_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.062 seconds
+desktop: 2880x1800 60Hz; virtual: 2880x1800 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.

@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 1405084788}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -185,7 +185,7 @@ AudioSource:
   m_GameObject: {fileID: 92538414}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: f945bb861c3c0c846ba0a2ded4cc6ed2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0e4d8e7058e9a284ea9422d4a11fdf42, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

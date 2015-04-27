@@ -8,6 +8,8 @@ public class SpawnController : MonoBehaviour {
     public List<GameObject> enemies;
     public GameObject smokeSpawn;
     public int enemyCount = 0;
+    public GameObject chestMessage;
+    public int wave = 0;
 
     enum EnemyType
     {
@@ -17,8 +19,6 @@ public class SpawnController : MonoBehaviour {
         Demon
     };
 
-    bool opened;
-    int wave = 0;
     int spawnCount = 5;
 	List<GameObject> spawnPoints;
 	ChestController chest;
@@ -27,7 +27,6 @@ public class SpawnController : MonoBehaviour {
 	void Start ()
 	{
 		chest = GameObject.FindGameObjectWithTag ("Chest").GetComponent<ChestController>();
-		opened = true;
 		spawnPoints = new List<GameObject> ();
 		GameObject[] array = GameObject.FindGameObjectsWithTag ("SpawnPoint");
 		for(int i = 0; i < array.Length; i++)
@@ -45,7 +44,9 @@ public class SpawnController : MonoBehaviour {
 				{
 					wave++;
 					spawnCount = 10;
-					waveTime = 30;
+					waveTime = 15;
+                    chest.collectable = true;
+                    chestMessage.SetActive(true);
 					break;
 				}
 				else
@@ -69,18 +70,17 @@ public class SpawnController : MonoBehaviour {
 				}
 				break;
 			case 1:
-				if(opened)
-				{
-					chest.CloseChest();
-					opened = false;
-				}
-				chest.collectable = true;
+                if (!chest.collectable)
+                {
+                    chestMessage.SetActive(false);
+                }
 				if(waveTime < 0 || (Input.GetKey("space") && spawnCount == 0))
 				{
 					wave++;
 					spawnCount = 10;
-					waveTime = 10;
-					opened = true;
+					waveTime = 20;
+                    chest.collectable = true;
+                    chestMessage.SetActive(true);
 					break;
 				}
 				else
@@ -104,18 +104,17 @@ public class SpawnController : MonoBehaviour {
 				}
 				break;
 			case 2:
-				if(opened)
-				{
-					chest.CloseChest();
-					opened = false;
-				}
-				chest.collectable = true;
+                if (!chest.collectable)
+                {
+                    chestMessage.SetActive(false);
+                }
                 if(waveTime < 0 || (Input.GetKey("space") && spawnCount == 0))
 				{
 					wave++;
 					spawnCount = 10;
-					waveTime = 10;
-					opened = true;
+					waveTime = 25;
+                    chest.collectable = true;
+                    chestMessage.SetActive(true);
 					break;
 				}
 				else
@@ -139,12 +138,10 @@ public class SpawnController : MonoBehaviour {
 				}
 				break;
             case 3:
-				if(opened)
-				{
-					chest.CloseChest();
-					opened = false;
-				}
-				chest.collectable = true;
+                if (!chest.collectable)
+                {
+                    chestMessage.SetActive(false);
+                }
 				SpawnEnemy(3);
 				SpawnEnemy(0);
 				SpawnEnemy(0);
@@ -153,10 +150,6 @@ public class SpawnController : MonoBehaviour {
 				SpawnEnemy(2);
 				enemyCount = enemyCount + 6;
 				wave++;
-				break;
-			case 4:
-				if(enemyCount == 0)
-					Application.LoadLevel(2);
 				break;
 		}
 	}
