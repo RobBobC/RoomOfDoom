@@ -11,6 +11,7 @@ public class BaseEnemy : MonoBehaviour {
     public float timeBetweenAttacks = 1.5f;
 	public AudioClip spawnSound;
 	public AudioClip dieSound;
+    public AudioClip hammerSmack;
 
 	protected GameObject player;
 	protected Animator animator;
@@ -37,6 +38,7 @@ public class BaseEnemy : MonoBehaviour {
         playerController = player.GetComponent<PlayerController>();
 		AudioSource.PlayClipAtPoint (spawnSound, new Vector3 (0, 0, 0), spawnSoundVolume);
         spawnController = GameObject.FindGameObjectWithTag("SpawnController").GetComponent<SpawnController>();
+
 	}
     
 	protected void Update()
@@ -95,7 +97,6 @@ public class BaseEnemy : MonoBehaviour {
 
 			if(health <= 0)
 			{
-				AudioSource.PlayClipAtPoint (dieSound, new Vector3 (0, 0, 0),dieSoundVolume);
                 Death();
 			}
 
@@ -114,7 +115,7 @@ public class BaseEnemy : MonoBehaviour {
 		if(other.tag == "LaunchBox")
 		{
 			health -= other.gameObject.GetComponentInParent<WeaponController>().weapon.GetComponent<MeleeController>().damage;
-
+            AudioSource.PlayClipAtPoint(hammerSmack, new Vector3(0, 0, 0), spawnSoundVolume);
 			if(health <= 0)
 			{
                 Death();
@@ -127,7 +128,7 @@ public class BaseEnemy : MonoBehaviour {
 		if(other.tag == "LaunchBox")
 		{
 			health -= other.gameObject.GetComponentInParent<WeaponController>().weapon.GetComponent<MeleeController>().damage;
-
+            AudioSource.PlayClipAtPoint(hammerSmack, new Vector3(0, 0, 0), spawnSoundVolume);
 			if(health <= 0)
 			{
                 Death();
@@ -137,6 +138,7 @@ public class BaseEnemy : MonoBehaviour {
     
 	protected void GrantTheSweetReleaseOfDeath()
 	{
+        AudioSource.PlayClipAtPoint(dieSound, new Vector3(0, 0, 0), dieSoundVolume);
 		Destroy (gameObject);
 	}
 

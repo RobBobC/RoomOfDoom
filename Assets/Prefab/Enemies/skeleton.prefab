@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -76.9897919, y: -40.2562408, z: 0}
+  m_LocalPosition: {x: 1.38098001, y: -22.1544361, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 426058}
@@ -131,6 +131,7 @@ MonoBehaviour:
   timeBetweenAttacks: 1.5
   spawnSound: {fileID: 8300000, guid: 5e9b4be23945db745a8d216b93f0ab97, type: 3}
   dieSound: {fileID: 8300000, guid: e53498f7b7f1dd447b55ca87d4e0e3ae, type: 3}
+  hammerSmack: {fileID: 8300000, guid: bd66cd382425ac64c8a2b35c4104912b, type: 3}
   shotSpeed: 1000
   launchBoxRotatationSpeed: 20
   launchBox: {fileID: 126058}
